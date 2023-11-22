@@ -60,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700643193987</updated>
-      <workItem from="1700643194925" duration="918000" />
+      <workItem from="1700643194925" duration="2141000" />
     </task>
     <task id="LOCAL-00001" summary="PRUEBA">
       <option name="closed" value="true" />
@@ -102,11 +102,46 @@
       <option name="project" value="LOCAL" />
       <updated>1700644113426</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700644212344</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700644212344</updated>
+    </task>
+    <task id="LOCAL-00007" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700644351822</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700644351822</updated>
+    </task>
+    <task id="LOCAL-00008" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700645049304</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700645049304</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PRUEBA" />
