@@ -27,6 +27,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -57,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700643193987</updated>
-      <workItem from="1700643194925" duration="531000" />
+      <workItem from="1700643194925" duration="918000" />
     </task>
     <task id="LOCAL-00001" summary="PRUEBA">
       <option name="closed" value="true" />
@@ -67,7 +70,39 @@
       <option name="project" value="LOCAL" />
       <updated>1700643331766</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700643767887</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700643767887</updated>
+    </task>
+    <task id="LOCAL-00003" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700643892643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700643892643</updated>
+    </task>
+    <task id="LOCAL-00004" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700643936090</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700643936090</updated>
+    </task>
+    <task id="LOCAL-00005" summary="PRUEBA">
+      <option name="closed" value="true" />
+      <created>1700644113426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700644113426</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
