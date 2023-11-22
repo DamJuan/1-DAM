@@ -10,6 +10,20 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "DamJuan"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c01fb975-7fd9-4a63-9a4f-cd5844e8086c" />
+        <option name="url" value="https://github.com/DamJuan/1-DAM.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
