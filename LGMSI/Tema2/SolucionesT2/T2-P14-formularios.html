@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+
+    <h3>Formulario Inscripción</h3>
+    <!--Enctype multipart/form-data: no se aplica ninguna codificación.
+    Este valor es necesario para la subida de archivos.-->
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre"> Nombre <br />
+          <input type="text" id="nombre" name="nombre" value="" /></label>
+          <br />
+        <label for="apellidos"> Apellidos <br />
+          <input type="text" id="apellidos" name="apellidos" value="" /></label>
+          <br />
+        <label for="dni">DNI <br />
+          <input type="text" id="dni" value="" size="10" maxlength="9"/>
+        </label>
+        <br>
+        Sexo <br>
+        <input type="radio" id="hombre" name="sexo" value="hombre" />
+        <label for="hombre">Hombre </label><br>
+
+        <input type="radio" id="mujer" name="sexo" value="mujer" checked="checked" />
+        <label for="mujer">Mujer </label><br>
+        
+    <label for="fichero">Subir foto </label>
+    <input type="file" id="fichero" name="adjunto" />
+    <br>
+    <input name="boletín" id="boletin" type="checkbox" value="boletin" />
+     <label for="boletin">Suscribirse al boletín de novedades</label>
+      </fieldset>
+      <fieldset>
+        <legend>Datos de usuario</legend>
+        <label for="usuario"> Nombre de usuario <br />
+          <input type="text" id="usuario" name="usuario" value="" maxlength="10" />
+          <br/>
+        </label>
+        <label for="password"> Contraseña <br />
+          <input type="password" id="password" name="password" value="" maxlength="10" />
+          <br/>
+        </label>
+        <label for="password2"> Repite la contraseña <br />
+          <input type="password" id="password2" name="password2" value="" maxlength="10"/>
+        </label>
+        <br>
+        <br>
+        <input type="button" name="guardar" value="Guardar Cambios" />
+        <input type="reset" name="borrado" value="Borrar datos"/>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
