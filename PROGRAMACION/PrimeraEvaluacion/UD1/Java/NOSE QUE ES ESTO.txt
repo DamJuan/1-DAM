@@ -1,0 +1,22 @@
+El nombre de una persona ---> String
+El telefono de una persona ---> String
+El numero pi =3.1416 ---> double
+El precio de un tomate ---> double
+Una nota de la asignatura de programacion ---> double
+Estar aprobado o no ---> boolean
+El numero de asignaturas de DAM ---> int
+La marca de un ordenador portatil ---> String
+El numero de ordenadores del aula de informatica ---> int
+El numero de bastidor de un coche ---> String
+El mes de marzo ---> int
+El hecho de que una persona sea mayor de edad o no ---> boolean
+
+
+bar
+
+numero de consumiciones INT
+Edad (dni) String
+Cuenta bancaria DOUBLE
+Deuda de la personas DOUBLE
+Media de personas DOUBLE
+Bebida preferida String
