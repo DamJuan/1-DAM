@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div element="article" href="toc.htm" number="" targetptr="">
+  <ttl>Oracle&#x00AE; Warehouse Builder Release Notes</ttl>
+  <xreftext><cite>Oracle&#x00AE; Warehouse Builder Release Notes</cite></xreftext>
+  <div element="sect1" href="toc.htm" number="1" targetptr="CHDHGIIJ">
+    <ttl>Documentation Accessibility</ttl>
+    <xreftext>&#x201C;Documentation Accessibility&#x201D;</xreftext>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Accessibility of Code Examples in Documentation</ttl>
+      <xreftext>&#x201C;Accessibility of Code Examples in Documentation&#x201D;</xreftext>
+    </obj>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Accessibility of Links to External Web Sites in Documentation</ttl>
+      <xreftext>&#x201C;Accessibility of Links to External Web Sites in Documentation&#x201D;</xreftext>
+    </obj>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Deaf/Hard of Hearing Access to Oracle Support Services</ttl>
+      <xreftext>&#x201C;Deaf/Hard of Hearing Access to Oracle Support Services&#x201D;</xreftext>
+    </obj>
+  </div>
+  <div element="sect1" href="toc.htm" number="2" targetptr="BCFIDAHG">
+    <ttl>Related Publications</ttl>
+    <xreftext>&#x201C;Related Publications&#x201D;</xreftext>
+  </div>
+  <div element="sect1" href="toc.htm" number="3" targetptr="BCFGGEIH">
+    <ttl>Requirements</ttl>
+    <xreftext>&#x201C;Requirements&#x201D;</xreftext>
+  </div>
+  <div element="sect1" href="toc.htm" number="4" targetptr="BCFHBGDI">
+    <ttl>Known Issues and Limitations</ttl>
+    <xreftext>&#x201C;Known Issues and Limitations&#x201D;</xreftext>
+    <div element="sect2" href="toc.htm" number="4.1" targetptr="BEIDGCHB">
+      <ttl>Business Intelligence Objects</ttl>
+      <xreftext>&#x201C;Business Intelligence Objects&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.2" targetptr="BCFCFHDF">
+      <ttl>Languages and Translations</ttl>
+      <xreftext>&#x201C;Languages and Translations&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.3" targetptr="BABHCGEB">
+      <ttl>Mapping Designs and Configurations</ttl>
+      <xreftext>&#x201C;Mapping Designs and Configurations&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.4" targetptr="CIHHHJHH">
+      <ttl>Warehouse Builder Connector for SAP</ttl>
+      <xreftext>&#x201C;Warehouse Builder Connector for SAP&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.5" targetptr="CIHIBCAI">
+      <ttl>Non-Oracle Database Connectivity</ttl>
+      <xreftext>&#x201C;Non-Oracle Database Connectivity&#x201D;</xreftext>
+      <obj element="table" href="toc.htm" number="@-1" targetptr="">
+        <ttl>Drivers Required to Connect to Non-Oracle Databases</ttl>
+        <xreftext>&#x201C;Drivers Required to Connect to Non-Oracle Databases&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.6" targetptr="CJAFFGBF">
+      <ttl>OMB*Plus Scripts</ttl>
+      <xreftext>&#x201C;OMB*Plus Scripts&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.7" targetptr="CIHIFCGA">
+      <ttl>Repository Browser</ttl>
+      <xreftext>&#x201C;Repository Browser&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.8" targetptr="CJAIJFGB">
+      <ttl>User Interface</ttl>
+      <xreftext>&#x201C;User Interface&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="5" targetptr="CIHCHGGE">
+    <ttl>Documentation Addendum</ttl>
+    <xreftext>&#x201C;Documentation Addendum&#x201D;</xreftext>
+    <div element="sect2" href="toc.htm" number="5.1" targetptr="CIHFFBJD">
+      <ttl>Oracle Warehouse Builder Installation and Administration Guide for Windows and Linux</ttl>
+      <xreftext>&#x201C;Oracle Warehouse Builder Installation and Administration Guide for Windows and Linux&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="6" targetptr="CJADEIGB">
+    <ttl>Resolved Issues</ttl>
+    <xreftext>&#x201C;Resolved Issues&#x201D;</xreftext>
+  </div>
+</div>

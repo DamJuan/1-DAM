@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div element="article" href="toc.htm" number="" targetptr="">
+  <ttl>Oracle&#x00AE; Database Client Quick Installation Guide for Microsoft Windows x64 (64-Bit)</ttl>
+  <xreftext><cite>Oracle&#x00AE; Database Client Quick Installation Guide for Microsoft Windows x64 (64-Bit)</cite></xreftext>
+  <div element="sect1" href="toc.htm" number="1" targetptr="BGBIJEDD">
+    <ttl>Review Information About this Guide</ttl>
+    <xreftext>&#x201C;Review Information About this Guide&#x201D;</xreftext>
+    <obj element="bridgehead" href="toc.htm" number="" targetptr="">
+      <ttl>Where to Get Additional Installation Information</ttl>
+      <xreftext>&#x201C;Where to Get Additional Installation Information&#x201D;</xreftext>
+    </obj>
+  </div>
+  <div element="sect1" href="toc.htm" number="2" targetptr="BAGBFCFF">
+    <ttl>Hardware Requirements</ttl>
+    <xreftext>&#x201C;Hardware Requirements&#x201D;</xreftext>
+    <obj element="table" href="toc.htm" number="@-1" targetptr="">
+      <ttl>Hardware Requirements</ttl>
+      <xreftext>&#x201C;Hardware Requirements&#x201D;</xreftext>
+    </obj>
+    <div element="sect2" href="toc.htm" number="2.1" targetptr="">
+      <ttl>Hard Disk Space Requirements</ttl>
+      <xreftext>&#x201C;Hard Disk Space Requirements&#x201D;</xreftext>
+      <obj element="table" href="toc.htm" number="@-2" targetptr="">
+        <ttl>Disk Space Requirements on NTFS</ttl>
+        <xreftext>&#x201C;Disk Space Requirements on NTFS&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect2" href="toc.htm" number="2.2" targetptr="">
+      <ttl>Verifying Hardware Requirements</ttl>
+      <xreftext>&#x201C;Verifying Hardware Requirements&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="3" targetptr="BABEHGHH">
+    <ttl>Software Requirements</ttl>
+    <xreftext>&#x201C;Software Requirements&#x201D;</xreftext>
+    <obj element="table" href="toc.htm" number="@-3" targetptr="">
+      <ttl>Software Requirements</ttl>
+      <xreftext>&#x201C;Software Requirements&#x201D;</xreftext>
+    </obj>
+    <div element="sect2" href="toc.htm" number="3.1" targetptr="">
+      <ttl>Instant Client Light Language and Character Set Requirements</ttl>
+      <xreftext>&#x201C;Instant Client Light Language and Character Set Requirements&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="4" targetptr="CFHEEEBJ">
+    <ttl>Web Browser Support</ttl>
+    <xreftext>&#x201C;Web Browser Support&#x201D;</xreftext>
+  </div>
+  <div element="sect1" href="toc.htm" number="5" targetptr="BABJGGJH">
+    <ttl>Install the Oracle Database Client Software</ttl>
+    <xreftext>&#x201C;Install the Oracle Database Client Software&#x201D;</xreftext>
+    <div element="sect2" href="toc.htm" number="5.1" targetptr="CHDJJJEF">
+      <ttl>Guidelines for Installing Oracle Database Client</ttl>
+      <xreftext>&#x201C;Guidelines for Installing Oracle Database Client&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.2" targetptr="BABEHJDJ">
+      <ttl>Procedure for Installing Oracle Database Client</ttl>
+      <xreftext>&#x201C;Procedure for Installing Oracle Database Client&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="6" targetptr="CHDCCEFG">
+    <ttl>What&#x0027;s Next?</ttl>
+    <xreftext>&#x201C;What&#x0027;s Next?&#x201D;</xreftext>
+  </div>
+  <div element="sect1" href="toc.htm" number="7" targetptr="CHDGBDEJ">
+    <ttl>Documentation Accessibility</ttl>
+    <xreftext>&#x201C;Documentation Accessibility&#x201D;</xreftext>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Accessibility of Code Examples in Documentation</ttl>
+      <xreftext>&#x201C;Accessibility of Code Examples in Documentation&#x201D;</xreftext>
+    </obj>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Accessibility of Links to External Web Sites in Documentation</ttl>
+      <xreftext>&#x201C;Accessibility of Links to External Web Sites in Documentation&#x201D;</xreftext>
+    </obj>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Access to Oracle Support</ttl>
+      <xreftext>&#x201C;Access to Oracle Support&#x201D;</xreftext>
+    </obj>
+  </div>
+</div>

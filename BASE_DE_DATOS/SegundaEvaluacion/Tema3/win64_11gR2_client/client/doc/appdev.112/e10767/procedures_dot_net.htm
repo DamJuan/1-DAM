@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="all" scheme="http://www.robotstxt.org/" />
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Version 5.1.1 Build 005" />
+<meta name="Date" content="2009-07-23T17:44:31Z" />
+<meta name="doctitle" content="Oracle&reg; Database 2 Day + .NET Developer's Guide 11g Release 2 (11.2)" />
+<meta name="partno" content="E10767-01" />
+<meta name="docid" content="TDPNG" />
+<link rel="Start" href="../../index.htm" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+<link rel="Stylesheet" href="../../dcommon/css/blafdoc.css" title="Default" type="text/css" />
+<script type="text/javascript" src="../../dcommon/js/doccd.js">
+</script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Index" href="index.htm" title="Index" type="text/html" />
+<link rel="Prev" href="using_aspnt.htm" title="Previous" type="text/html" />
+<link rel="Next" href="globalizing.htm" title="Next" type="text/html" />
+<link rel="alternate" href="../e10767.pdf" title="PDF version" type="application/pdf" />
+<title>Developing and Deploying .NET Stored Procedures</title>
+</head>
+<body>
+<div class="header">
+<div class="zz-skip-header"><a name="top" id="top" href="#BEGIN">Skip Headers</a></div>
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="left" valign="top"><b>Oracle&reg; Database 2 Day + .NET Developer's Guide<br />
+11<i>g</i> Release 2 (11.2)</b><br />
+Part Number E10767-01</td>
+<td valign="bottom" align="right">
+<table class="icons oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="245">
+<tr>
+<td align="center" valign="top"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td align="center" valign="top"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td align="center" valign="top"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td align="center" valign="top"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td align="center" valign="top"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr />
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="left" valign="top">
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="98">
+<tr>
+<td align="center" valign="top"><a href="using_aspnt.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td align="center" valign="top"><a href="globalizing.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td align="right" valign="top" style="font-size: 90%"><a href="../e10767.pdf">View PDF</a></td>
+</tr>
+</table>
+<a name="BEGIN" id="BEGIN"></a></div>
+<div class="IND"><!-- End Header --><a id="CIHGJIGJ" name="CIHGJIGJ"></a>
+<h1 class="chapter"><span class="secnum">8</span> <a name="TDPNG70000" id="TDPNG70000"></a> Developing and Deploying .NET Stored Procedures</h1>
+<p>This chapter contains:</p>
+<ul>
+<li>
+<p><a href="#CIHHGABG">Overview of .NET Stored Procedures</a></p>
+</li>
+<li>
+<p><a href="#CHDHFGBA">Starting the Common Language Runtime Service</a></p>
+</li>
+<li>
+<p><a href="#CIHGHIHA">Creating a Connection as SYSDBA</a></p>
+</li>
+<li>
+<p><a href="#CIHHGEEG">Creating an Oracle Project</a></p>
+</li>
+<li>
+<p><a href="#CIHBEJGG">Creating .NET Stored Functions and Procedures</a></p>
+</li>
+<li>
+<p><a href="#CIHIEEBI">Deploying .NET Stored Functions and Procedures</a></p>
+</li>
+<li>
+<p><a href="#CIHIAIHF">Running .NET Stored Functions and Procedures</a></p>
+</li>
+<li>
+<p><a href="#CIHIIJBE">Running .NET Stored Procedure in a Query Window</a></p>
+</li>
+</ul>
+<a id="CIHHGABG" name="CIHHGABG"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Overview of .NET Stored Procedures</h2>
+<p>.NET stored procedures are methods or procedures written in a .NET language which contains SQL or PL/SQL statements.</p>
+<p>You can write custom stored procedures and functions using any .NET compliant language, such as C# and VB.NET, and use these .NET stored procedures in the database, in the same manner as other PL/SQL or Java stored procedures. .NET stored procedures can be called from PL/SQL packages, procedures, functions, and triggers; from SQL statements, or from anywhere a PL/SQL procedure or function can be called.</p>
+<p>Oracle Database Extensions for .NET (a database option that allows you to write .NET stored procedures) must be installed and configured in the database to run the examples in this chapter.</p>
+<p>This chapter discusses how to use and deploy .NET stored procedures in your application.</p>
+</div>
+<!-- class="sect1" -->
+<a id="CHDHFGBA" name="CHDHFGBA"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG70010" id="TDPNG70010"></a>Starting the Common Language Runtime Service<a id="sthref530" name="sthref530"></a><a id="sthref531" name="sthref531"></a><a id="sthref532" name="sthref532"></a><a id="sthref533" name="sthref533"></a></h2>
+<p>To use .NET stored procedures, you must first start the common language runtime agent, represented by the <code>OraClrAgent</code> service. This service may not start by default. Note that it is located on the Oracle database, not on the client.</p>
+<div class="infoboxnote">
+<p class="notep1">Note:</p>
+<code>OraClrAgnt</code> can be accessed through the Services Control Panel, as <code>Oracle</code><code><span class="codeinlineitalic">OracleHomeName</span></code><code>ClrAgnt</code>, where <code><span class="codeinlineitalic">OracleHomeName</span></code> represents your Oracle home.</div>
+<a id="sthref534" name="sthref534"></a>
+<p class="subhead2">To start the common language runtime service:</p>
+<ol>
+<li><a id="CIHJEFIC" name="CIHJEFIC"></a>
+<p>From the <span class="bold">Start</span> menu, select <span class="bold">All Programs</span>, then select <span class="bold">Administrative Tools</span>, and finally, select <span class="bold">Services</span>.</p>
+</li>
+<li><a id="CIHCDGFD" name="CIHCDGFD"></a>
+<p>In the Services window, click the <span class="bold">Extended</span> tab.</p>
+<p>Scroll down the list of Services, and select <code>Oracle</code><code><span class="codeinlineitalic">OracleHomeName</span></code><code>ClrAgnt</code>.</p>
+</li>
+<li><a id="CIHHGDAB" name="CIHHGDAB"></a>
+<p>Click the <span class="bold">Start</span> hyperlink.</p>
+<p>The Service Control window shows that the <code>OracleClrAgent</code> is starting.</p>
+</li>
+<li><a id="CIHECFCE" name="CIHECFCE"></a>
+<p>When the Service Control window closes, note that the status of the <code>OracleClrAgent</code> is changed to <code>Started</code>.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CIHGHIHA" name="CIHGHIHA"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG70030" id="TDPNG70030"></a>Creating a Connection as SYSDBA<a id="sthref535" name="sthref535"></a><a id="sthref536" name="sthref536"></a><a id="sthref537" name="sthref537"></a><a id="sthref538" name="sthref538"></a><a id="sthref539" name="sthref539"></a><a id="sthref540" name="sthref540"></a><a id="sthref541" name="sthref541"></a><a id="sthref542" name="sthref542"></a><a id="sthref543" name="sthref543"></a><a id="sthref544" name="sthref544"></a><a id="sthref545" name="sthref545"></a><a id="sthref546" name="sthref546"></a><a id="sthref547" name="sthref547"></a><a id="sthref548" name="sthref548"></a><a id="sthref549" name="sthref549"></a><a id="sthref550" name="sthref550"></a><a id="sthref551" name="sthref551"></a></h2>
+<p>Next, you must create a database connection as <code>SYSDBA</code> which enables you to deploy your Oracle Project.</p>
+<div class="infoboxnote">
+<p class="notep1">Note:</p>
+You must have administrative privileges as <code>SYSDBA</code> to perform this task.</div>
+<div class="infoboxnote">
+<p class="notep1">Note:</p>
+To use the Enterprise Manager to set the <code>sys</code> account password, see <a class="olink ADMQS12002" href="http://www.oracle.com/pls/db112/lookup?id=ADMQS12002">About Administrative Accounts and Privileges</a> in the <a class="olink ADMQS" href="http://www.oracle.com/pls/db112/lookup?id=ADMQS"><span class="italic">Oracle Database 2 Day DBA</span></a>.</div>
+<a id="sthref552" name="sthref552"></a>
+<p class="subhead2">To create a database connection in ODT:</p>
+<ol>
+<li>
+<p>From the View menu, select <span class="bold">Server Explorer.</span></p>
+</li>
+<li>
+<p>In Server Explorer, right-click <span class="bold">Data Connections</span>.</p>
+</li>
+<li>
+<p>Select <span class="bold">Add Connection</span>.</p>
+</li>
+<li>
+<p>When the Add Connection window appears, determine if the Data source says Oracle Database (Oracle ODP.NET).</p>
+<p>If it does, skip to Step <a href="#CIHBAFEJ">6</a>.</p>
+<img width="381" height="129" src="img/addconnection1a.gif" alt="Description of addconnection1a.gif follows" title="Description of addconnection1a.gif follows" longdesc="img_text/addconnection1a.htm" /><br />
+<a id="sthref553" name="sthref553" href="img_text/addconnection1a.htm">Description of the illustration addconnection1a.gif</a><br />
+<br />
+<p>If Data source does not say Oracle Database (Oracle ODP.NET), select <span class="bold">Change</span>.</p>
+<p>The Change Data Source window appears.</p>
+<img width="438" height="259" src="img/addconnection2a.gif" alt="Description of addconnection2a.gif follows" title="Description of addconnection2a.gif follows" longdesc="img_text/addconnection2a.htm" /><br />
+<a id="sthref554" name="sthref554" href="img_text/addconnection2a.htm">Description of the illustration addconnection2a.gif</a><br />
+<br /></li>
+<li>
+<p>Choose Oracle Database and then select Oracle Data Provider for .NET.</p>
+</li>
+<li><a id="CIHBAFEJ" name="CIHBAFEJ"></a>
+<p>In the Add Connection window, use the following:</p>
+<ul>
+<li>
+<p>For <span class="bold">User name</span>, enter <code>sys</code>.</p>
+</li>
+<li>
+<p>For <span class="bold">Password</span>, enter the password set by the administrator who unlocked and set up the <code>sys</code> account.</p>
+<p>To use the Enterprise Manager to set the <code>sys</code> account password, see <a class="olink ADMQS12002" href="http://www.oracle.com/pls/db112/lookup?id=ADMQS12002">About Administrative Accounts and Privileges</a> in the <a class="olink ADMQS" href="http://www.oracle.com/pls/db112/lookup?id=ADMQS"><span class="italic">Oracle Database 2 Day DBA</span></a>.</p>
+</li>
+<li>
+<p>Ensure that the <span class="bold">Role</span> is set to <code>Sysdba</code>.</p>
+<p>The <span class="bold">Connection name</span> is generated automatically from the <span class="bold">Data source name</span> and the <span class="bold">User name</span> values.</p>
+<img width="385" height="487" src="img/deploy03.gif" alt="Description of deploy03.gif follows" title="Description of deploy03.gif follows" longdesc="img_text/deploy03.htm" /><br />
+<a id="sthref555" name="sthref555" href="img_text/deploy03.htm">Description of the illustration deploy03.gif</a><br />
+<br /></li>
+</ul>
+</li>
+<li>
+<p>In the Add Connection window, click <span class="bold">OK</span></p>
+<p>The Server Explorer window should now contain the <code>SYS.ORCL</code> connection.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CIHHGEEG" name="CIHHGEEG"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG70020" id="TDPNG70020"></a>Creating an Oracle Project<a id="sthref556" name="sthref556"></a><a id="sthref557" name="sthref557"></a><a id="sthref558" name="sthref558"></a></h2>
+<p>To use stored procedures in .NET, you must first create a new Oracle Project to hold the stored procedures.</p>
+<a id="sthref559" name="sthref559"></a>
+<p class="subhead2">To create a project for .NET stored procedures:</p>
+<ol>
+<li>
+<p>From the <span class="bold">File</span> menu, select <span class="bold">New</span>, and then select <span class="bold">Project</span>.</p>
+<p>A New Project dialog box appears.</p>
+</li>
+<li><a id="CIHGCGDC" name="CIHGCGDC"></a>
+<p>In Project Types, select the type of project you are creating:</p>
+<ul>
+<li>
+<p><span class="bold">Visual C#:</span></p>
+<p><span class="bold">Visual C#</span> , then select <span class="bold">Database</span>, and under Templates:<span class="bold">Oracle Project</span></p>
+<p>Enter <span class="bold">Name:</span> <code>HR_DeployStored_CS</code>.</p>
+</li>
+<li>
+<p><span class="bold">Visual Basic:</span></p>
+<p><span class="bold">Other Languages</span>, then select <span class="bold">Visual Basic</span> and <span class="bold">Database</span>, then under Templates: <span class="bold">Oracle Project</span></p>
+<p>Enter <span class="bold">Name:</span> <code>HR_DeployStored_VB</code>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Enter <span class="bold">Location</span>: <code>C:\HR_Projects</code>.</p>
+</li>
+<li>
+<p>Click <span class="bold">OK</span>.</p>
+<img width="676" height="494" src="img/deploy01.gif" alt="Description of deploy01.gif follows" title="Description of deploy01.gif follows" longdesc="img_text/deploy01.htm" /><br />
+<a id="sthref560" name="sthref560" href="img_text/deploy01.htm">Description of the illustration deploy01.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CIHBEJGG" name="CIHBEJGG"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG70040" id="TDPNG70040"></a>Creating .NET Stored Functions and Procedures<a id="sthref561" name="sthref561"></a></h2>
+<p>You are now ready to create a .NET stored procedure.</p>
+<a id="sthref562" name="sthref562"></a>
+<p class="subhead2">To create a .NET stored procedure:</p>
+<ol>
+<li>
+<p>In Solution View, select the <span class="bold">Class1.cs</span> or <span class="bold">Class1.vb</span> tab in your project.</p>
+</li>
+<li>
+<p>Add these namespace directives for the specific language, as described in <a href="connecting.htm#BCGGGBJJ">"Adding Namespace Directives"</a>.</p>
+<p><span class="bold">Visual C#:</span></p>
+<pre xml:space="preserve" class="oac_no_warn">using Oracle.DataAccess.Client; 
+using Oracle.DataAccess.Types;
+</pre>
+<pre xml:space="preserve" class="oac_no_warn"></pre>
+<p><span class="bold">Visual Basic:</span></p>
+<pre xml:space="preserve" class="oac_no_warn">Imports Oracle.DataAccess.Client 
+Imports Oracle.DataAccess.Types
+</pre></li>
+<li>
+<p>Add Reference to <code>Oracle.DataAccess.dll</code> as described in <a href="connecting.htm#BCGIIJEA">"Adding a Reference"</a>.</p>
+</li>
+<li><a id="CIHEBHDI" name="CIHEBHDI"></a>
+<p>Copy the <code>getDepartmentno()</code> method into the <code>Class1</code> declaration, as indicated</p>
+<p><span class="bold">Visual C#</span></p>
+<a id="CIHBGFIE" name="CIHBGFIE"></a>
+<pre xml:space="preserve" class="oac_no_warn">public static int getDepartmentno(int employee_id)
+{
+  int department_id = 0;
+
+  // Get a connection to the db
+  OracleConnection conn = new OracleConnection();
+  conn.ConnectionString = "context connection=true";
+  conn.Open();
+
+  // Create and execute a command
+  OracleCommand cmd = conn.CreateCommand();
+  cmd.CommandText = "select department_id from employees where employee_id = :1";
+  cmd.Parameters.Add(":1", OracleDbType.Int32, employee_id,
+    ParameterDirection.Input);
+  OracleDataReader rdr = cmd.ExecuteReader();
+
+  while(rdr.Read())
+    department_id=rdr.GetInt32(0);
+
+  rdr.Close();
+  cmd.Dispose();
+
+  // Return the employee's department number
+  return department_id;
+}
+</pre>
+<p><span class="bold">Visual Basic:</span></p>
+<a id="CIHHFAEC" name="CIHHFAEC"></a>
+<pre xml:space="preserve" class="oac_no_warn">Public Shared Function getDepartmentno(ByVal employee_id As Integer) As Integer
+  Dim department_id As Integer = 0 
+
+  ' Get a connection to the db
+  Dim conn As OracleConnection = New OracleConnection()
+  conn.ConnectionString = "context connection=true"
+  conn.Open()
+
+  ' Create and execute a command
+  Dim cmd As OracleCommand = conn.CreateCommand()
+  cmd.CommandText = "select department_id from employees where employee_id = :1"
+  cmd.Parameters.Add(":1", OracleDbType.Int32, employee_id,     ParameterDirection.Input)
+  Dim rdr As OracleDataReader = cmd.ExecuteReader()
+
+  While rdr.Read()
+    department_id = rdr.GetInt32(0)
+
+  End While
+
+  rdr.Close()
+  cmd.Dispose()
+
+  ' Return the employee's department number
+  Return department_id
+
+End Function
+</pre>
+<img width="615" height="226" src="img/deploy04.gif" alt="Description of deploy04.gif follows" title="Description of deploy04.gif follows" longdesc="img_text/deploy04.htm" /><br />
+<a id="sthref563" name="sthref563" href="img_text/deploy04.htm">Description of the illustration deploy04.gif</a><br />
+<br /></li>
+<li>
+<p>Save <code>Class1</code>.</p>
+</li>
+<li><a id="CIHIIHDI" name="CIHIIHDI"></a>
+<p>From the <span class="bold">Build</span> menu, select <span class="bold">Build Solution</span>.</p>
+<img width="504" height="302" src="img/deploy05.gif" alt="Description of deploy05.gif follows" title="Description of deploy05.gif follows" longdesc="img_text/deploy05.htm" /><br />
+<a id="sthref564" name="sthref564" href="img_text/deploy05.htm">Description of the illustration deploy05.gif</a><br />
+<br /></li>
+<li>
+<p>Check that the Output window indicates a successful build and close it.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CIHIEEBI" name="CIHIEEBI"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG70050" id="TDPNG70050"></a>Deploying .NET Stored Functions and Procedures<a id="sthref565" name="sthref565"></a><a id="sthref566" name="sthref566"></a><a id="sthref567" name="sthref567"></a><a id="sthref568" name="sthref568"></a><a id="sthref569" name="sthref569"></a><a id="sthref570" name="sthref570"></a><a id="sthref571" name="sthref571"></a><a id="sthref572" name="sthref572"></a><a id="sthref573" name="sthref573"></a><a id="sthref574" name="sthref574"></a><a id="sthref575" name="sthref575"></a></h2>
+<p>You can now deploy the .NET stored procedure that you created <a href="#CIHBEJGG">"Creating .NET Stored Functions and Procedures"</a>.</p>
+<a id="sthref576" name="sthref576"></a>
+<p class="subhead2">To deploy a .NET stored procedure:</p>
+<ol>
+<li><a id="CIHHFABG" name="CIHHFABG"></a>
+<p>From the <span class="bold">Build</span> menu, select <span class="bold">Deploy Solution</span>.</p>
+<img width="500" height="299" src="img/deploy06.gif" alt="Description of deploy06.gif follows" title="Description of deploy06.gif follows" longdesc="img_text/deploy06.htm" /><br />
+<a id="sthref577" name="sthref577" href="img_text/deploy06.htm">Description of the illustration deploy06.gif</a><br />
+<br />
+<p>An Oracle Deployment Wizard for .NET window appears.</p>
+</li>
+<li><a id="CIHJIAIC" name="CIHJIAIC"></a>
+<p>In the Oracle Deployment Wizard for .NET window, click <span class="bold">Next</span>.</p>
+<img width="550" height="415" src="img/deploy07.gif" alt="Description of deploy07.gif follows" title="Description of deploy07.gif follows" longdesc="img_text/deploy07.htm" /><br />
+<a id="sthref578" name="sthref578" href="img_text/deploy07.htm">Description of the illustration deploy07.gif</a><br />
+<br /></li>
+<li><a id="CIHEEFAC" name="CIHEEFAC"></a>
+<p>On the <span class="bold">Configure your OracleConnection</span> window, click <span class="bold">Next</span>.</p>
+<img width="552" height="415" src="img/deploy08.gif" alt="Description of deploy08.gif follows" title="Description of deploy08.gif follows" longdesc="img_text/deploy08.htm" /><br />
+<a id="sthref579" name="sthref579" href="img_text/deploy08.htm">Description of the illustration deploy08.gif</a><br />
+<br /></li>
+<li><a id="CIHIIIED" name="CIHIIIED"></a>
+<p>On the Specify your deployment option window, ensure that the first option, <span class="bold">Copy assembly and generate stored procedures</span> is selected, and click <span class="bold">Next</span>.</p>
+<img width="551" height="413" src="img/deploy10.gif" alt="Description of deploy10.gif follows" title="Description of deploy10.gif follows" longdesc="img_text/deploy10.htm" /><br />
+<a id="sthref580" name="sthref580" href="img_text/deploy10.htm">Description of the illustration deploy10.gif</a><br />
+<br /></li>
+<li><a id="CIHDEHII" name="CIHDEHII"></a>
+<p>On the Specify an assembly and library name window, accept the defaults and click <span class="bold">Next</span>.</p>
+<img width="554" height="415" src="img/deploy11.gif" alt="Description of deploy11.gif follows" title="Description of deploy11.gif follows" longdesc="img_text/deploy11.htm" /><br />
+<a id="sthref581" name="sthref581" href="img_text/deploy11.htm">Description of the illustration deploy11.gif</a><br />
+<br /></li>
+<li><a id="CIHCAAAD" name="CIHCAAAD"></a>
+<p>On the Specify copy options window, accept the defaults and click <span class="bold">Next</span>.</p>
+<p><span class="bold">Visual Basic:</span></p>
+<p>If you are using Visual Basic, the <code>Microsoft.VisualBasic</code> assembly also appears as a referenced assembly.</p>
+<img width="551" height="413" src="img/deploy12.gif" alt="Description of deploy12.gif follows" title="Description of deploy12.gif follows" longdesc="img_text/deploy12.htm" /><br />
+<a id="sthref582" name="sthref582" href="img_text/deploy12.htm">Description of the illustration deploy12.gif</a><br />
+<br /></li>
+<li><a id="CIHHEECB" name="CIHHEECB"></a>
+<p>On the Specify methods and security details window, under Available methods, expand <span class="bold">HR_DeployStored_CS</span> or <span class="bold">HR_DeployStored_VB</span>, then expand <span class="bold">Class1</span>, and select the <code><span class="codeinlinebold">getDepartmentno()</span></code> method.</p>
+<p>Under Method Details, select <span class="bold">HR</span> from the Schema list.</p>
+<p>Click <span class="bold">Next</span>.</p>
+<img width="549" height="415" src="img/deploy13.gif" alt="Description of deploy13.gif follows" title="Description of deploy13.gif follows" longdesc="img_text/deploy13.htm" /><br />
+<a id="sthref583" name="sthref583" href="img_text/deploy13.htm">Description of the illustration deploy13.gif</a><br />
+<br /></li>
+<li><a id="CIHCCBAG" name="CIHCCBAG"></a>
+<p>On the Summary window, click <span class="bold">Finish</span>.</p>
+<img width="553" height="417" src="img/deploy14.gif" alt="Description of deploy14.gif follows" title="Description of deploy14.gif follows" longdesc="img_text/deploy14.htm" /><br />
+<a id="sthref584" name="sthref584" href="img_text/deploy14.htm">Description of the illustration deploy14.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CIHIAIHF" name="CIHIAIHF"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG70060" id="TDPNG70060"></a>Running .NET Stored Functions and Procedures<a id="sthref585" name="sthref585"></a><a id="sthref586" name="sthref586"></a><a id="sthref587" name="sthref587"></a></h2>
+<p>You are now ready to run the .NET stored procedure you deployed earlier.</p>
+<a id="sthref588" name="sthref588"></a>
+<p class="subhead2">To run a .NET stored procedure:</p>
+<ol>
+<li><a id="CIHJGABD" name="CIHJGABD"></a>
+<p>In Server Explorer, open and expand the <code>HR.ORCL</code> connection. Expand Functions. Right-click <code>GETDEPARTMENTNO</code> and select <span class="bold">Run</span>.</p>
+<img width="333" height="306" src="img/deploy15.gif" alt="Description of deploy15.gif follows" title="Description of deploy15.gif follows" longdesc="img_text/deploy15.htm" /><br />
+<a id="sthref589" name="sthref589" href="img_text/deploy15.htm">Description of the illustration deploy15.gif</a><br />
+<br />
+<p>The Run Function window appears.</p>
+</li>
+<li><a id="CIHDGHIH" name="CIHDGHIH"></a>
+<p>In the Run Function window, enter a <code>Value</code> of <code>100</code> for <code>EMPLOYEE_ID</code>.</p>
+<p>Click <span class="bold">OK</span>.</p>
+<img width="511" height="176" src="img/deploy16.gif" alt="Description of deploy16.gif follows" title="Description of deploy16.gif follows" longdesc="img_text/deploy16.htm" /><br />
+<a id="sthref590" name="sthref590" href="img_text/deploy16.htm">Description of the illustration deploy16.gif</a><br />
+<br /></li>
+<li><a id="CIHHJAAE" name="CIHHJAAE"></a>
+<p>Note that the return value for department is <code>90</code>, indicating that <code>EMPLOYEE_ID</code> <code>100</code> is in department 90.</p>
+<img width="542" height="212" src="img/deploy17.gif" alt="Description of deploy17.gif follows" title="Description of deploy17.gif follows" longdesc="img_text/deploy17.htm" /><br />
+<a id="sthref591" name="sthref591" href="img_text/deploy17.htm">Description of the illustration deploy17.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CIHIIJBE" name="CIHIIJBE"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Running .NET Stored Procedure in a Query Window<a id="sthref592" name="sthref592"></a><a id="sthref593" name="sthref593"></a><a id="sthref594" name="sthref594"></a></h2>
+<p>You can run the .NET stored procedure that you have just created using the ODT Query Window, in addition to running it from Server Explorer.</p>
+<ol>
+<li>
+<p>Open the Server Explorer in the <code>HR.ORCL</code> schema.</p>
+</li>
+<li>
+<p>Expand Functions and select <code>GETDEPARTMENTNO</code>.</p>
+</li>
+<li>
+<p>Right-click and select Query Window.</p>
+</li>
+<li>
+<p>Enter <code>Select</code> <code>getdepartmentno(100)</code> <code>from</code> <code>dual</code>.</p>
+</li>
+<li>
+<p>Click Execute from the toolbar.</p>
+<img width="582" height="341" src="img/querywindow.gif" alt="Description of querywindow.gif follows" title="Description of querywindow.gif follows" longdesc="img_text/querywindow.htm" /><br />
+<a id="sthref595" name="sthref595" href="img_text/querywindow.htm">Description of the illustration querywindow.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" --></div>
+<!-- class="ind" -->
+<div class="footer">
+<hr />
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<col width="33%" />
+<col width="*" />
+<col width="33%" />
+<tr>
+<td align="left">
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="98">
+<tr>
+<td align="center" valign="top"><a href="using_aspnt.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td align="center" valign="top"><a href="globalizing.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td style="font-size: 90%" align="center" class="copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2006, 2009,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td align="right">
+<table class="icons oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="245">
+<tr>
+<td align="center" valign="top"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td align="center" valign="top"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td align="center" valign="top"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td align="center" valign="top"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td align="center" valign="top"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

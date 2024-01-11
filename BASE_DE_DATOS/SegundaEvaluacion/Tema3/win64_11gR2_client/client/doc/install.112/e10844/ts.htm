@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="all" scheme="http://www.robotstxt.org/" />
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Version 5.1.1 Build 026" />
+<meta name="Date" content="2010-03-08T19:45:17Z" />
+<meta name="doctitle" content="Oracle&reg; Database Client Installation Guide 11g Release 2 (11.2) for Microsoft Windows" />
+<meta name="partno" content="E10844-01" />
+<meta name="docid" content="NTCLI" />
+<link rel="Start" href="../../index.htm" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+<link rel="Stylesheet" href="../../dcommon/css/blafdoc.css" title="Default" type="text/css" />
+<script type="text/javascript" src="../../dcommon/js/doccd.js">
+</script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Index" href="index.htm" title="Index" type="text/html" />
+<link rel="Glossary" href="glossary.htm" title="Glossary" type="text/html" />
+<link rel="Prev" href="gblsupp.htm" title="Previous" type="text/html" />
+<link rel="Next" href="glossary.htm" title="Next" type="text/html" />
+<link rel="alternate" href="../e10844.pdf" title="PDF version" type="application/pdf" />
+<title>Troubleshooting the Oracle&nbsp;Database&nbsp;Client&nbsp;Installation</title>
+</head>
+<body>
+<div class="header">
+<div class="zz-skip-header"><a name="top" id="top" href="#BEGIN">Skip Headers</a></div>
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="left" valign="top"><b>Oracle&reg; Database Client Installation Guide<br />
+11<i>g</i> Release 2 (11.2) for Microsoft Windows</b><br />
+Part Number E10844-01</td>
+<td valign="bottom" align="right">
+<table class="icons oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="245">
+<tr>
+<td align="center" valign="top"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td align="center" valign="top"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td align="center" valign="top"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td align="center" valign="top"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td align="center" valign="top"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr />
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="left" valign="top">
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="98">
+<tr>
+<td align="center" valign="top"><a href="gblsupp.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td align="center" valign="top"><a href="glossary.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td align="right" valign="top" style="font-size: 90%"><a href="../e10844.pdf">View PDF</a></td>
+</tr>
+</table>
+<a name="BEGIN" id="BEGIN"></a></div>
+<div class="IND"><!-- End Header --><a id="BABFDJDB" name="BABFDJDB"></a>
+<h1 class="appendix"><span class="secnum">D</span> <a name="NTCLI008" id="NTCLI008"></a> Troubleshooting the Oracle&nbsp;Database&nbsp;Client&nbsp;Installation</h1>
+<p><a id="ABC1300516" name="ABC1300516"></a><a id="ABC1300516SRI1" name="ABC1300516SRI1"></a>This appendix contains the following information about troubleshooting:</p>
+<ul>
+<li>
+<p><a href="#CIHFJIFF">Verifying Requirements</a></p>
+</li>
+<li>
+<p><a href="#i638074">What to Do if an Installation Error Occurs?</a></p>
+</li>
+<li>
+<p><a href="#i1090466">Reviewing the Log of an Installation Session</a></p>
+</li>
+<li>
+<p><a href="#i1090449">Silent or Noninteractive Installation Response File Error Handling</a></p>
+</li>
+<li>
+<p><a href="#i637944">Troubleshooting Configuration Assistants</a></p>
+</li>
+<li>
+<p><a href="#CIHGAFDE">Troubleshooting Inventory Issues</a></p>
+</li>
+<li>
+<p><a href="#BABDJIFE">Cleaning Up After a Failed Installation</a></p>
+</li>
+</ul>
+<a id="CIHFJIFF" name="CIHFJIFF"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><span class="secnum">D.1</span> Verifying Requirements</h2>
+<p>Before you try any of the troubleshooting steps in this appendix, do the following:</p>
+<ul>
+<li>
+<p>Check that the system meets the requirements and that you have completed all of the preinstallation tasks specified in <a href="pre_install.htm#CIHHCHCJ">Chapter 2, "Oracle Database Client Preinstallation Requirements."</a></p>
+</li>
+<li>
+<p>Read the release notes for the product on your platform before installing it. The release notes are available on the Oracle Database installation media. You can find the latest version of the release notes on the Oracle Technology Network Web site:</p>
+<pre xml:space="preserve" class="oac_no_warn"><a href="http://www.oracle.com/technology/documentation/">http://www.oracle.com/technology/documentation/</a>
+</pre></li>
+</ul>
+</div>
+<!-- class="sect1" -->
+<a id="i638074" name="i638074"></a>
+<div class="sect1">
+<h2 class="sect1"><span class="secnum">D.2</span> What to Do if an Installation Error Occurs?</h2>
+<p>If you encounter an error during installation:</p>
+<ul>
+<li>
+<p>Do not exit Oracle Universal Installer.</p>
+</li>
+<li>
+<p>If you clicked <span class="bold">Next</span> after you entered incorrect information about one of the installation windows, click <span class="bold">Back</span> to return to the window and correct the information.</p>
+</li>
+<li>
+<p><a id="sthref244" name="sthref244"></a>If you encounter an error while Oracle Universal Installer is copying or linking files, then see <a href="#i1090466">"Reviewing the Log of an Installation Session"</a> for interactive installations or <a href="#i1090449">"Silent or Noninteractive Installation Response File Error Handling"</a> for silent or noninteractive installations.</p>
+</li>
+<li>
+<p>If you encounter an error while configuration assistant is running, then see <a href="#i637944">Section D.5, "Troubleshooting Configuration Assistants."</a></p>
+</li>
+<li>
+<p>If you cannot resolve the problem, then remove the failed installation by following the steps listed in <a href="#BABDJIFE">Section D.7, "Cleaning Up After a Failed Installation."</a></p>
+</li>
+</ul>
+</div>
+<!-- class="sect1" -->
+<a id="i1090466" name="i1090466"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><span class="secnum">D.3</span> <a id="sthref245" name="sthref245"></a><a id="sthref246" name="sthref246"></a>Reviewing the Log of an Installation Session<a id="sthref247" name="sthref247"></a></h2>
+<p><a id="sthref248" name="sthref248"></a><a id="sthref249" name="sthref249"></a><a id="sthref250" name="sthref250"></a>When <a id="sthref251" name="sthref251"></a><a id="sthref252" name="sthref252"></a>you run Oracle Universal Installer on a computer with no Oracle software installed, it creates a directory called:</p>
+<pre xml:space="preserve" class="oac_no_warn"><span class="italic">DRIVE_LETTER</span>:\Program Files\Oracle\Inventory\logs
+</pre>
+<p>During this first installation and all subsequent installations, Oracle Universal Installer records all of the actions that it performs in a log file in this directory. If you encounter problems during the installation, review the log file for information about possible causes of the problem.</p>
+<p>Log filenames for interactive installations take the form:<a id="sthref253" name="sthref253"></a></p>
+<pre xml:space="preserve" class="oac_no_warn">installActions<span class="italic">date_time</span>.log<a id="sthref254" name="sthref254"></a>
+</pre>
+<p>For example, if an interactive installation occurred at 9:00:56 A.M. on February 14, 2005, the log file would be named:</p>
+<pre xml:space="preserve" class="oac_no_warn">installActions2005-02-14_09-00-56-am.log
+</pre>
+<div class="infoboxnote">
+<p class="notep1">Note:</p>
+Do not delete or manually alter the <code>Inventory</code> directory or its contents. Doing so can prevent Oracle Universal Installer from locating products that you install on your system.</div>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<a href="#i1090449">"Silent or Noninteractive Installation Response File Error Handling"</a></div>
+</div>
+<!-- class="sect1" -->
+<a id="i1090449" name="i1090449"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><span class="secnum">D.4</span> <a id="sthref255" name="sthref255"></a>Silent or Noninteractive Installation Response File Error<a id="sthref256" name="sthref256"></a><a id="sthref257" name="sthref257"></a><a id="sthref258" name="sthref258"></a> Handling<a id="sthref259" name="sthref259"></a><a id="sthref260" name="sthref260"></a><a id="sthref261" name="sthref261"></a></h2>
+<p><a id="sthref262" name="sthref262"></a><a id="sthref263" name="sthref263"></a>To determine whether a silent or nonintereactive installation succeeds or fails, check the <code>silentInstallActions</code><code><span class="codeinlineitalic">date_time</span></code><code>.log</code> file, located in the <code><span class="codeinlineitalic">DRIVE_LETTER</span></code><code>:\Program Files\Oracle\Inventory\logs</code> directory.</p>
+<p>A silent installation fails if:</p>
+<ul>
+<li>
+<p>You do not specify a response file.</p>
+</li>
+<li>
+<p>You specify an incorrect or incomplete response file.</p>
+<p>For example, a common problem is that while all the database-specific data is filled out correctly, the staging area location may be incorrect. If this is the case, check the <code>FROM_LOCATION</code> variable and ensure that it points to the <code>products.xml</code> file in the installation media. In the installation media, this <code>products.xml</code> is in <code>client\stage</code>.</p>
+</li>
+<li>
+<p>Oracle Universal Installer encounters an error, such as insufficient disk space.</p>
+</li>
+</ul>
+<p>Oracle Universal Installer or a configuration assistant validates the response file at runtime. If the validation fails, the installation or configuration process ends. <a id="sthref264" name="sthref264"></a><a id="sthref265" name="sthref265"></a>Oracle Universal Installer treats values for parameters that are of the wrong context, format, or type as if no value was specified in the file.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<a href="#i1090466">"Reviewing the Log of an Installation Session"</a> for information about interactive installation log files</div>
+</div>
+<!-- class="sect1" -->
+<a id="i637944" name="i637944"></a>
+<div class="sect1">
+<h2 class="sect1"><span class="secnum">D.5</span> Troubleshooting Configuration Assistants<a id="sthref266" name="sthref266"></a><a id="sthref267" name="sthref267"></a></h2>
+<p><a id="sthref268" name="sthref268"></a>To troubleshoot an installation error that occurs when a configuration assistant is running:<a id="sthref269" name="sthref269"></a></p>
+<ul>
+<li>
+<p>Review the installation log files listed in <a href="#i1090466">Section D.3, "Reviewing the Log of an Installation Session."</a></p>
+</li>
+<li>
+<p>Review the specific configuration assistant log file located in the <code><span class="codeinlineitalic">ORACLE_HOME</span></code><code>\cfgtoollogs</code> directory. Try to fix the issue that caused the error.</p>
+</li>
+<li>
+<p>If you see the <code>Fatal Error. Reinstall</code> message, look for the cause of the problem by reviewing the log files. Refer to <a href="#i639047">"Irrecoverable Errors"</a> for further instructions.</p>
+</li>
+</ul>
+<div class="sect2"><a id="sthref270" name="sthref270"></a>
+<h3 class="sect2"><span class="secnum">D.5.1</span> Configuration Assistant Failure</h3>
+<p>Oracle configuration assistant failures are noted at the bottom of the installation window. The configuration assistant interface displays additional information, if available. The configuration assistant execution status is stored in the <code>installActions</code><code><span class="codeinlineitalic">date_time</span></code><code>.log</code> file.</p>
+<p>The execution status codes are listed in the following table:</p>
+<div class="inftblhruleinformal">
+<table class="HRuleInformal" title="Configuration Assistant Result Codes" summary="Oracle Database configuration assistant failures are noted at the bottom of the Installation screen. The Oracle Database configuration assistant interface displays additional information, if applicable. The Oracle Database configuration assistant's execution status will be identified by the result code called &quot;exit-code&quot;. The result codes are shown on the table." dir="ltr" border="1" width="100%" frame="hsides" rules="rows" cellpadding="3" cellspacing="0">
+<col width="*" />
+<col width="31%" />
+<thead>
+<tr align="left" valign="top">
+<th align="left" valign="bottom" id="r1c1-t5">Status</th>
+<th align="left" valign="bottom" id="r1c2-t5">Result Code</th>
+</tr>
+</thead>
+<tbody>
+<tr align="left" valign="top">
+<td align="left" id="r2c1-t5" headers="r1c1-t5">Configuration assistant succeeded</td>
+<td align="left" headers="r2c1-t5 r1c2-t5">0</td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" id="r3c1-t5" headers="r1c1-t5">Configuration assistant failed</td>
+<td align="left" headers="r3c1-t5 r1c2-t5">1</td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" id="r4c1-t5" headers="r1c1-t5">Configuration assistant cancelled</td>
+<td align="left" headers="r4c1-t5 r1c2-t5">-1</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="inftblhruleinformal" --></div>
+<!-- class="sect2" -->
+<a id="i639047" name="i639047"></a>
+<div class="sect2">
+<h3 class="sect2"><span class="secnum">D.5.2</span> <a id="sthref271" name="sthref271"></a><a id="sthref272" name="sthref272"></a>Irrecoverable Errors<a id="sthref273" name="sthref273"></a></h3>
+<p>If you receive an irrecoverable error while a configuration assistant is running:</p>
+<ol>
+<li>
+<p>Remove the failed installation as described in <a href="#BABDJIFE">Section D.7, "Cleaning Up After a Failed Installation."</a></p>
+</li>
+<li>
+<p>Correct the cause of the irrecoverable error.</p>
+</li>
+<li>
+<p>Reinstall the Oracle software.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect2" --></div>
+<!-- class="sect1" -->
+<a id="CIHGAFDE" name="CIHGAFDE"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><span class="secnum">D.6</span> Troubleshooting Inventory Issues</h2>
+<p>If you face any of the following situations for Oracle home, then run the <code>opatch lsinventory -detail</code> command to list the contents of the inventory and see section "Recovering from inventory corruption" in the <span class="italic"><a class="olink OUICG155" href="http://www.oracle.com/pls/db112/lookup?id=OUICG155">Oracle Universal Installer and OPatch User's Guide</a></span> for information on fixing the issue.</p>
+<ul>
+<li>
+<p>Oracle home is cloned without completing the inventory steps.</p>
+</li>
+<li>
+<p>There is bad inventory.</p>
+</li>
+<li>
+<p>Inventory is not available but it is created when the Oracle Enterprise Manager Agent is installed in a separate Oracle home.</p>
+</li>
+</ul>
+</div>
+<!-- class="sect1" -->
+<a id="BABDJIFE" name="BABDJIFE"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><span class="secnum">D.7</span> Cleaning Up After a Failed Installation</h2>
+<p>If an installation fails, you must remove files that Oracle Universal Installer created during the attempted installation and remove the Oracle home directory. Follow the instructions in <a href="deinstall.htm#BABHIGFE">Chapter 5, "Removing Oracle Database Client Software"</a> to run the Deinstallation tool. <a id="sthref274" name="sthref274"></a><a id="sthref275" name="sthref275"></a></p>
+</div>
+<!-- class="sect1" --></div>
+<!-- class="ind" -->
+<div class="footer">
+<hr />
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<col width="33%" />
+<col width="*" />
+<col width="33%" />
+<tr>
+<td align="left">
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="98">
+<tr>
+<td align="center" valign="top"><a href="gblsupp.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td align="center" valign="top"><a href="glossary.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td style="font-size: 90%" align="center" class="copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;1996, 2010,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td align="right">
+<table class="icons oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="245">
+<tr>
+<td align="center" valign="top"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td align="center" valign="top"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td align="center" valign="top"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td align="center" valign="top"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td align="center" valign="top"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

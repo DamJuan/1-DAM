@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta name="robots" content="all" scheme="http://www.robotstxt.org/" />
+<meta name="generator" content="Oracle DARB XHTML Converter (Mode = document) - Version 5.1.1 Build 005" />
+<meta name="Date" content="2009-07-23T17:44:8Z" />
+<meta name="doctitle" content="Oracle&reg; Database 2 Day + .NET Developer's Guide 11g Release 2 (11.2)" />
+<meta name="partno" content="E10767-01" />
+<meta name="docid" content="TDPNG" />
+<link rel="Start" href="../../index.htm" title="Home" type="text/html" />
+<link rel="Copyright" href="../../dcommon/html/cpyr.htm" title="Copyright" type="text/html" />
+<link rel="Stylesheet" href="../../dcommon/css/blafdoc.css" title="Default" type="text/css" />
+<script type="text/javascript" src="../../dcommon/js/doccd.js">
+</script>
+<link rel="Contents" href="toc.htm" title="Contents" type="text/html" />
+<link rel="Index" href="index.htm" title="Index" type="text/html" />
+<link rel="Prev" href="building_odp.htm" title="Previous" type="text/html" />
+<link rel="Next" href="procedures_plsql.htm" title="Next" type="text/html" />
+<link rel="alternate" href="../e10767.pdf" title="PDF version" type="application/pdf" />
+<title>Using Oracle Developer Tools for Visual Studio</title>
+</head>
+<body>
+<div class="header">
+<div class="zz-skip-header"><a name="top" id="top" href="#BEGIN">Skip Headers</a></div>
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="left" valign="top"><b>Oracle&reg; Database 2 Day + .NET Developer's Guide<br />
+11<i>g</i> Release 2 (11.2)</b><br />
+Part Number E10767-01</td>
+<td valign="bottom" align="right">
+<table class="icons oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="245">
+<tr>
+<td align="center" valign="top"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td align="center" valign="top"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td align="center" valign="top"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td align="center" valign="top"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td align="center" valign="top"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<hr />
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td align="left" valign="top">
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="98">
+<tr>
+<td align="center" valign="top"><a href="building_odp.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td align="center" valign="top"><a href="procedures_plsql.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td align="right" valign="top" style="font-size: 90%"><a href="../e10767.pdf">View PDF</a></td>
+</tr>
+</table>
+<a name="BEGIN" id="BEGIN"></a></div>
+<div class="IND"><!-- End Header --><a id="CHDIDGGJ" name="CHDIDGGJ"></a>
+<h1 class="chapter"><span class="secnum">5</span> <a name="TDPNG50000" id="TDPNG50000"></a>Using Oracle Developer Tools for Visual Studio</h1>
+<p>This chapter contains:</p>
+<ul>
+<li>
+<p><a href="#CIHJAHIG">Using Oracle Developer Tools</a></p>
+</li>
+<li>
+<p><a href="#CEGBAFAC">Connecting to the Oracle Database</a></p>
+</li>
+<li>
+<p><a href="#CHDDJFAE">Creating a Table and Its Columns</a></p>
+</li>
+<li>
+<p><a href="#CHDBHBDG">Creating a Table Index</a></p>
+</li>
+<li>
+<p><a href="#CHDFFBEG">Adding Table Constraints</a></p>
+</li>
+<li>
+<p><a href="#CHDHGIGI">Adding Data to a Table</a></p>
+</li>
+<li>
+<p><a href="#CHDJFGII">Generating Code Automatically to Display and Update Data</a></p>
+</li>
+</ul>
+<a id="CIHJAHIG" name="CIHJAHIG"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1">Using Oracle Developer Tools<a id="sthref318" name="sthref318"></a></h2>
+<p>Oracle Developer Tools for Visual Studio (ODT) is a tightly integrated Add-in for Visual Studio. Using enhancements that ODT brings to the Server Explorer, you can automatically create tables, indexes, constraints, data connections and other database schema objects. Additionally you can automatically generate application code.</p>
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<a href="introduction.htm#CACBFJFD">"Overview of Oracle Developer Tools for Visual Studio"</a></div>
+</div>
+<!-- class="sect1" -->
+<a id="CEGBAFAC" name="CEGBAFAC"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG50010" id="TDPNG50010"></a>Connecting to the Oracle Database<a id="sthref319" name="sthref319"></a><a id="sthref320" name="sthref320"></a><a id="sthref321" name="sthref321"></a><a id="sthref322" name="sthref322"></a><a id="sthref323" name="sthref323"></a><a id="sthref324" name="sthref324"></a><a id="sthref325" name="sthref325"></a><a id="sthref326" name="sthref326"></a><a id="sthref327" name="sthref327"></a><a id="sthref328" name="sthref328"></a><a id="sthref329" name="sthref329"></a><a id="sthref330" name="sthref330"></a><a id="sthref331" name="sthref331"></a><a id="sthref332" name="sthref332"></a><a id="sthref333" name="sthref333"></a><a id="sthref334" name="sthref334"></a><a id="sthref335" name="sthref335"></a><a id="sthref336" name="sthref336"></a><a id="sthref337" name="sthref337"></a><a id="sthref338" name="sthref338"></a><a id="sthref339" name="sthref339"></a><a id="sthref340" name="sthref340"></a></h2>
+<p>This section shows you how to use the Server Explorer to connect to the Oracle Database for the purpose of automatically creating or modifying database schema objects.</p>
+<a id="sthref341" name="sthref341"></a>
+<p class="subhead2">To connect to the database:</p>
+<ol>
+<li>
+<p>From the View menu, select <span class="bold">Server Explorer.</span></p>
+</li>
+<li>
+<p>In Server Explorer, right-click <span class="bold">Data Connections</span>.</p>
+</li>
+<li>
+<p>Select <span class="bold">Add Connection</span>.</p>
+<img width="377" height="183" src="img/addconnection1.gif" alt="Description of addconnection1.gif follows" title="Description of addconnection1.gif follows" longdesc="img_text/addconnection1.htm" /><br />
+<a id="sthref342" name="sthref342" href="img_text/addconnection1.htm">Description of the illustration addconnection1.gif</a><br />
+<br /></li>
+<li><a id="CHDJDGGH" name="CHDJDGGH"></a>
+<p>When the Add Connection window appears, determine if the Data source says Oracle Database (Oracle ODP.NET).</p>
+<p>If it does, skip to Step <a href="#BABBHCAF">6</a>.</p>
+<img width="381" height="129" src="img/addconnection1a.gif" alt="Description of addconnection1a.gif follows" title="Description of addconnection1a.gif follows" longdesc="img_text/addconnection1a.htm" /><br />
+<a id="sthref343" name="sthref343" href="img_text/addconnection1a.htm">Description of the illustration addconnection1a.gif</a><br />
+<br />
+<p>If Data source does not say Oracle Database (Oracle ODP.NET), select <span class="bold">Change</span>.</p>
+<p>The Change Data Source window appears.</p>
+<img width="438" height="259" src="img/addconnection2a.gif" alt="Description of addconnection2a.gif follows" title="Description of addconnection2a.gif follows" longdesc="img_text/addconnection2a.htm" /><br />
+<a id="sthref344" name="sthref344" href="img_text/addconnection2a.htm">Description of the illustration addconnection2a.gif</a><br />
+<br /></li>
+<li><a id="CHDGEFHD" name="CHDGEFHD"></a>
+<p>Choose Oracle Database and then select Oracle Data Provider for .NET.</p>
+</li>
+<li><a id="BABBHCAF" name="BABBHCAF"></a>
+<p>On the Connection Details tab, in the Add Connection window, enter the following information:</p>
+<p><span class="bold">Data source name:</span> For this example, use the alias of the remote database instance, <code>orcl</code>.</p>
+<p>If you are connecting to a database on the same computer, use the <code>Local Database</code>.</p>
+<p>Select the <span class="bold">Use a specific user name and password</span> option.</p>
+<p>For <span class="bold">User name</span>, enter <code>HR</code>.</p>
+<p>For <span class="bold">Password</span>, enter the password created when the <code>hr</code> account was unlocked and set up.</p>
+<p>To save the password for future sessions, check the <span class="bold">Save password</span> box.</p>
+<p>Ensure that <span class="bold">Role</span> is set to <code>Default</code>. This refers to the default roles that have been granted to the user <code>hr</code>.</p>
+<p>The <span class="bold">Connection name</span> should be generated automatically from the <span class="bold">Data source name</span> and the <span class="bold">User name</span> values. In this exercise, it will be <span class="bold">HR.orcl</span>.</p>
+<img width="385" height="487" src="img/addconnection2.gif" alt="Description of addconnection2.gif follows" title="Description of addconnection2.gif follows" longdesc="img_text/addconnection2.htm" /><br />
+<a id="sthref345" name="sthref345" href="img_text/addconnection2.htm">Description of the illustration addconnection2.gif</a><br />
+<br /></li>
+<li>
+<p>Click the <span class="bold">Apply Filters</span> tab, and verify that the <code>HR</code> schema is in the <span class="bold">Displayed schemas</span> column. When you expand the schema category nodes in the data connection, only those schema objects (tables, views, and so on) selected in the <span class="bold">Apply Filters</span> tab appear.</p>
+<img width="385" height="488" src="img/addconnection3.gif" alt="Description of addconnection3.gif follows" title="Description of addconnection3.gif follows" longdesc="img_text/addconnection3.htm" /><br />
+<a id="sthref346" name="sthref346" href="img_text/addconnection3.htm">Description of the illustration addconnection3.gif</a><br />
+<br /></li>
+<li>
+<p>Click <span class="bold">Test connection</span>.</p>
+<img width="236" height="127" src="img/addconnection4.gif" alt="Description of addconnection4.gif follows" title="Description of addconnection4.gif follows" longdesc="img_text/addconnection4.htm" /><br />
+<a id="sthref347" name="sthref347" href="img_text/addconnection4.htm">Description of the illustration addconnection4.gif</a><br />
+<br />
+<p>The test should succeed. Click <span class="bold">OK</span>.</p>
+<p>If the test fails, it may be due to one or more of the following issues that you must address before proceeding with further steps:</p>
+<ul>
+<li>
+<p>The database is not started.</p>
+</li>
+<li>
+<p>The database listener is not started.</p>
+</li>
+<li>
+<p>The database connectivity is not properly configured.</p>
+</li>
+<li>
+<p>You do not have the correct user name, password, or role.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the Add Connection window, click <span class="bold">OK</span>.</p>
+</li>
+<li><a id="BABCAFGG" name="BABCAFGG"></a>
+<p>In the Server Explorer, expand the <span class="bold">HR.ORCL</span> connection to show the contents of the <code>HR</code> schema. You should see Tables, Views, Procedures, Functions, Packages, Synonyms, Sequences, and so on.</p>
+<img width="184" height="279" src="img/addconnection5.gif" alt="Description of addconnection5.gif follows" title="Description of addconnection5.gif follows" longdesc="img_text/addconnection5.htm" /><br />
+<a id="sthref348" name="sthref348" href="img_text/addconnection5.htm">Description of the illustration addconnection5.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CHDDJFAE" name="CHDDJFAE"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG50020" id="TDPNG50020"></a>Creating a Table and Its Columns<a id="sthref349" name="sthref349"></a><a id="sthref350" name="sthref350"></a><a id="sthref351" name="sthref351"></a><a id="sthref352" name="sthref352"></a><a id="sthref353" name="sthref353"></a><a id="sthref354" name="sthref354"></a><a id="sthref355" name="sthref355"></a><a id="sthref356" name="sthref356"></a><a id="sthref357" name="sthref357"></a></h2>
+<p>Oracle Developer Tools includes a user interface for creating database objects. In this section, you will create a table named <code>DEPENDENTS</code>.</p>
+<a id="sthref358" name="sthref358"></a>
+<p class="subhead2">To create a table:</p>
+<ol>
+<li><a id="BABBCHIG" name="BABBCHIG"></a>
+<p>In Server Explorer, right-click <span class="bold">Tables</span> and select <span class="bold">New Relational Table</span>.</p>
+<img width="248" height="295" src="img/table1.gif" alt="Description of table1.gif follows" title="Description of table1.gif follows" longdesc="img_text/table1.htm" /><br />
+<a id="sthref359" name="sthref359" href="img_text/table1.htm">Description of the illustration table1.gif</a><br />
+<br />
+<p>A table design window appears.</p>
+</li>
+<li><a id="BABBIBAH" name="BABBIBAH"></a>
+<p>In design view, enter <code>DEPENDENTS</code> for <span class="bold">Table name</span>.</p>
+<img width="585" height="422" src="img/table2.gif" alt="Description of table2.gif follows" title="Description of table2.gif follows" longdesc="img_text/table2.htm" /><br />
+<a id="sthref360" name="sthref360" href="img_text/table2.htm">Description of the illustration table2.gif</a><br />
+<br /></li>
+<li><a id="BABEBAGD" name="BABEBAGD"></a>
+<p>In the Column Properties tab, add the following six columns in this manner:</p>
+<p>Click <span class="bold">Add</span>. Then enter the new column information. Keep clicking add until you have added all the new columns.</p>
+<p>Fields may differ depending on the data type. You might have to close windows such as Server Explorer or Solution Explorer to access the entire tab.</p>
+<ul>
+<li>
+<p><span class="bold">Name</span> <code>LAST_NAME</code>, <span class="bold">Data Type</span> <code>VARCHAR2</code>, and <span class="bold">Size</span> <code>30</code>. Leave all other properties at their default values.</p>
+</li>
+<li>
+<p><span class="bold">Name</span> <code>FIRST_NAME</code>, <span class="bold">Data Type</span> <code>VARCHAR2</code>, and <span class="bold">Size</span> <code>20</code>. Leave all other properties at their default values.</p>
+</li>
+<li>
+<p><span class="bold">Name</span> <code>BIRTH_DATE</code>, <span class="bold">Data Type</span> <code>DATE</code>. Leave all other properties at their default values.</p>
+</li>
+<li>
+<p><span class="bold">Name</span> <code>RELATIONSHIP</code>, <span class="bold">Data Type</span> <code>VARCHAR2</code>, and <span class="bold">Size</span> <code>20</code>. Leave all other properties at their default values.</p>
+</li>
+<li>
+<p><span class="bold">Name</span> <code>EMPLOYEE_ID</code>, <span class="bold">Data Type</span> <code>NUMBER</code>, deselect <span class="bold">Allow null</span>, enter <span class="bold">Precision</span> <code>6</code> and <span class="bold">Scale</span> <code>0</code>.</p>
+</li>
+<li>
+<p><span class="bold">Name</span> <code>DEPENDENT_ID</code>, <span class="bold">Data Type</span> <code>NUMBER</code>, deselect <span class="bold">Allow null</span> check box, enter <span class="bold">Precision</span> <code>6</code> and <span class="bold">Scale</span> <code>0</code>.</p>
+</li>
+</ul>
+<img width="585" height="422" src="img/table3.gif" alt="Description of table3.gif follows" title="Description of table3.gif follows" longdesc="img_text/table3.htm" /><br />
+<a id="sthref361" name="sthref361" href="img_text/table3.htm">Description of the illustration table3.gif</a><br />
+<br /></li>
+<li><a id="BABCGEDI" name="BABCGEDI"></a>
+<p>Click <span class="bold">Preview SQL</span>.</p>
+<p>The SQL statement for constructing the table appears in the Preview SQL window, similar to this.</p>
+<img width="433" height="193" src="img/table4.gif" alt="Description of table4.gif follows" title="Description of table4.gif follows" longdesc="img_text/table4.htm" /><br />
+<a id="sthref362" name="sthref362" href="img_text/table4.htm">Description of the illustration table4.gif</a><br />
+<br />
+<p>Click <span class="bold">OK</span> to close the Preview SQL window.</p>
+</li>
+<li>
+<p>In the table design view, click <span class="bold">Save</span>.</p>
+<p>This action creates the new table <code>DEPENDENTS</code> in the <code>HR</code> schema. The new table is listed in the Server Explorer.</p>
+<img width="585" height="422" src="img/table5.gif" alt="Description of table5.gif follows" title="Description of table5.gif follows" longdesc="img_text/table5.htm" /><br />
+<a id="sthref363" name="sthref363" href="img_text/table5.htm">Description of the illustration table5.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CHDBHBDG" name="CHDBHBDG"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG50030" id="TDPNG50030"></a>Creating a Table Index<a id="sthref364" name="sthref364"></a><a id="sthref365" name="sthref365"></a><a id="sthref366" name="sthref366"></a><a id="sthref367" name="sthref367"></a><a id="sthref368" name="sthref368"></a><a id="sthref369" name="sthref369"></a></h2>
+<p>Indexes are an optional but very powerful feature of relational databases. An index enables quick access to the rows (or records) in a table. In this section, you will create an index for the <code>DEPENDENTS</code> table.</p>
+<a id="sthref370" name="sthref370"></a>
+<p class="subhead2">To create an index:</p>
+<ol>
+<li>
+<p>In the <code>DEPENDENTS</code> Table Design view, click the <span class="bold">Indexes</span> tab.</p>
+</li>
+<li><a id="BABGBEEB" name="BABGBEEB"></a>
+<p>Click <span class="bold">Add</span> under the Indexes area.</p>
+<p>The Index Properties area becomes active.</p>
+</li>
+<li>
+<p>Under Index Properties (to the right), enter the <span class="bold">Name</span> <code>DEPENDENTS_INDEX</code>, and leave all other properties in their default state.</p>
+</li>
+<li>
+<p>At the bottom of the Index Properties area, click <span class="bold">Add</span>.</p>
+</li>
+<li>
+<p>Under Index keys, click in the first cell of the <span class="bold">Key</span> column, and select <span class="bold">DEPENDENT_ID</span> from the list.</p>
+<img width="585" height="422" src="img/index1.gif" alt="Description of index1.gif follows" title="Description of index1.gif follows" longdesc="img_text/index1.htm" /><br />
+<a id="sthref371" name="sthref371" href="img_text/index1.htm">Description of the illustration index1.gif</a><br />
+<br /></li>
+<li><a id="BABDAEED" name="BABDAEED"></a>
+<p>Click <span class="bold">Preview SQL</span></p>
+<p>A Preview SQL window appears, displaying SQL statement to construct the index.</p>
+<img width="433" height="193" src="img/index2.gif" alt="Description of index2.gif follows" title="Description of index2.gif follows" longdesc="img_text/index2.htm" /><br />
+<a id="sthref372" name="sthref372" href="img_text/index2.htm">Description of the illustration index2.gif</a><br />
+<br />
+<p>Click <span class="bold">OK</span> to close the Preview SQL window.</p>
+</li>
+<li>
+<p>In the table design view, click <span class="bold">Save</span>.</p>
+<p>This creates the new index on the table <code>DEPENDENTS</code> in the <code>HR</code> schema. To see this in the Server Explorer, expand the <code>DEPENDENTS</code> table and related Indexes.</p>
+<img width="287" height="351" src="img/index3.gif" alt="Description of index3.gif follows" title="Description of index3.gif follows" longdesc="img_text/index3.htm" /><br />
+<a id="sthref373" name="sthref373" href="img_text/index3.htm">Description of the illustration index3.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CHDFFBEG" name="CHDFFBEG"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG50040" id="TDPNG50040"></a>Adding Table Constraints<a id="sthref374" name="sthref374"></a><a id="sthref375" name="sthref375"></a><a id="sthref376" name="sthref376"></a><a id="sthref377" name="sthref377"></a><a id="sthref378" name="sthref378"></a><a id="sthref379" name="sthref379"></a><a id="sthref380" name="sthref380"></a></h2>
+<p>The database uses constraints to automatically enforce data integrity defining rules for permissible data values. Constraints also implement primary and foreign keys in the table. In this section, you will add such constraints to the new table <code>DEPENDENTS</code>.</p>
+<a id="sthref381" name="sthref381"></a>
+<p class="subhead2">How to add foreign and primary keys:</p>
+<ol>
+<li><a id="BABIBJEG" name="BABIBJEG"></a>
+<p>In the <code>DEPENDENTS</code> table design view, click the <span class="bold">Constraints</span> tab.</p>
+<p>Note that depending on your configuration, there may already be default check constraints in the list.</p>
+</li>
+<li>
+<p>Under the Constraints area, add the following constraints in this manner:.</p>
+<p>Under Constraint Properties, Click <span class="bold">Add</span>. Then enter the new constraint information. Keep clicking add until you have added all the new constraints.</p>
+<ul>
+<li>
+<p><span class="bold">Name</span> <code>EMPLOYEES_FK</code>, <span class="bold">Type</span> <code>Foreign Key</code>, <span class="bold">Table</span> <code>EMPLOYEES</code>, <span class="bold">Constraint</span> <code>EMP_EMP_ID_PK</code>. Under Association, select <span class="bold">Referenced Column:</span> <code>EMPLOYEE_ID,</code> and <span class="bold">Local Column:</span> <code>EMPLOYEE_ID</code>, set the <span class="bold">On delete</span> value to <code>Cascade</code>. Leave all other properties at their default values.</p>
+<img width="585" height="502" src="img/constraint1.gif" alt="Description of constraint1.gif follows" title="Description of constraint1.gif follows" longdesc="img_text/constraint1.htm" /><br />
+<a id="sthref382" name="sthref382" href="img_text/constraint1.htm">Description of the illustration constraint1.gif</a><br />
+<br /></li>
+<li>
+<p><span class="bold">Name</span> <code>DEPENDENTS_PK</code>, <span class="bold">Type</span> <code>Primary Key</code>.</p>
+<p>Under the Primary key columns area, click <span class="bold">Add</span> (you may need to scroll down). Under Primary Key Columns, select <span class="bold">Key:</span> <code>DEPENDENT_ID</code>, set the <span class="bold">Using index</span> value to <code>DEPENDENTS_INDEX</code>. Leave all other properties at their default values.</p>
+<img width="585" height="468" src="img/constraint2.gif" alt="Description of constraint2.gif follows" title="Description of constraint2.gif follows" longdesc="img_text/constraint2.htm" /><br />
+<a id="sthref383" name="sthref383" href="img_text/constraint2.htm">Description of the illustration constraint2.gif</a><br />
+<br /></li>
+</ul>
+</li>
+<li><a id="BABFIEGB" name="BABFIEGB"></a>
+<p>Click <span class="bold">Preview SQL</span>. <a id="sthref384" name="sthref384"></a><a id="sthref385" name="sthref385"></a><a id="sthref386" name="sthref386"></a></p>
+<p>The Preview SQL window displays the code generated for constraints on table <code>DEPENDENTS</code>. Note that adding constraints is an <code>ALTER TABLE</code> command because constraints change the definitions of the <code>DEPENDENT_ID</code> and <code>EMPLOYEE_ID</code> columns of the table.</p>
+<img width="435" height="282" src="img/constraint3.gif" alt="Description of constraint3.gif follows" title="Description of constraint3.gif follows" longdesc="img_text/constraint3.htm" /><br />
+<a id="sthref387" name="sthref387" href="img_text/constraint3.htm">Description of the illustration constraint3.gif</a><br />
+<br />
+<p>Click <span class="bold">OK</span> to close the Preview SQL window.</p>
+</li>
+<li><a id="BABBCEBI" name="BABBCEBI"></a>
+<p>In the table design view, click <span class="bold">Save</span>.</p>
+<p>This action creates the two new constraints on the <code>DEPENDENTS</code> table in the <code>HR</code> schema. To see the Server Explorer, expand the hierarchy tree for the table <code>DEPENDENTS</code> and constraints.</p>
+<img width="281" height="265" src="img/constraint4.gif" alt="Description of constraint4.gif follows" title="Description of constraint4.gif follows" longdesc="img_text/constraint4.htm" /><br />
+<a id="sthref388" name="sthref388" href="img_text/constraint4.htm">Description of the illustration constraint4.gif</a><br />
+<br /></li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CHDHGIGI" name="CHDHGIGI"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG50050" id="TDPNG50050"></a>Adding Data to a Table<a id="sthref389" name="sthref389"></a><a id="sthref390" name="sthref390"></a><a id="sthref391" name="sthref391"></a><a id="sthref392" name="sthref392"></a><a id="sthref393" name="sthref393"></a><a id="sthref394" name="sthref394"></a></h2>
+<p>You must now add data to the new <code>DEPENDENTS</code> table.</p>
+<a id="sthref395" name="sthref395"></a>
+<p class="subhead2">To populate a table:</p>
+<ol>
+<li><a id="BABEEJEB" name="BABEEJEB"></a>
+<p>In Server Explorer, right-click the <code>DEPENDENTS</code> table and select <span class="bold">Retrieve Data</span>.</p>
+<img width="378" height="416" src="img/retrieve1.gif" alt="Description of retrieve1.gif follows" title="Description of retrieve1.gif follows" longdesc="img_text/retrieve1.htm" /><br />
+<a id="sthref396" name="sthref396" href="img_text/retrieve1.htm">Description of the illustration retrieve1.gif</a><br />
+<br />
+<p>A table grid for <code>DEPENDENTS</code> appears in design view.</p>
+</li>
+<li><a id="BABIJFAC" name="BABIJFAC"></a>
+<p>Enter the four records listed in <a href="#CHDFBECB">Table 5-1</a> into the table grid.</p>
+<div class="tblformal"><a id="sthref397" name="sthref397"></a><a id="CHDFBECB" name="CHDFBECB"></a>
+<p class="titleintable">Table 5-1 New Data for the DEPENDENTS Table</p>
+<table class="Formal" title="New Data for the DEPENDENTS Table" summary="There are six columns in the table: for LASTNAME, FIRSTNAME, BIRTHDATE, RELATIONSHIP, EMPLOYEEID and DEPENDENTID" dir="ltr" border="1" width="100%" frame="hsides" rules="groups" cellpadding="3" cellspacing="0">
+<col width="15%" />
+<col width="15%" />
+<col width="16%" />
+<col width="*" />
+<col width="16%" />
+<col width="19%" />
+<thead>
+<tr align="left" valign="top">
+<th align="left" valign="bottom" id="r1c1-t3">LAST_NAME</th>
+<th align="left" valign="bottom" id="r1c2-t3">FIRST_NAME</th>
+<th align="left" valign="bottom" id="r1c3-t3">BIRTH_DATE</th>
+<th align="left" valign="bottom" id="r1c4-t3">RELATIONSHIP</th>
+<th align="left" valign="bottom" id="r1c5-t3">EMPLOYEE_ID</th>
+<th align="left" valign="bottom" id="r1c6-t3">DEPENDENT_ID</th>
+</tr>
+</thead>
+<tbody>
+<tr align="left" valign="top">
+<td align="left" id="r2c1-t3" headers="r1c1-t3">
+<p>Ernst</p>
+</td>
+<td align="left" headers="r2c1-t3 r1c2-t3">
+<p>Mary</p>
+</td>
+<td align="left" headers="r2c1-t3 r1c3-t3">
+<p>06-MAY-2000</p>
+</td>
+<td align="left" headers="r2c1-t3 r1c4-t3">
+<p>daughter</p>
+</td>
+<td align="left" headers="r2c1-t3 r1c5-t3">
+<p>104</p>
+</td>
+<td align="left" headers="r2c1-t3 r1c6-t3">
+<p>1041</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" id="r3c1-t3" headers="r1c1-t3">
+<p>Atkinson</p>
+</td>
+<td align="left" headers="r3c1-t3 r1c2-t3">
+<p>Sue</p>
+</td>
+<td align="left" headers="r3c1-t3 r1c3-t3">
+<p>12-JUL-1998</p>
+</td>
+<td align="left" headers="r3c1-t3 r1c4-t3">
+<p>daughter</p>
+</td>
+<td align="left" headers="r3c1-t3 r1c5-t3">
+<p>130</p>
+</td>
+<td align="left" headers="r3c1-t3 r1c6-t3">
+<p>1301</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" id="r4c1-t3" headers="r1c1-t3">
+<p>Ernst</p>
+</td>
+<td align="left" headers="r4c1-t3 r1c2-t3">
+<p>David</p>
+</td>
+<td align="left" headers="r4c1-t3 r1c3-t3">
+<p>02-APR-2007</p>
+</td>
+<td align="left" headers="r4c1-t3 r1c4-t3">
+<p>son</p>
+</td>
+<td align="left" headers="r4c1-t3 r1c5-t3">
+<p>104</p>
+</td>
+<td align="left" headers="r4c1-t3 r1c6-t3">
+<p>1042</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td align="left" id="r5c1-t3" headers="r1c1-t3">
+<p>Sciarra</p>
+</td>
+<td align="left" headers="r5c1-t3 r1c2-t3">
+<p>Aaron</p>
+</td>
+<td align="left" headers="r5c1-t3 r1c3-t3">
+<p>31-JAN-2008</p>
+</td>
+<td align="left" headers="r5c1-t3 r1c4-t3">
+<p>son</p>
+</td>
+<td align="left" headers="r5c1-t3 r1c5-t3">
+<p>111</p>
+</td>
+<td align="left" headers="r5c1-t3 r1c6-t3">
+<p>1111</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /></div>
+<!-- class="tblformal" -->
+<p>The grid now looks as follows:</p>
+<img width="496" height="154" src="img/retrieve2.gif" alt="Description of retrieve2.gif follows" title="Description of retrieve2.gif follows" longdesc="img_text/retrieve2.htm" /><br />
+<a id="sthref398" name="sthref398" href="img_text/retrieve2.htm">Description of the illustration retrieve2.gif</a><br />
+<br />
+<p>Note that the data is automatically saved as you move between rows.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect1" -->
+<a id="CHDJFGII" name="CHDJFGII"></a>
+<div class="sect1"><!-- infolevel="all" infotype="General" -->
+<h2 class="sect1"><a name="TDPNG50060" id="TDPNG50060"></a>Generating Code Automatically to Display and Update Data<a id="sthref399" name="sthref399"></a><a id="sthref400" name="sthref400"></a></h2>
+<p>To explore the content of the <code>DEPENDENTS</code> table, we will build a form that uses a simple table query. In this section you will use the Visual Studio integrated development environment (IDE), to automatically generate the code that corresponds to your actions.</p>
+<a id="sthref401" name="sthref401"></a>
+<p class="subhead2">To create a new Data Source:</p>
+<ol>
+<li>
+<p>Start a new project, as described in <a href="connecting.htm#CEGCFHIC">"Creating a New Project"</a>. Name the new project as indicated.</p>
+<p><span class="bold">Visual C#:</span></p>
+<p><code>HR_ODT_CS</code>.</p>
+<p><span class="bold">Visual Basic</span>:</p>
+<p><code>HR_ODT_VB</code>.</p>
+</li>
+<li>
+<p>Check <span class="bold">Create Directory for Solution</span>. Click <span class="bold">OK</span>.</p>
+</li>
+<li>
+<p>Switch to the Form1 design view, if you are not already in it.</p>
+<p>Note: All applications start with Form1, but this is not related to applications created in previous chapters.</p>
+</li>
+<li>
+<p>Click on the Server Explorer window to enable the Show Data Sources window.</p>
+</li>
+<li>
+<p>From the Visual Studio <span class="bold">Data</span> menu, select <span class="bold">Show Data Sources</span>.</p>
+<p>The Data Source window appears.</p>
+<img width="283" height="175" src="img/datasource1.gif" alt="Description of datasource1.gif follows" title="Description of datasource1.gif follows" longdesc="img_text/datasource1.htm" /><br />
+<a id="sthref402" name="sthref402" href="img_text/datasource1.htm">Description of the illustration datasource1.gif</a><br />
+<br /></li>
+<li>
+<p>In the Data Sources window, click <span class="bold">Add New Data Source</span>.</p>
+<p>The Data Source Configuration Wizard opens.</p>
+</li>
+<li>
+<p>In the Data Source Configuration Wizard, under Choose a Data Source Type, select <span class="bold">Database</span>.</p>
+<p>Click <span class="bold">Next</span>.</p>
+<img width="498" height="338" src="img/datasource2.gif" alt="Description of datasource2.gif follows" title="Description of datasource2.gif follows" longdesc="img_text/datasource2.htm" /><br />
+<a id="sthref403" name="sthref403" href="img_text/datasource2.htm">Description of the illustration datasource2.gif</a><br />
+<br /></li>
+<li>
+<p>Under Choose Your Data Connection, select <span class="bold">HR.ORCL</span>, or <span class="bold">HR.(Local Database)</span>. For this example, we will use HR.ORCL.</p>
+<p>Select <span class="bold">Yes, include sensitive data in the connection string</span>.</p>
+<p>Click <span class="bold">Next</span>.</p>
+<img width="586" height="458" src="img/datasource3.gif" alt="Description of datasource3.gif follows" title="Description of datasource3.gif follows" longdesc="img_text/datasource3.htm" /><br />
+<a id="sthref404" name="sthref404" href="img_text/datasource3.htm">Description of the illustration datasource3.gif</a><br />
+<br /></li>
+<li>
+<p>Under Save the Connection String to the Application Configuration File, select <span class="bold">Yes, save the connection as:</span> <code>ConnectionString</code>.</p>
+<p>Click <span class="bold">Next</span>.</p>
+<img width="577" height="265" src="img/datasource4.gif" alt="Description of datasource4.gif follows" title="Description of datasource4.gif follows" longdesc="img_text/datasource4.htm" /><br />
+<a id="sthref405" name="sthref405" href="img_text/datasource4.htm">Description of the illustration datasource4.gif</a><br />
+<br /></li>
+<li>
+<p>Under Choose Your Database Objects, expand <span class="bold">Tables</span>.</p>
+<p>Check the <span class="bold">DEPENDENTS(HR)</span> table.</p>
+<p>Change the <span class="bold">DataSet name</span> to <span class="bold">tableDependents</span>.</p>
+<p>Click <span class="bold">Finish</span>.</p>
+<img width="577" height="323" src="img/datasource5.gif" alt="Description of datasource5.gif follows" title="Description of datasource5.gif follows" longdesc="img_text/datasource5.htm" /><br />
+<a id="sthref406" name="sthref406" href="img_text/datasource5.htm">Description of the illustration datasource5.gif</a><br />
+<br />
+<div class="infoboxnotealso">
+<p class="notep1">See Also:</p>
+<a href="building_odp.htm#CEGHAFDH">"Using the DataSet Class with Oracle Data Provider for .NET"</a> for information about the DataSet Class</div>
+</li>
+</ol>
+<a id="sthref407" name="sthref407"></a>
+<p class="subhead2">To automatically generate code using drag-and-drop:</p>
+<ol>
+<li>
+<p>Switch to the Form1 Design view.</p>
+</li>
+<li>
+<p>In the Data Sources window, expand <span class="bold">tableDependents</span>.</p>
+<img width="198" height="122" src="img/datasource6.gif" alt="Description of datasource6.gif follows" title="Description of datasource6.gif follows" longdesc="img_text/datasource6.htm" /><br />
+<a id="sthref408" name="sthref408" href="img_text/datasource6.htm">Description of the illustration datasource6.gif</a><br />
+<br /></li>
+<li>
+<p>Select the <span class="bold">DEPENDENTS</span> table, and drag it onto Form1.</p>
+<p>You may need to resize both the form and the table grid.</p>
+<img width="656" height="306" src="img/datasource7.gif" alt="Description of datasource7.gif follows" title="Description of datasource7.gif follows" longdesc="img_text/datasource7.htm" /><br />
+<a id="sthref409" name="sthref409" href="img_text/datasource7.htm">Description of the illustration datasource7.gif</a><br />
+<br />
+<p>Note that along with the table grid (which includes record navigation elements), the following components were added to the design view of your project. These objects represent automatically generated code for Form1.</p>
+<p><span class="bold">Visual C#:</span></p>
+<p><code>tableDependents</code>, <code>dEPENDENTSBindingSource</code>, <code>dEPENDENTSTableAdapter</code>, <code>tableAdapterManager</code>, and <code>dEPENDENTSBindingNavigator</code></p>
+<p><span class="bold">Visual Basic:</span></p>
+<p><code>TableDependents</code>, <code>DEPENDENTSBindingSource</code>, <code>DEPENDENTSTableAdapter</code>, <code>TableAdapterManager</code>, and <code>DEPENDENTSBiningNavigator</code></p>
+</li>
+<li>
+<p>Double-click the <span class="bold">Save</span> icon (floppy disk) near the top of Form1.</p>
+<p>This opens the code window for the Save icon for Form1.</p>
+</li>
+<li>
+<p>In the private method, <code><span class="codeinlineitalic">xxx</span></code><code>SaveItem_Click()</code>, encapsulate the existing code in a <code>try...catch</code> block. See the code listed for the complete Visual C# and Visual Basic names of this automatically generated method.</p>
+<p>Also, add a <code>MessageBox.show()</code> call to both the try and catch sections. The updated method code follows, with new or changed code in bold font.</p>
+<p><span class="bold">Visual C#</span>:</p>
+<a id="CIHBHDIA" name="CIHBHDIA"></a>
+<pre xml:space="preserve" class="oac_no_warn">private void dEPENDENTSBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+{
+<span class="bold"> try</span>
+ <span class="bold">{</span>
+  this.Validate();
+  this.dEPENDENTSBindingSource.EndEdit();
+  this.tableAdapterManager.UpdateAll(this.tableDependents);
+
+  <span class="bold">MessageBox.Show("Update successful");</span>
+ <span class="bold">}</span>
+ <span class="bold">catch (System.Exception ex)</span>
+ <span class="bold">{</span>
+  <span class="bold">MessageBox.Show("Update failed: "+ ex.Message.ToString());</span>
+ <span class="bold">}</span>
+}
+</pre>
+<p><span class="bold">Visual Basic#</span>:</p>
+<a id="CIHJIHGB" name="CIHJIHGB"></a>
+<pre xml:space="preserve" class="oac_no_warn">Private Sub DEPENDENTSBindingNavigatorSaveItem_Click(
+ ByVal sender As System.Object, ByVal e As System.EventArgs) 
+ Handles DEPENDENTSBindingNavigatorSaveItem.Click
+ 
+ <span class="bold">Try</span>
+  Me.Validate()
+  Me.DEPENDENTSBindingSource.EndEdit()
+  Me.TableAdapterManager.UpdateAll(Me.TableDependents)
+  <span class="bold">MessageBox.Show("Update successful")</span>
+ 
+ <span class="bold">Catch ex As Exception</span>
+  <span class="bold">MessageBox.Show("Update failed: " + ex.Message.ToString())</span>
+ 
+ <span class="bold">End Try</span>
+ 
+End Sub
+</pre></li>
+<li>
+<p>To compile and run the application, follow the instructions in section <a href="connecting.htm#BCGJDCFF">"Compiling and Running the Application"</a>.</p>
+</li>
+</ol>
+<p>You can test the new application in the following manner. The floppy disk icon represents the Save command.</p>
+<a id="sthref410" name="sthref410"></a>
+<p class="subhead2">To test the application:</p>
+<ol>
+<li>
+<p>Change the <code>DEPENDENT_ID</code> value for Mary Ernst to <code>1110</code> and click the <span class="bold">Save</span> icon. The message box <code>Update successful</code> should appear. Click <span class="bold">OK</span> to dismiss the message box.</p>
+</li>
+<li>
+<p>Change the <code>EMPLOYEE_ID</code> value for David Ernst to <code>99999</code> and click the <span class="bold">Save</span> icon. The following message should appear: <code>Update failed: ORA-02291: integrity constraint (HR.EMPLOYEES_FK) violated - parent key not found</code>. Click <span class="bold">OK</span> to dismiss the message box.</p>
+</li>
+</ol>
+</div>
+<!-- class="sect1" --></div>
+<!-- class="ind" -->
+<div class="footer">
+<hr />
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="100%">
+<col width="33%" />
+<col width="*" />
+<col width="33%" />
+<tr>
+<td align="left">
+<table class="simple oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="98">
+<tr>
+<td align="center" valign="top"><a href="building_odp.htm"><img width="24" height="24" src="../../dcommon/gifs/leftnav.gif" alt="Go to previous page" /><br />
+<span class="icon">Previous</span></a></td>
+<td align="center" valign="top"><a href="procedures_plsql.htm"><img width="24" height="24" src="../../dcommon/gifs/rightnav.gif" alt="Go to next page" /><br />
+<span class="icon">Next</span></a></td>
+</tr>
+</table>
+</td>
+<td style="font-size: 90%" align="center" class="copyrightlogo"><img width="144" height="18" src="../../dcommon/gifs/oracle.gif" alt="Oracle" /><br />
+Copyright&nbsp;&copy;&nbsp;2006, 2009,&nbsp;Oracle&nbsp;and/or&nbsp;its&nbsp;affiliates.&nbsp;All&nbsp;rights&nbsp;reserved.<br />
+<a href="../../dcommon/html/cpyr.htm">Legal Notices</a></td>
+<td align="right">
+<table class="icons oac_no_warn" summary="" cellspacing="0" cellpadding="0" width="245">
+<tr>
+<td align="center" valign="top"><a href="../../index.htm"><img width="24" height="24" src="../../dcommon/gifs/doclib.gif" alt="Go to Documentation Home" /><br />
+<span class="icon">Home</span></a></td>
+<td align="center" valign="top"><a href="../../nav/portal_booklist.htm"><img width="24" height="24" src="../../dcommon/gifs/booklist.gif" alt="Go to Book List" /><br />
+<span class="icon">Book List</span></a></td>
+<td align="center" valign="top"><a href="toc.htm"><img width="24" height="24" src="../../dcommon/gifs/toc.gif" alt="Go to Table of Contents" /><br />
+<span class="icon">Contents</span></a></td>
+<td align="center" valign="top"><a href="index.htm"><img width="24" height="24" src="../../dcommon/gifs/index.gif" alt="Go to Index" /><br />
+<span class="icon">Index</span></a></td>
+<td align="center" valign="top"><a href="../../dcommon/html/feedback.htm"><img width="24" height="24" src="../../dcommon/gifs/feedbck2.gif" alt="Go to Feedback page" /><br />
+<span class="icon">Contact Us</span></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<noscript>
+<p>Scripting on this page enhances content navigation, but does not change the content in any way.</p>
+</noscript>
+</body>
+</html>

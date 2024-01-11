@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div element="article" href="toc.htm" number="" targetptr="">
+  <ttl>Oracle&#x00AE; Database Release Notes for Microsoft Windows</ttl>
+  <xreftext><cite>Oracle&#x00AE; Database Release Notes for Microsoft Windows</cite></xreftext>
+  <div element="sect1" href="toc.htm" number="1" targetptr="CHDFHIEA">
+    <ttl>Certification Information</ttl>
+    <xreftext>&#x201C;Certification Information&#x201D;</xreftext>
+  </div>
+  <div element="sect1" href="toc.htm" number="2" targetptr="CHDEGDFF">
+    <ttl>Unsupported Products</ttl>
+    <xreftext>&#x201C;Unsupported Products&#x201D;</xreftext>
+    <obj element="bridgehead" href="toc.htm" number="" targetptr="">
+      <ttl>Database Smart Flash Cache Support</ttl>
+      <xreftext>&#x201C;Database Smart Flash Cache Support&#x201D;</xreftext>
+    </obj>
+    <obj element="bridgehead" href="toc.htm" number="" targetptr="">
+      <ttl>Oracle Automatic Storage Management Cluster File System and Oracle Automatic Storage Management Dynamic Volume Manager Support</ttl>
+      <xreftext>&#x201C;Oracle Automatic Storage Management Cluster File System and Oracle Automatic Storage Management Dynamic Volume Manager Support&#x201D;</xreftext>
+    </obj>
+    <obj element="bridgehead" href="toc.htm" number="" targetptr="">
+      <ttl>Oracle SQL Developer Support</ttl>
+      <xreftext>&#x201C;Oracle SQL Developer Support&#x201D;</xreftext>
+    </obj>
+  </div>
+  <div element="sect1" href="toc.htm" number="3" targetptr="CJAFDHEB">
+    <ttl>Preinstallation Requirements</ttl>
+    <xreftext>&#x201C;Preinstallation Requirements&#x201D;</xreftext>
+  </div>
+  <div element="sect1" href="toc.htm" number="4" targetptr="CJADEEHD">
+    <ttl>Installation, Configuration, and Upgrade Issues</ttl>
+    <xreftext>&#x201C;Installation, Configuration, and Upgrade Issues&#x201D;</xreftext>
+    <div element="sect2" href="toc.htm" number="4.1" targetptr="CJAFHBIA">
+      <ttl>Latest Upgrade Information</ttl>
+      <xreftext>&#x201C;Latest Upgrade Information&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.2" targetptr="CHDGIBEF">
+      <ttl>Microsoft Visual C++ Redistributable Packages</ttl>
+      <xreftext>&#x201C;Microsoft Visual C++ Redistributable Packages&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.3" targetptr="CHDECEBC">
+      <ttl>Upgrading Windows 32-Bit to Windows 64-Bit Using Oracle OLAP</ttl>
+      <xreftext>&#x201C;Upgrading Windows 32-Bit to Windows 64-Bit Using Oracle OLAP&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.4" targetptr="CJAJDEGI">
+      <ttl>Issues Associated with SID Containing Underscore Character</ttl>
+      <xreftext>&#x201C;Issues Associated with SID Containing Underscore Character&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.5" targetptr="CJAGBFDH">
+      <ttl>Enabling Oracle Automatic Storage Management Dynamic Volume Manager Volumes</ttl>
+      <xreftext>&#x201C;Enabling Oracle Automatic Storage Management Dynamic Volume Manager Volumes&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.6" targetptr="CJAGCGIH">
+      <ttl>	Automatic Storage Management Service Is Disabled After System Restart</ttl>
+      <xreftext>&#x201C;	Automatic Storage Management Service Is Disabled After System Restart&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.7" targetptr="CJADCJCJ">
+      <ttl>OCI Instant Client Version Update Issue</ttl>
+      <xreftext>&#x201C;OCI Instant Client Version Update Issue&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.8" targetptr="CJAIGFCE">
+      <ttl>ORA-00600 Error During Database Upgrade</ttl>
+      <xreftext>&#x201C;ORA-00600 Error During Database Upgrade&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.9" targetptr="CHDFACGF">
+      <ttl>Oracle Clusterware Upgrade Error</ttl>
+      <xreftext>&#x201C;Oracle Clusterware Upgrade Error&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.10" targetptr="CHDCGCDE">
+      <ttl>EMVLOGGER.EXE Process Does Not Restart Automatically</ttl>
+      <xreftext>&#x201C;EMVLOGGER.EXE Process Does Not Restart Automatically&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.11" targetptr="CJAEEBGC">
+      <ttl>Windows Service Issue for Oracle Database</ttl>
+      <xreftext>&#x201C;Windows Service Issue for Oracle Database&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.12" targetptr="CJAFJJEB">
+      <ttl>Remote Agents Must Be Manually Reloaded After Cluster Ready Services (CRS) Upgrade and Oracle ASM Upgrade</ttl>
+      <xreftext>&#x201C;Remote Agents Must Be Manually Reloaded After Cluster Ready Services (CRS) Upgrade and Oracle ASM Upgrade&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.13" targetptr="CJAHIGJE">
+      <ttl>Oracle MTS Recovery Service Issue When Installing Oracle RAC</ttl>
+      <xreftext>&#x201C;Oracle MTS Recovery Service Issue When Installing Oracle RAC&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.14" targetptr="CJAFBAFB">
+      <ttl>Root Script Status Not Displayed with Oracle Grid Infrastructure</ttl>
+      <xreftext>&#x201C;Root Script Status Not Displayed with Oracle Grid Infrastructure&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="4.15" targetptr="CJAFIHAJ">
+      <ttl>Issue Encountered If Non-ASCII Characters Are Used in Network Connection Names for Oracle Grid Infrastructure</ttl>
+      <xreftext>&#x201C;Issue Encountered If Non-ASCII Characters Are Used in Network Connection Names for Oracle Grid Infrastructure&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="5" targetptr="CJAEHDEC">
+    <ttl>Other Known Issues</ttl>
+    <xreftext>&#x201C;Other Known Issues&#x201D;</xreftext>
+    <div element="sect2" href="toc.htm" number="5.1" targetptr="CJAFCFIJ">
+      <ttl>Oracle Wallet Manager Help Does Not Work</ttl>
+      <xreftext>&#x201C;Oracle Wallet Manager Help Does Not Work&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.2" targetptr="CJAFIJAG">
+      <ttl>Delete Node Deployment Procedure Not Supported</ttl>
+      <xreftext>&#x201C;Delete Node Deployment Procedure Not Supported&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.3" targetptr="CHDBJAEF">
+      <ttl>Oracle Database Extensions for .NET (ODE.NET) Support on Windows x64</ttl>
+      <xreftext>&#x201C;Oracle Database Extensions for .NET (ODE.NET) Support on Windows x64&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.4" targetptr="CJAIGECH">
+      <ttl>Oracle RAC Patch Not Supported</ttl>
+      <xreftext>&#x201C;Oracle RAC Patch Not Supported&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.5" targetptr="CJAIEHAC">
+      <ttl>Incorrect Reverse Ping Command from Oracle Management Service (OMS)</ttl>
+      <xreftext>&#x201C;Incorrect Reverse Ping Command from Oracle Management Service (OMS)&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.6" targetptr="CHDGCHBH">
+      <ttl>Installing Online Patches on Windows Systems</ttl>
+      <xreftext>&#x201C;Installing Online Patches on Windows Systems&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.7" targetptr="CHDIFGDJ">
+      <ttl>File Systems Mounted with Drive Letters on Oracle ADVM Volumes Are Not Visible in Windows Explorer</ttl>
+      <xreftext>&#x201C;File Systems Mounted with Drive Letters on Oracle ADVM Volumes Are Not Visible in Windows Explorer&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.8" targetptr="CHDBAHBE">
+      <ttl>Download Microsoft Handle Utility When Using Oracle ACFS</ttl>
+      <xreftext>&#x201C;Download Microsoft Handle Utility When Using Oracle ACFS&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.9" targetptr="CJACFEJC">
+      <ttl>Grid Naming Service (GNS) Failure</ttl>
+      <xreftext>&#x201C;Grid Naming Service (GNS) Failure&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.10" targetptr="CJACDIAE">
+      <ttl>Oracle Grid Infrastructure Listeners Issue</ttl>
+      <xreftext>&#x201C;Oracle Grid Infrastructure Listeners Issue&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.11" targetptr="CHDDDDGC">
+      <ttl>Shared Oracle Home Shortcuts Do Not Work on Windows Server 2008</ttl>
+      <xreftext>&#x201C;Shared Oracle Home Shortcuts Do Not Work on Windows Server 2008&#x201D;</xreftext>
+    </div>
+    <div element="sect2" href="toc.htm" number="5.12" targetptr="CJAHCEBH">
+      <ttl>addnode.bat Script Shows Success When One or More Node Additions Failed</ttl>
+      <xreftext>&#x201C;addnode.bat Script Shows Success When One or More Node Additions Failed&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="sect1" href="toc.htm" number="6" targetptr="CHDCAEFG">
+    <ttl>Documentation Accessibility</ttl>
+    <xreftext>&#x201C;Documentation Accessibility&#x201D;</xreftext>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Accessibility of Code Examples in Documentation</ttl>
+      <xreftext>&#x201C;Accessibility of Code Examples in Documentation&#x201D;</xreftext>
+    </obj>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Accessibility of Links to External Web Sites in Documentation</ttl>
+      <xreftext>&#x201C;Accessibility of Links to External Web Sites in Documentation&#x201D;</xreftext>
+    </obj>
+    <obj element="formalpara" href="toc.htm" number="" targetptr="">
+      <ttl>Access to Oracle Support</ttl>
+      <xreftext>&#x201C;Access to Oracle Support&#x201D;</xreftext>
+    </obj>
+  </div>
+</div>

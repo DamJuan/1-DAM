@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE targetset SYSTEM "dcommon/dtds/targetdatabase.dtd" [
+<!ENTITY e10767 SYSTEM "appdev.112/e10767/target.db">
+<!ENTITY e10844 SYSTEM "install.112/e10844/target.db">
+<!ENTITY e10879 SYSTEM "install.112/e10879/target.db">
+<!ENTITY e10579 SYSTEM "owb.112/e10579/target.db">
+<!ENTITY e10585 SYSTEM "relnotes.112/e10585/target.db">
+<!ENTITY e10842 SYSTEM "relnotes.112/e10842/target.db">
+]>
+<targetset>
+  <targetsetinfo>
+    Oracle® Database Documentation Media Library 11g Release 2 (11.2)
+  </targetsetinfo>
+  <sitemap>
+    <dir name=".">
+      <dir name="appdev.112">
+        <dir name="e10767">
+          <document targetdoc="TDPNG" baseuri="toc.htm">&e10767;</document>
+        </dir>
+      </dir>
+      <dir name="install.112">
+        <dir name="e10844">
+          <document targetdoc="NTCLI" baseuri="toc.htm">&e10844;</document>
+        </dir>
+        <dir name="e10879">
+          <document targetdoc="NXCQI" baseuri="toc.htm">&e10879;</document>
+        </dir>
+      </dir>
+      <dir name="owb.112">
+        <dir name="e10579">
+          <document targetdoc="WBINS" baseuri="toc.htm">&e10579;</document>
+        </dir>
+      </dir>
+      <dir name="relnotes.112">
+        <dir name="e10585">
+          <document targetdoc="WBREL" baseuri="toc.htm">&e10585;</document>
+        </dir>
+        <dir name="e10842">
+          <document targetdoc="NTDBN" baseuri="toc.htm">&e10842;</document>
+        </dir>
+      </dir>
+    </dir>
+  </sitemap>
+</targetset>

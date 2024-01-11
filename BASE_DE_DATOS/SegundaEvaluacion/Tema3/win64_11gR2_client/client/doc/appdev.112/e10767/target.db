@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div element="book" href="toc.htm" number="" targetptr="TDPNG">
+  <ttl>Oracle&#x00AE; Database 2 Day + .NET Developer&#x0027;s Guide</ttl>
+  <xreftext><cite>Oracle&#x00AE; Database 2 Day + .NET Developer&#x0027;s Guide</cite></xreftext>
+  <div element="preface" href="preface.htm" number="" targetptr="TDPNG00010">
+    <ttl>Preface</ttl>
+    <xreftext>&#x201C;Preface&#x201D;</xreftext>
+    <div element="prefsect1" href="preface.htm" number="" targetptr="">
+      <ttl>Audience</ttl>
+      <xreftext>&#x201C;Audience&#x201D;</xreftext>
+    </div>
+    <div element="prefsect1" href="preface.htm" number="" targetptr="">
+      <ttl>Documentation Accessibility</ttl>
+      <xreftext>&#x201C;Documentation Accessibility&#x201D;</xreftext>
+      <obj element="formalpara" href="preface.htm" number="" targetptr="">
+        <ttl>Accessibility of Code Examples in Documentation</ttl>
+        <xreftext>&#x201C;Accessibility of Code Examples in Documentation&#x201D;</xreftext>
+      </obj>
+      <obj element="formalpara" href="preface.htm" number="" targetptr="">
+        <ttl>Accessibility of Links to External Web Sites in Documentation</ttl>
+        <xreftext>&#x201C;Accessibility of Links to External Web Sites in Documentation&#x201D;</xreftext>
+      </obj>
+      <obj element="formalpara" href="preface.htm" number="" targetptr="">
+        <ttl>Deaf/Hard of Hearing Access to Oracle Support Services</ttl>
+        <xreftext>&#x201C;Deaf/Hard of Hearing Access to Oracle Support Services&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="prefsect1" href="preface.htm" number="" targetptr="">
+      <ttl>Related Documents</ttl>
+      <xreftext>&#x201C;Related Documents&#x201D;</xreftext>
+    </div>
+    <div element="prefsect1" href="preface.htm" number="" targetptr="">
+      <ttl>Conventions</ttl>
+      <xreftext>&#x201C;Conventions&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="chapter" href="introduction.htm" number="1" targetptr="TDPNG10000">
+    <ttl>Introduction</ttl>
+    <xreftext>&#x201C;Introduction&#x201D;</xreftext>
+    <div element="sect1" href="introduction.htm" number="1.1" targetptr="CACBIGJI">
+      <ttl>About This Guide</ttl>
+      <xreftext>&#x201C;About This Guide&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="introduction.htm" number="1.2" targetptr="TDPNG10010">
+      <ttl>What is the Microsoft .NET Framework</ttl>
+      <xreftext>&#x201C;What is the Microsoft .NET Framework&#x201D;</xreftext>
+      <obj element="bridgehead" href="introduction.htm" number="" targetptr="">
+        <ttl>Common Language Runtime</ttl>
+        <xreftext>&#x201C;Common Language Runtime&#x201D;</xreftext>
+      </obj>
+      <obj element="bridgehead" href="introduction.htm" number="" targetptr="">
+        <ttl>Framework Class Libraries</ttl>
+        <xreftext>&#x201C;Framework Class Libraries&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="introduction.htm" number="1.3" targetptr="TDPNG10020">
+      <ttl>Overview of Oracle Data Provider for .NET</ttl>
+      <xreftext>&#x201C;Overview of Oracle Data Provider for .NET&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="introduction.htm" number="1.4" targetptr="TDPNG10030">
+      <ttl>Overview of Oracle Developer Tools for Visual Studio</ttl>
+      <xreftext>&#x201C;Overview of Oracle Developer Tools for Visual Studio&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="introduction.htm" number="1.5" targetptr="TDPNG10040">
+      <ttl>Overview of .NET Stored Procedures</ttl>
+      <xreftext>&#x201C;Overview of .NET Stored Procedures&#x201D;</xreftext>
+      <obj element="bridgehead" href="introduction.htm" number="" targetptr="CACGFDFF">
+        <ttl>Integration with Microsoft Visual Studio</ttl>
+        <xreftext>&#x201C;Integration with Microsoft Visual Studio&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="introduction.htm" number="1.6" targetptr="CHDJIJFA">
+      <ttl>Overview of Oracle Providers for ASP.NET</ttl>
+      <xreftext>&#x201C;Overview of Oracle Providers for ASP.NET&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="chapter" href="installation.htm" number="2" targetptr="TDPNG20000">
+    <ttl>Installing .NET Products</ttl>
+    <xreftext>&#x201C;Installing .NET Products&#x201D;</xreftext>
+    <div element="sect1" href="installation.htm" number="2.1" targetptr="TDPNG20010">
+      <ttl>What You Need</ttl>
+      <xreftext>&#x201C;What You Need&#x201D;</xreftext>
+      <div element="sect2" href="installation.htm" number="2.1.1" targetptr="">
+        <ttl>Oracle Database</ttl>
+        <xreftext>&#x201C;Oracle Database&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="installation.htm" number="2.1.2" targetptr="">
+        <ttl>Sample Data</ttl>
+        <xreftext>&#x201C;Sample Data&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="installation.htm" number="2.1.3" targetptr="">
+        <ttl>Oracle Data Access Components</ttl>
+        <xreftext>&#x201C;Oracle Data Access Components&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="installation.htm" number="2.1.4" targetptr="">
+        <ttl>Oracle Database Extensions for .NET</ttl>
+        <xreftext>&#x201C;Oracle Database Extensions for .NET&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="installation.htm" number="2.1.5" targetptr="">
+        <ttl>Visual Studio Versions</ttl>
+        <xreftext>&#x201C;Visual Studio Versions&#x201D;</xreftext>
+      </div>
+    </div>
+    <div element="sect1" href="installation.htm" number="2.2" targetptr="TDPNG20020">
+      <ttl>Installing .NET Products</ttl>
+      <xreftext>&#x201C;Installing .NET Products&#x201D;</xreftext>
+      <obj element="bridgehead" href="installation.htm" number="" targetptr="">
+        <ttl>To install:</ttl>
+        <xreftext>&#x201C;To install:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="installation.htm" number="2.3" targetptr="CHDGBJCH">
+      <ttl>Configuring a NET Connect Alias</ttl>
+      <xreftext>&#x201C;Configuring a NET Connect Alias&#x201D;</xreftext>
+      <obj element="example" href="installation.htm" number="2-1" targetptr="">
+        <ttl>tnsnames.ora connect descriptor</ttl>
+        <xreftext>&#x201C;tnsnames.ora connect descriptor&#x201D;</xreftext>
+      </obj>
+      <obj element="example" href="installation.htm" number="2-2" targetptr="CHDICHDD">
+        <ttl>Sample tnsnames.ora File</ttl>
+        <xreftext>&#x201C;Sample tnsnames.ora File&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="installation.htm" number="2.4" targetptr="CHDJBEDF">
+      <ttl>Setup for Oracle Providers for ASP.NET</ttl>
+      <xreftext>&#x201C;Setup for Oracle Providers for ASP.NET&#x201D;</xreftext>
+      <div element="sect2" href="installation.htm" number="2.4.1" targetptr="CHDCBFFJ">
+        <ttl>Oracle Providers for ASP.NET Database User Setup</ttl>
+        <xreftext>&#x201C;Oracle Providers for ASP.NET Database User Setup&#x201D;</xreftext>
+        <div element="sect3" href="installation.htm" number="2.4.1.1" targetptr="CHDDCFEE">
+          <ttl>Creating the User and Granting Privileges</ttl>
+          <xreftext>&#x201C;Creating the User and Granting Privileges&#x201D;</xreftext>
+        </div>
+        <div element="sect3" href="installation.htm" number="2.4.1.2" targetptr="BABDEHAJ">
+          <ttl>Configuring All Oracle Providers for ASP.NET</ttl>
+          <xreftext>&#x201C;Configuring All Oracle Providers for ASP.NET&#x201D;</xreftext>
+        </div>
+        <div element="sect3" href="installation.htm" number="2.4.1.3" targetptr="BABFFDIE">
+          <ttl>Configuring Oracle Providers for ASP.NET Individually</ttl>
+          <xreftext>&#x201C;Configuring Oracle Providers for ASP.NET Individually&#x201D;</xreftext>
+          <obj element="table" href="installation.htm" number="2-1" targetptr="">
+            <ttl>Individual Install Scripts for Oracle Providers for ASP.NET</ttl>
+            <xreftext>&#x201C;Individual Install Scripts for Oracle Providers for ASP.NET&#x201D;</xreftext>
+          </obj>
+        </div>
+        <div element="sect3" href="installation.htm" number="2.4.1.4" targetptr="BHCCDCEA">
+          <ttl>Uninstalling Schemas for Oracle Providers for ASP.NET</ttl>
+          <xreftext>&#x201C;Uninstalling Schemas for Oracle Providers for ASP.NET&#x201D;</xreftext>
+        </div>
+      </div>
+      <div element="sect2" href="installation.htm" number="2.4.2" targetptr="CHDFFEIB">
+        <ttl>Setting the Connection String</ttl>
+        <xreftext>&#x201C;Setting the Connection String&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="installation.htm" number="2.4.3" targetptr="CHDGFFGA">
+        <ttl>Customizing Oracle Providers for ASP.NET for Different Setups</ttl>
+        <xreftext>&#x201C;Customizing Oracle Providers for ASP.NET for Different Setups&#x201D;</xreftext>
+      </div>
+    </div>
+  </div>
+  <div element="chapter" href="connecting.htm" number="3" targetptr="TDPNG30000">
+    <ttl>Building a Simple .NET Application Using ODP.NET</ttl>
+    <xreftext>&#x201C;Building a Simple .NET Application Using ODP.NET&#x201D;</xreftext>
+    <div element="sect1" href="connecting.htm" number="3.1" targetptr="TDPNG30010">
+      <ttl>Creating a New Project</ttl>
+      <xreftext>&#x201C;Creating a New Project&#x201D;</xreftext>
+      <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+        <ttl>To start a new project:</ttl>
+        <xreftext>&#x201C;To start a new project:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="connecting.htm" number="3.2" targetptr="TDPNG30020">
+      <ttl>Adding a Reference</ttl>
+      <xreftext>&#x201C;Adding a Reference&#x201D;</xreftext>
+      <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+        <ttl>To add a reference:</ttl>
+        <xreftext>&#x201C;To add a reference:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="connecting.htm" number="3.3" targetptr="TDPNG30030">
+      <ttl>Adding Namespace Directives</ttl>
+      <xreftext>&#x201C;Adding Namespace Directives&#x201D;</xreftext>
+      <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+        <ttl>To add Oracle namespace directives:</ttl>
+        <xreftext>&#x201C;To add Oracle namespace directives:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="connecting.htm" number="3.4" targetptr="TDPNG30040">
+      <ttl>Designing the User Interface</ttl>
+      <xreftext>&#x201C;Designing the User Interface&#x201D;</xreftext>
+      <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+        <ttl>To add toolbox controls:</ttl>
+        <xreftext>&#x201C;To add toolbox controls:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="connecting.htm" number="3.5" targetptr="TDPNG30050">
+      <ttl>Writing the Connection Code</ttl>
+      <xreftext>&#x201C;Writing the Connection Code&#x201D;</xreftext>
+      <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+        <ttl>To write code that connects to the database:</ttl>
+        <xreftext>&#x201C;To write code that connects to the database:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="connecting.htm" number="3.6" targetptr="TDPNG30060">
+      <ttl>Compiling and Running the Application</ttl>
+      <xreftext>&#x201C;Compiling and Running the Application&#x201D;</xreftext>
+      <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+        <ttl>To compile and run the application:</ttl>
+        <xreftext>&#x201C;To compile and run the application:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="connecting.htm" number="3.7" targetptr="TDPNG30070">
+      <ttl>Error Handling</ttl>
+      <xreftext>&#x201C;Error Handling&#x201D;</xreftext>
+      <div element="sect2" href="connecting.htm" number="3.7.1" targetptr="">
+        <ttl>Using Try-Catch-Finally Block Structure</ttl>
+        <xreftext>&#x201C;Using Try-Catch-Finally Block Structure&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="connecting.htm" number="3.7.2" targetptr="">
+        <ttl>Handling General Errors</ttl>
+        <xreftext>&#x201C;Handling General Errors&#x201D;</xreftext>
+        <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+          <ttl>To handle general errors:</ttl>
+          <xreftext>&#x201C;To handle general errors:&#x201D;</xreftext>
+        </obj>
+      </div>
+      <div element="sect2" href="connecting.htm" number="3.7.3" targetptr="">
+        <ttl>Handling Common Oracle Errors</ttl>
+        <xreftext>&#x201C;Handling Common Oracle Errors&#x201D;</xreftext>
+        <obj element="bridgehead" href="connecting.htm" number="" targetptr="">
+          <ttl>To handle specific errors:</ttl>
+          <xreftext>&#x201C;To handle specific errors:&#x201D;</xreftext>
+        </obj>
+      </div>
+    </div>
+  </div>
+  <div element="chapter" href="building_odp.htm" number="4" targetptr="TDPNG40000">
+    <ttl>Retrieving and Updating with Oracle Data Provider for .NET</ttl>
+    <xreftext>&#x201C;Retrieving and Updating with Oracle Data Provider for .NET&#x201D;</xreftext>
+    <div element="sect1" href="building_odp.htm" number="4.1" targetptr="TDPNG40020">
+      <ttl>Using the Command Object</ttl>
+      <xreftext>&#x201C;Using the Command Object&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odp.htm" number="" targetptr="">
+        <ttl>To use the command object:</ttl>
+        <xreftext>&#x201C;To use the command object:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odp.htm" number="4.2" targetptr="TDPNG40030">
+      <ttl>Retrieving Data: a Simple Query</ttl>
+      <xreftext>&#x201C;Retrieving Data: a Simple Query&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odp.htm" number="" targetptr="">
+        <ttl>To retrieve data:</ttl>
+        <xreftext>&#x201C;To retrieve data:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odp.htm" number="4.3" targetptr="TDPNG40040">
+      <ttl>Retrieving Data: Bind Variables</ttl>
+      <xreftext>&#x201C;Retrieving Data: Bind Variables&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odp.htm" number="" targetptr="">
+        <ttl>To retrieve data using bind variables:</ttl>
+        <xreftext>&#x201C;To retrieve data using bind variables:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odp.htm" number="4.4" targetptr="TDPNG40050">
+      <ttl>Retrieving Data: Multiple Values</ttl>
+      <xreftext>&#x201C;Retrieving Data: Multiple Values&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odp.htm" number="" targetptr="">
+        <ttl>To retrieve multiple values:</ttl>
+        <xreftext>&#x201C;To retrieve multiple values:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odp.htm" number="4.5" targetptr="TDPNG40060">
+      <ttl>Using the DataSet Class with Oracle Data Provider for .NET</ttl>
+      <xreftext>&#x201C;Using the DataSet Class with Oracle Data Provider for .NET&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odp.htm" number="" targetptr="">
+        <ttl>To use the DataSet class:</ttl>
+        <xreftext>&#x201C;To use the DataSet class:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odp.htm" number="4.6" targetptr="CHDHHGCG">
+      <ttl>Enabling Updates to the Database</ttl>
+      <xreftext>&#x201C;Enabling Updates to the Database&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="building_odp.htm" number="4.7" targetptr="CEGCEFHJ">
+      <ttl>Inserting, Deleting, and Updating Data</ttl>
+      <xreftext>&#x201C;Inserting, Deleting, and Updating Data&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odp.htm" number="" targetptr="">
+        <ttl>To insert, delete and update data:</ttl>
+        <xreftext>&#x201C;To insert, delete and update data:&#x201D;</xreftext>
+      </obj>
+    </div>
+  </div>
+  <div element="chapter" href="building_odt.htm" number="5" targetptr="TDPNG50000">
+    <ttl>Using Oracle Developer Tools for Visual Studio</ttl>
+    <xreftext>&#x201C;Using Oracle Developer Tools for Visual Studio&#x201D;</xreftext>
+    <div element="sect1" href="building_odt.htm" number="5.1" targetptr="CIHJAHIG">
+      <ttl>Using Oracle Developer Tools</ttl>
+      <xreftext>&#x201C;Using Oracle Developer Tools&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="building_odt.htm" number="5.2" targetptr="TDPNG50010">
+      <ttl>Connecting to the Oracle Database</ttl>
+      <xreftext>&#x201C;Connecting to the Oracle Database&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To connect to the database:</ttl>
+        <xreftext>&#x201C;To connect to the database:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odt.htm" number="5.3" targetptr="TDPNG50020">
+      <ttl>Creating a Table and Its Columns</ttl>
+      <xreftext>&#x201C;Creating a Table and Its Columns&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To create a table:</ttl>
+        <xreftext>&#x201C;To create a table:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odt.htm" number="5.4" targetptr="TDPNG50030">
+      <ttl>Creating a Table Index</ttl>
+      <xreftext>&#x201C;Creating a Table Index&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To create an index:</ttl>
+        <xreftext>&#x201C;To create an index:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odt.htm" number="5.5" targetptr="TDPNG50040">
+      <ttl>Adding Table Constraints</ttl>
+      <xreftext>&#x201C;Adding Table Constraints&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>How to add foreign and primary keys:</ttl>
+        <xreftext>&#x201C;How to add foreign and primary keys:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odt.htm" number="5.6" targetptr="TDPNG50050">
+      <ttl>Adding Data to a Table</ttl>
+      <xreftext>&#x201C;Adding Data to a Table&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To populate a table:</ttl>
+        <xreftext>&#x201C;To populate a table:&#x201D;</xreftext>
+      </obj>
+      <obj element="table" href="building_odt.htm" number="5-1" targetptr="">
+        <ttl>New Data for the DEPENDENTS Table</ttl>
+        <xreftext>&#x201C;New Data for the DEPENDENTS Table&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="building_odt.htm" number="5.7" targetptr="TDPNG50060">
+      <ttl>Generating Code Automatically to Display and Update Data</ttl>
+      <xreftext>&#x201C;Generating Code Automatically to Display and Update Data&#x201D;</xreftext>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To create a new Data Source:</ttl>
+        <xreftext>&#x201C;To create a new Data Source:&#x201D;</xreftext>
+      </obj>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To automatically generate code using drag-and-drop:</ttl>
+        <xreftext>&#x201C;To automatically generate code using drag-and-drop:&#x201D;</xreftext>
+      </obj>
+      <obj element="bridgehead" href="building_odt.htm" number="" targetptr="">
+        <ttl>To test the application:</ttl>
+        <xreftext>&#x201C;To test the application:&#x201D;</xreftext>
+      </obj>
+    </div>
+  </div>
+  <div element="chapter" href="procedures_plsql.htm" number="6" targetptr="TDPNG60000">
+    <ttl>Using PL/SQL Stored Procedures and REF CURSORs</ttl>
+    <xreftext>&#x201C;Using PL/SQL Stored Procedures and REF CURSORs&#x201D;</xreftext>
+    <div element="sect1" href="procedures_plsql.htm" number="6.1" targetptr="TDPNG60020">
+      <ttl>Introduction to PL/SQL Stored Procedures</ttl>
+      <xreftext>&#x201C;Introduction to PL/SQL Stored Procedures&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="procedures_plsql.htm" number="6.2" targetptr="TDPNG60030">
+      <ttl>Introduction to PL/SQL Packages and Package Bodies</ttl>
+      <xreftext>&#x201C;Introduction to PL/SQL Packages and Package Bodies&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="procedures_plsql.htm" number="6.3" targetptr="TDPNG60035">
+      <ttl>Introduction to REF CURSORs</ttl>
+      <xreftext>&#x201C;Introduction to REF CURSORs&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="procedures_plsql.htm" number="6.4" targetptr="TDPNG60040">
+      <ttl>Creating a PL/SQL Stored Procedure that Uses REF CURSORs</ttl>
+      <xreftext>&#x201C;Creating a PL/SQL Stored Procedure that Uses REF CURSORs&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_plsql.htm" number="" targetptr="">
+        <ttl>To create a stored procedure:</ttl>
+        <xreftext>&#x201C;To create a stored procedure:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_plsql.htm" number="6.5" targetptr="TDPNG60042">
+      <ttl>Modifying an ODP.NET Application to Run Stored Procedures</ttl>
+      <xreftext>&#x201C;Modifying an ODP.NET Application to Run Stored Procedures&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_plsql.htm" number="" targetptr="">
+        <ttl>To modify your application to run a stored procedure:</ttl>
+        <xreftext>&#x201C;To modify your application to run a stored procedure:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_plsql.htm" number="6.6" targetptr="TDPNG60050">
+      <ttl>Running a PL/SQL Stored Procedure Using an ODP.NET Application</ttl>
+      <xreftext>&#x201C;Running a PL/SQL Stored Procedure Using an ODP.NET Application&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_plsql.htm" number="" targetptr="">
+        <ttl>To run a stored procedure:</ttl>
+        <xreftext>&#x201C;To run a stored procedure:&#x201D;</xreftext>
+      </obj>
+    </div>
+  </div>
+  <div element="chapter" href="using_aspnt.htm" number="7" targetptr="TDPNG00000">
+    <ttl>Using ASP.NET with Oracle Database</ttl>
+    <xreftext>&#x201C;Using ASP.NET with Oracle Database&#x201D;</xreftext>
+    <div element="sect1" href="using_aspnt.htm" number="7.1" targetptr="BABJFCDA">
+      <ttl>Overview: Building an ASP.NET Application with Oracle Developer Tools</ttl>
+      <xreftext>&#x201C;Overview: Building an ASP.NET Application with Oracle Developer Tools&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="using_aspnt.htm" number="7.2" targetptr="BABBFHIG">
+      <ttl>Before Beginning This Tutorial</ttl>
+      <xreftext>&#x201C;Before Beginning This Tutorial&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="using_aspnt.htm" number="7.3" targetptr="BABJCDHG">
+      <ttl>Creating a Web Site and Connecting it to the Database</ttl>
+      <xreftext>&#x201C;Creating a Web Site and Connecting it to the Database&#x201D;</xreftext>
+      <div element="sect2" href="using_aspnt.htm" number="7.3.1" targetptr="BABBJJGC">
+        <ttl>Creating an ASP.NET Web Site</ttl>
+        <xreftext>&#x201C;Creating an ASP.NET Web Site&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="using_aspnt.htm" number="7.3.2" targetptr="BABGDHCA">
+        <ttl>Creating a Data Source</ttl>
+        <xreftext>&#x201C;Creating a Data Source&#x201D;</xreftext>
+      </div>
+    </div>
+    <div element="sect1" href="using_aspnt.htm" number="7.4" targetptr="BABJIHEI">
+      <ttl>Enabling a Web Site for Authentication</ttl>
+      <xreftext>&#x201C;Enabling a Web Site for Authentication&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="using_aspnt.htm" number="7.5" targetptr="BABHIIEE">
+      <ttl>Enabling Oracle Providers for ASP.NET and Creating a Lightweight Web User</ttl>
+      <xreftext>&#x201C;Enabling Oracle Providers for ASP.NET and Creating a Lightweight Web User&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="using_aspnt.htm" number="7.6" targetptr="BABGDGJG">
+      <ttl>Testing Web Site Authentication</ttl>
+      <xreftext>&#x201C;Testing Web Site Authentication&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="chapter" href="procedures_dot_net.htm" number="8" targetptr="TDPNG70000">
+    <ttl>Developing and Deploying .NET Stored Procedures</ttl>
+    <xreftext>&#x201C;Developing and Deploying .NET Stored Procedures&#x201D;</xreftext>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.1" targetptr="CIHHGABG">
+      <ttl>Overview of .NET Stored Procedures</ttl>
+      <xreftext>&#x201C;Overview of .NET Stored Procedures&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.2" targetptr="TDPNG70010">
+      <ttl>Starting the Common Language Runtime Service</ttl>
+      <xreftext>&#x201C;Starting the Common Language Runtime Service&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_dot_net.htm" number="" targetptr="">
+        <ttl>To start the common language runtime service:</ttl>
+        <xreftext>&#x201C;To start the common language runtime service:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.3" targetptr="TDPNG70030">
+      <ttl>Creating a Connection as SYSDBA</ttl>
+      <xreftext>&#x201C;Creating a Connection as SYSDBA&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_dot_net.htm" number="" targetptr="">
+        <ttl>To create a database connection in ODT:</ttl>
+        <xreftext>&#x201C;To create a database connection in ODT:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.4" targetptr="TDPNG70020">
+      <ttl>Creating an Oracle Project</ttl>
+      <xreftext>&#x201C;Creating an Oracle Project&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_dot_net.htm" number="" targetptr="">
+        <ttl>To create a project for .NET stored procedures:</ttl>
+        <xreftext>&#x201C;To create a project for .NET stored procedures:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.5" targetptr="TDPNG70040">
+      <ttl>Creating .NET Stored Functions and Procedures</ttl>
+      <xreftext>&#x201C;Creating .NET Stored Functions and Procedures&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_dot_net.htm" number="" targetptr="">
+        <ttl>To create a .NET stored procedure:</ttl>
+        <xreftext>&#x201C;To create a .NET stored procedure:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.6" targetptr="TDPNG70050">
+      <ttl>Deploying .NET Stored Functions and Procedures</ttl>
+      <xreftext>&#x201C;Deploying .NET Stored Functions and Procedures&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_dot_net.htm" number="" targetptr="">
+        <ttl>To deploy a .NET stored procedure:</ttl>
+        <xreftext>&#x201C;To deploy a .NET stored procedure:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.7" targetptr="TDPNG70060">
+      <ttl>Running .NET Stored Functions and Procedures</ttl>
+      <xreftext>&#x201C;Running .NET Stored Functions and Procedures&#x201D;</xreftext>
+      <obj element="bridgehead" href="procedures_dot_net.htm" number="" targetptr="">
+        <ttl>To run a .NET stored procedure:</ttl>
+        <xreftext>&#x201C;To run a .NET stored procedure:&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="procedures_dot_net.htm" number="8.8" targetptr="CIHIIJBE">
+      <ttl>Running .NET Stored Procedure in a Query Window</ttl>
+      <xreftext>&#x201C;Running .NET Stored Procedure in a Query Window&#x201D;</xreftext>
+    </div>
+  </div>
+  <div element="chapter" href="globalizing.htm" number="9" targetptr="TDPNG80000">
+    <ttl>Including Globalization Support</ttl>
+    <xreftext>&#x201C;Including Globalization Support&#x201D;</xreftext>
+    <div element="sect1" href="globalizing.htm" number="9.1" targetptr="TDPNG80010">
+      <ttl>Introduction to Global Applications</ttl>
+      <xreftext>&#x201C;Introduction to Global Applications&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="globalizing.htm" number="9.2" targetptr="TDPNG80020">
+      <ttl>Developing Global Applications with the .NET Framework</ttl>
+      <xreftext>&#x201C;Developing Global Applications with the .NET Framework&#x201D;</xreftext>
+    </div>
+    <div element="sect1" href="globalizing.htm" number="9.3" targetptr="TDPNG80030">
+      <ttl>Presenting Data in the Correct User Local Convention</ttl>
+      <xreftext>&#x201C;Presenting Data in the Correct User Local Convention&#x201D;</xreftext>
+      <div element="sect2" href="globalizing.htm" number="9.3.1" targetptr="">
+        <ttl>Connecting to SQL*Plus</ttl>
+        <xreftext>&#x201C;Connecting to SQL*Plus&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="globalizing.htm" number="9.3.2" targetptr="TDPNG80031">
+        <ttl>Using Oracle Date Formats</ttl>
+        <xreftext>&#x201C;Using Oracle Date Formats&#x201D;</xreftext>
+        <obj element="bridgehead" href="globalizing.htm" number="" targetptr="">
+          <ttl>To change the Oracle date format:</ttl>
+          <xreftext>&#x201C;To change the Oracle date format:&#x201D;</xreftext>
+        </obj>
+      </div>
+      <div element="sect2" href="globalizing.htm" number="9.3.3" targetptr="TDPNG80032">
+        <ttl>Using Oracle Number Formats</ttl>
+        <xreftext>&#x201C;Using Oracle Number Formats&#x201D;</xreftext>
+        <obj element="bridgehead" href="globalizing.htm" number="" targetptr="">
+          <ttl>To change the Oracle number format:</ttl>
+          <xreftext>&#x201C;To change the Oracle number format:&#x201D;</xreftext>
+        </obj>
+      </div>
+      <div element="sect2" href="globalizing.htm" number="9.3.4" targetptr="TDPNG80033">
+        <ttl>Using Oracle Linguistic Sorts</ttl>
+        <xreftext>&#x201C;Using Oracle Linguistic Sorts&#x201D;</xreftext>
+        <obj element="bridgehead" href="globalizing.htm" number="" targetptr="">
+          <ttl>To change the Oracle linguistic sort:</ttl>
+          <xreftext>&#x201C;To change the Oracle linguistic sort:&#x201D;</xreftext>
+        </obj>
+      </div>
+      <div element="sect2" href="globalizing.htm" number="9.3.5" targetptr="TDPNG80034">
+        <ttl>Oracle Error Messages</ttl>
+        <xreftext>&#x201C;Oracle Error Messages&#x201D;</xreftext>
+        <obj element="bridgehead" href="globalizing.htm" number="" targetptr="">
+          <ttl>To change the Oracle NLS language parameter:</ttl>
+          <xreftext>&#x201C;To change the Oracle NLS language parameter:&#x201D;</xreftext>
+        </obj>
+      </div>
+    </div>
+    <div element="sect1" href="globalizing.htm" number="9.4" targetptr="TDPNG80040">
+      <ttl>Synchronizing the .NET and Oracle Database Locale Environments</ttl>
+      <xreftext>&#x201C;Synchronizing the .NET and Oracle Database Locale Environments&#x201D;</xreftext>
+      <obj element="table" href="globalizing.htm" number="9-1" targetptr="">
+        <ttl>Common NLS_LANGUAGE and NLS_TERRITORY Parameters</ttl>
+        <xreftext>&#x201C;Common NLS_LANGUAGE and NLS_TERRITORY Parameters&#x201D;</xreftext>
+      </obj>
+    </div>
+    <div element="sect1" href="globalizing.htm" number="9.5" targetptr="TDPNG80050">
+      <ttl>Client Globalization Support in Oracle Data Provider for .NET</ttl>
+      <xreftext>&#x201C;Client Globalization Support in Oracle Data Provider for .NET&#x201D;</xreftext>
+      <div element="sect2" href="globalizing.htm" number="9.5.1" targetptr="TDPNG80051">
+        <ttl>Client Globalization Settings</ttl>
+        <xreftext>&#x201C;Client Globalization Settings&#x201D;</xreftext>
+      </div>
+      <div element="sect2" href="globalizing.htm" number="9.5.2" targetptr="TDPNG80052">
+        <ttl>Using Session Globalization Settings</ttl>
+        <xreftext>&#x201C;Using Session Globalization Settings&#x201D;</xreftext>
+        <obj element="bridgehead" href="globalizing.htm" number="" targetptr="">
+          <ttl>To specify the globalization session setting:</ttl>
+          <xreftext>&#x201C;To specify the globalization session setting:&#x201D;</xreftext>
+        </obj>
+      </div>
+      <div element="sect2" href="globalizing.htm" number="9.5.3" targetptr="TDPNG80053">
+        <ttl>Thread-Based Globalization Settings</ttl>
+        <xreftext>&#x201C;Thread-Based Globalization Settings&#x201D;</xreftext>
+      </div>
+    </div>
+  </div>
+  <div element="appendix" href="appendix_a.htm" number="A" targetptr="TDPNG100">
+    <ttl>Starting and Stopping an Oracle&#x00A0;Database&#x00A0;Instance</ttl>
+    <xreftext>&#x201C;Starting and Stopping an Oracle&#x00A0;Database&#x00A0;Instance&#x201D;</xreftext>
+    <obj element="bridgehead" href="appendix_a.htm" number="" targetptr="">
+      <ttl>To start an Oracle Database Instance:</ttl>
+      <xreftext>&#x201C;To start an Oracle Database Instance:&#x201D;</xreftext>
+    </obj>
+    <obj element="bridgehead" href="appendix_a.htm" number="" targetptr="">
+      <ttl>To stop an Oracle Database Instance:</ttl>
+      <xreftext>&#x201C;To stop an Oracle Database Instance:&#x201D;</xreftext>
+    </obj>
+  </div>
+  <div element="appendix" href="appendix_b.htm" number="B" targetptr="TDPNG200">
+    <ttl>Copying a Form</ttl>
+    <xreftext>&#x201C;Copying a Form&#x201D;</xreftext>
+    <obj element="bridgehead" href="appendix_b.htm" number="" targetptr="">
+      <ttl>To create a copy of an existing form:</ttl>
+      <xreftext>&#x201C;To create a copy of an existing form:&#x201D;</xreftext>
+    </obj>
+  </div>
+</div>
