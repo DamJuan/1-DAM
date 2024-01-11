@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1"  ?>
+<!DOCTYPE RootProperty SYSTEM "admin.dtd" >
+
+
+<!-- 
+======================================================================
+ CAUTION:                                                             
+    Changes to this file might adversely affect Cluster Verification.  
+
+    This file has 2 sections. Section D contains the default values    
+    where as Section P contains the platform specific values 
+======================================================================= 
+-->
+
+<!-- Root property -->
+<RootProperty>
+
+  <!-- 
+  ===============  SECTION D: [ START ]  ============================
+  This section contains the default values for various properties. 
+  Generally, these are available/applicable on all the platforms.
+  ===================================================================
+  -->
+
+  <!-- name of the constraint file -->
+  <Property Name ="file_constraints_xml"  
+            Value="constraints.xml" />
+
+  <!-- default/current OCR version for this platform -->
+  <Property Name ="def_ocr_ver"  
+            Value="3" />
+            
+              <!-- default value for 'ocr.loc' owner  -->
+  <Property Name="def_ocr_loc_owner"
+            Value=""/>
+  <!-- default value for 'ocr.loc' group  -->
+  <Property Name="def_ocr_loc_group"
+            Value=""/>
+  <!-- default value for 'ocr.loc' permissions  -->
+  <Property Name="def_ocr_loc_permissions"
+            Value=""/>
+  <!-- default value for 'ocr' owner  -->
+  <Property Name="def_ocr_owner"
+            Value=""/>
+  <!-- default value for 'ocr' group  -->
+  <Property Name="def_ocr_group"
+            Value=""/>
+  <!-- default value for 'ocr' permissions  -->
+  <Property Name="def_ocr_permissions"
+            Value=""/>
+  <!-- default value for 'ocr' size  -->
+  <Property Name="def_ocr_size"
+            Value="262144"/>
+  <!-- default value for 'olr.loc' owner  -->
+  <Property Name="def_olr_loc_owner"
+            Value=""/>
+  <!-- default value for 'olr.loc' group  -->
+  <Property Name="def_olr_loc_group"
+            Value=""/>
+  <!-- default value for 'olr.loc' permissions  -->
+  <Property Name="def_olr_loc_permissions"
+            Value=""/>
+  <!-- default value for 'olr' owner in case of crs -->
+  <Property Name="def_olr_owner_crs"
+            Value=""/>
+  <!-- default value for 'olr' owner in case of siha -->
+  <Property Name="def_olr_owner_siha"
+            Value=""/>
+  <!-- default value for 'olr' group  -->
+  <Property Name="def_olr_group"
+            Value=""/>
+  <!-- default value for 'olr' permissions  -->
+  <Property Name="def_olr_permissions"
+            Value=""/>
+            
+
+  <!--  ********************  SECTION D: [ END ]  *****************  -->
+
+
+  <!-- 
+  ===============  SECTION P: [ START ]  ============================
+  This section contains the platform specific properties and their
+  values. These values may or may not exist on other platforms. 
+  ===================================================================
+  -->
+  <!--  Name of the remote command(the wrapper script for exectask) -->
+  <Property Name ="rem_command"  
+            Value="exectask.exe" />
+  <!--  Files required on the remote node for exectask operation -->
+  <!-- To be changed later -->
+  <Property Name ="rem_cmd_files"  
+            Value="cv\remenv\exectask.exe,bin\oracore11.dll,bin\orauts.dll,bin\oranls11.dll,bin\oraunls11.dll,bin\msvcr80.dll,bin\msvcp80.dll,bin\msvcm80.dll,bin\Microsoft.VC80.CRT.manifest" />
+
+  <!-- default temp location on this platform -->
+  <Property Name ="def_dir_temp"  
+            Value="C:\temp" />
+
+  <!-- CRS Daemon - internal name -->
+  <Property Name ="DAEMON_INAME_CRS"
+            Value="OracleCRService" />
+  <!-- CRS Daemon - display name -->
+  <Property Name ="DAEMON_DNAME_CRS"
+            Value="CRS daemon" />
+
+  <!-- CSS Daemon - internal name -->
+  <Property Name ="DAEMON_INAME_CSS"
+            Value="OracleCSService" />
+  <!-- CSS Daemon - display name -->
+  <Property Name ="DAEMON_DNAME_CSS"
+            Value="CSS daemon" />
+
+  <!-- EVM Daemon - internal name -->
+  <Property Name ="DAEMON_INAME_EVM"
+            Value="OracleEVMService" />
+  <!-- EVM Daemon - display name -->
+  <Property Name ="DAEMON_DNAME_EVM"
+            Value="EVM daemon" />
+
+  <!-- OHASD Daemon - internal name -->
+  <Property Name ="DAEMON_INAME_OHASD"
+            Value="OracleOHService" />
+  <!-- CRS Daemon - display name -->
+  <Property Name ="DAEMON_DNAME_OHASD"
+            Value="OHAS daemon" />
+
+  <!--  ***************  SECTION P:  [ END ]  ************************  -->
+
+</RootProperty>

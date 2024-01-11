@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<HOST PLATID="233">
+<SYSTEM>
+	<MEMORY>
+		<PHYSICAL_MEMORY VALUE="128" UNIT="MB" SEVERITY="IGNORABLE"/>
+		<!--<AVAILABLE_MEMORY VALUE="20" UNIT="MB"/> -->	
+	</MEMORY>
+	<SPACE>
+		<LOC VAR="TEMP_AREA" TEMP="true" SIZE="130" UNIT="MB" SEVERITY="IGNORABLE"/>
+	</SPACE>
+</SYSTEM>
+<CERTIFIED_SYSTEMS>
+         <OPERATING_SYSTEM RELEASE="5.0">
+             <VERSION VALUE="3"/>
+             <ARCHITECTURE VALUE="64-bit"/>
+             <NAME VALUE="Windows2000"/>
+             <ENV_VAR_LIST>
+                 <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+             </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+         <OPERATING_SYSTEM RELEASE="5.1">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="WindowsXP"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+         <OPERATING_SYSTEM RELEASE="5.2">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="Windows Server 2003"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+         <OPERATING_SYSTEM RELEASE="6.0">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="WindowsServer2008"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+         <OPERATING_SYSTEM RELEASE="6.0">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="WindowsVista"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+	 <OPERATING_SYSTEM RELEASE="6.1">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="Windows 7"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+	 <OPERATING_SYSTEM RELEASE="6.1">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="WindowsServer2008R2"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+	 <OPERATING_SYSTEM RELEASE="6.2">
+         	 <VERSION VALUE="3"/>
+         	 <ARCHITECTURE VALUE="64-bit"/>
+         	 <NAME VALUE="Windows 10"/>
+         	 <ENV_VAR_LIST>
+         	     <ENV_VAR NAME="PATH" MAX_LENGTH="1023" />
+         	 </ENV_VAR_LIST>
+         </OPERATING_SYSTEM>
+</CERTIFIED_SYSTEMS>
+<ORACLE_HOME>
+	<COMPATIBILITY_MATRIX>
+       <ALLOW>
+        <NEW_HOME/>
+        <COMP NAME="oracle.server" ATLEAST="11.2.0.0.0" ATMOST="11.2.9.9.9"/>
+        <COMP NAME="oracle.client" ATLEAST="11.2.0.0.0" ATMOST="11.2.9.9.9"/>
+       </ALLOW>
+      <DISALLOW>
+        <COMP NAME="oracle.server" ATLEAST="8.1.0.0.0" ATMOST="10.2.9.9.9"/>
+        <COMP NAME="oracle.client" ATLEAST="8.1.0.0.0" ATMOST="9.2.0.9.0"/>
+        <COMP NAME="oracle.iappserver.iapptop" ATLEAST="9.0.2.0.0" ATMOST="9.0.9.0.0"/>
+        <COMP NAME="oracle.iappserver.infrastructure" ATLEAST="9.0.2.0.0" ATMOST="9.0.9.0.0"/>
+        <COMP NAME="oracle.iappserver.devcorner " ATLEAST="9.0.2.0.0" ATMOST="9.0.9.0.0"/>
+        <COMP NAME="oracle.ids.toplevel.development" ATLEAST="9.0.0.0.0" ATMOST="9.0.9.0.0"/>
+        <COMP NAME="oracle.install.instcommon" ATLEAST="8.1.3.0.0" ATMOST="9.2.9.9.9"/>
+        <COMP NAME="oracle.networking.netclt" ATLEAST="8.1.3.0.0" ATMOST="9.2.0.9.0"/>
+        <ORCA_HOME/>
+      </DISALLOW>
+      </COMPATIBILITY_MATRIX>	
+</ORACLE_HOME>
+</HOST>
