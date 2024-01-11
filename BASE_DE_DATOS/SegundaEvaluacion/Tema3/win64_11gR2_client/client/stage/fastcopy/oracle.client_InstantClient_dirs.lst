@@ -1,0 +1,10 @@
+bin
+instantclient
+instantclient/light
+inventory/response
+jdbc/lib
+jlib
+lib
+odbc/html
+rdbms/admin
+rdbms/jlib

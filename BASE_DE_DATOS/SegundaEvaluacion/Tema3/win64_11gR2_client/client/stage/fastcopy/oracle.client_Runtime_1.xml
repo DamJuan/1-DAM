@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!-- Copyright (c) 2010 Oracle Corporation. All Rights Reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+
+<FILE_LIST>
+ <COMP NAME="oracle.client" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.client/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.client/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.sqlplus" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.sqlplus/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.sqlplus/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.sqlplus/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.sqlplus/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.sqlplus/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.network.client" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup12.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup19.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup20.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup15.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup18.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup14.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup17.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup13.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup21.jar </FILE>
+  <FILE> Components/oracle.network.client/11.2.0.1.0/1/DataFiles/filegroup16.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.assistants.netca.client" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.assistants.netca.client/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.assistants.netca.client/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.assistants.netca.client/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rdbms.oci" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rdbms.oci/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.rdbms.oci/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.rdbms.oci/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.rdbms.oci/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.rdbms.oci/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.precomp.common" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.precomp.common/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.dbjava.jdbc" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.dbjava.jdbc/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.dbjava.jdbc/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.assistants.acf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.assistants.acf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.assistants.acf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rdbms.install.common" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup14.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup13.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup16.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup12.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup15.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.rdbms.install.common/11.2.0.1.0/1/DataFiles/filegroup11.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ntoledb" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.ntoledb/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.has.common" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup18.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup13.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup11.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup16.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup14.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup12.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup17.jar </FILE>
+  <FILE> Components/oracle.has.common/11.2.0.1.0/1/DataFiles/filegroup15.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ons" VERSION="11.2.0.0.0" >
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.ons/11.2.0.0.0/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.aspnet_2" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.aspnet_2/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.aspnet_2/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.aspnet_2/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.aspnet_2/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.aspnet_2/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.aspnet_2/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ntoledb.odp_net_2" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup18.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup19.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.ntoledb.odp_net_2/11.2.0.1.0/1/DataFiles/filegroup17.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.dbjava.ucp" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.dbjava.ucp/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.kodiak" VERSION="1.2.1.0.0I" >
+  <FILE> Components/oracle.bali.kodiak/1.2.1.0.0I/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.sysman.console.emcp" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.sysman.console.emcp/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.sysman.console.emcp/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.sysman.console.emcp/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.sysman.console.emcp/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.sysman.console.emcp/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.sysman.console.emcp/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.assistants.oemlt" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.assistants.oemlt/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.buildtools.common" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.buildtools.common/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.cabo" VERSION="2.2.24.5.0" >
+  <FILE> Components/oracle.bali.cabo/2.2.24.5.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.bali.cabo/2.2.24.5.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.bali.cabo/2.2.24.5.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.buildtools.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.buildtools.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.nlsrtl.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.regexp" VERSION="2.1.9.0.0" >
+  <FILE> Components/oracle.bali.regexp/2.1.9.0.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.nlsrtl.rsf.lbuilder" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.nlsrtl.rsf.lbuilder/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf.lbuilder/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf.lbuilder/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.nlsrtl.rsf.lbuilder/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.has.common.cvu" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup12.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.has.common.cvu/11.2.0.1.0/1/DataFiles/filegroup11.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ldap.owm" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ldap.owm/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.ldap.owm/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.ldap.owm/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.ldap.owm/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.ldap.owm/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ldap.security.osdt" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ldap.security.osdt/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.xdk.parser.java" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.xdk.parser.java/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.xdk.parser.java/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.xdk.parser.java/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.xdk.parser.java/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.help" VERSION="4.2.9.0.0" >
+  <FILE> Components/oracle.bali.help/4.2.9.0.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.bali.help/4.2.9.0.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.network.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.network.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.network.rsf/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.network.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.network.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ldap.ssl" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ldap.ssl/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.jewt" VERSION="4.2.36.0.0" >
+  <FILE> Components/oracle.bali.jewt/4.2.36.0.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.perlint" VERSION="5.10.0.0.1" >
+  <FILE> Components/oracle.perlint/5.10.0.0.1/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.perlint/5.10.0.0.1/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.perlint/5.10.0.0.1/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.perlint/5.10.0.0.1/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.perlint/5.10.0.0.1/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.perlint/5.10.0.0.1/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.perlint.modules" VERSION="5.10.0.0.1" >
+  <FILE> Components/oracle.perlint.modules/5.10.0.0.1/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.perlint.modules/5.10.0.0.1/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.perlint.expat" VERSION="2.0.1.0.1" >
+  <FILE> Components/oracle.perlint.expat/2.0.1.0.1/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.dbjava.ic" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.dbjava.ic/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.dbjava.ic/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.oracore.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.oracore.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.precomp.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.precomp.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.precomp.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.precomp.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.ice" VERSION="5.2.3.6.0" >
+  <FILE> Components/oracle.bali.ice/5.2.3.6.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.has.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.has.rsf/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ldap.rsf.ic" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ldap.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.slax.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.slax.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.slax.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.nlsrtl.rsf.ic" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.nlsrtl.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.dbdev" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.dbdev/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.dbdev/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.dbdev/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rdbms.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup12.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup15.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup11.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup14.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup13.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup16.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rdbms.rsf.runtime" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rdbms.rsf.runtime/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rdbms.rsf.ic" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rdbms.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.rdbms.rsf.ic/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.xdk.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.xdk.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.xdk.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.xdk.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.ldap.rsf" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.ldap.rsf/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.ewt" VERSION="3.4.47.0.0" >
+  <FILE> Components/oracle.bali.ewt/3.4.47.0.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.sqlplus.ic" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.sqlplus.ic/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.sqlplus.ic/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.sqlplus.ic/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.bali.share" VERSION="1.1.18.0.0" >
+  <FILE> Components/oracle.bali.share/1.1.18.0.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.install.deinstalltool" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.install.deinstalltool/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.install.deinstalltool/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.install.deinstalltool/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.install.deinstalltool/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.install.deinstalltool/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.install.deinstalltool/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.sysman.common" VERSION="10.2.0.4.2" >
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup7.jar </FILE>
+  <FILE> Components/oracle.sysman.common/10.2.0.4.2/1/DataFiles/filegroup11.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.has.deconfig" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup10.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.has.deconfig/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.assistants.deconfig" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.assistants.deconfig/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.rdbms.deconfig" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.rdbms.deconfig/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.rdbms.deconfig/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.rdbms.deconfig/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.sysman.common.core" VERSION="10.2.0.4.2" >
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.sysman.common.core/10.2.0.4.2/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.sysman.ccr.deconfig" VERSION="10.3.1.0.0" >
+  <FILE> Components/oracle.sysman.ccr.deconfig/10.3.1.0.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.sysman.ccr.deconfig/10.3.1.0.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.swd.oui" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.swd.oui/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.swd.oui/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.swd.oui/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.swd.oui/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.swd.opatch" VERSION="11.2.0.0.2" >
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup9.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.swd.opatch/11.2.0.0.2/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.swd.oui.core" VERSION="11.2.0.1.0" >
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup6.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup1.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup8.jar </FILE>
+  <FILE> Components/oracle.swd.oui.core/11.2.0.1.0/1/DataFiles/filegroup7.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.swd.jre" VERSION="1.5.0.11.0" >
+  <FILE> Components/oracle.swd.jre/1.5.0.11.0/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.swd.jre/1.5.0.11.0/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.swd.jre/1.5.0.11.0/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+ <COMP NAME="oracle.jdk" VERSION="1.5.0.17.04" >
+  <FILE> Components/oracle.jdk/1.5.0.17.04/1/DataFiles/filegroup5.jar </FILE>
+  <FILE> Components/oracle.jdk/1.5.0.17.04/1/DataFiles/filegroup4.jar </FILE>
+  <FILE> Components/oracle.jdk/1.5.0.17.04/1/DataFiles/filegroup3.jar </FILE>
+  <FILE> Components/oracle.jdk/1.5.0.17.04/1/DataFiles/filegroup2.jar </FILE>
+  <FILE> Components/oracle.jdk/1.5.0.17.04/1/DataFiles/filegroup1.jar </FILE>
+ </COMP>
+</FILE_LIST>
