@@ -5,10 +5,11 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Agenda {
-
+	//TODO el main tiene casi 100 líneas...
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
+		
+		// TODO poco UX con el usuario
         System.out.println("Cuantas personas quiere añadir a la agenda");
         int numPersonas = sc.nextInt();
 
@@ -21,6 +22,7 @@ public class Agenda {
 
             boolean datosCompletos = false;
 
+			// TODO compilar esto por cada una de las persona que introducimos en la agenda no es necesario
             Pattern patternNombre = Pattern.compile("^[A-Za-z]+([ -][A-Za-z]+)* [A-Za-z]+([ -][A-Za-z]+)*$");
             Pattern patternTel = Pattern.compile("^\\+\\(34\\)\\s?[6-9][0-9]{8}$");
             Pattern patternIP = Pattern.compile("^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
@@ -44,11 +46,13 @@ public class Agenda {
                     datosCompletos = true;
 
                 } else {
-
+					//TODO si hay algún error no introducimos a una persona nueva, con lo cual esa posición del array se queda vacía
+					// TODO el ejercicio pedia volver a solicitar el dato hasta que fuera correcto. Además no informamos del formato nunca al usuario, con lo que es muy fácil que se equivoque al introducirlo.
                     System.out.println("Los  datos introducidos no son validos");
 
                 }
 
+				// TODO cuando llego al número de personas que he dicho, me pregunta y yo digo que sí, pero me echa de la aplicación.
                 System.out.println("Quieres terminar de introducir personas? Si/No");
                 String acabar = sc.nextLine();
 
@@ -72,6 +76,8 @@ public class Agenda {
         }
 
     }
+	
+	// TODO y este comentario aqui?
 
         /*
 
@@ -85,6 +91,7 @@ public class Agenda {
 
         */
 
+	// TODO quizá sería mas legible tener aqui el patrón
     public static String pedirNombreApellidos(Scanner sc, Pattern patternNombre) {
         System.out.println("Nombre y apellidos (Apellido1 Apellido2, Nombre): ");
         String nombreApellidos = sc.nextLine();
