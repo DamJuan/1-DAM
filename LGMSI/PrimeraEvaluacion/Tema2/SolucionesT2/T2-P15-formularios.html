@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tema 2 Práctica 15 - formularios</title>
+  </head>
+  <body>
+
+    <h3>Información sobre producto</h3>
+    <!--Enctype multipart/form-data: no se aplica ninguna codificación.
+    Este valor es necesario para la subida de archivos.-->
+    <form action="" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos básicos</legend>
+        <label for="nombre"> Nombre <br />
+          <input type="text" id="nombre" name="nombre" value="" placeholder="Nombre del producto" /></label>
+          <br>
+          <br>
+        <label for="descripcion"> Descripción <br />
+          <textarea  id="descripcion" name="apellidos" rows="4" cols="40" >Escribe aquí la descripción del producto</textarea></label>
+          <br>
+          <br>
+        <label for="foto"> Foto </label>
+        <input type="file" id="foto" name="foto" /><br>
+        <!--<input name="contador" id="contador" type="checkbox" value="contador" />
+        <label for="contador">Añadir contador de visitas</label>-->
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos económicos</legend>
+        <label for="precio">Precio &nbsp;
+          <input type="text" id="precio" size="6" value="" maxlength="5"> €
+        </label> 
+        <label for="lista-descuento">&nbsp;&nbsp; Impuestos &nbsp;&nbsp;
+          <select name="lista-descuento" id="lista-descuento">
+            <option value="" selected="selected">- selecciona - </option> 
+            <option value="4">4%</option> 
+            <option value="7">7%</option>
+            <option value="16">16%</option> 
+            <option value="25">25%</option> 
+          </select>
+        </label>
+        <br>
+        <br>
+        Promoción <br>
+        <label for="ninguna">
+          <input type="radio" id="ninguna" value="ninguna" name="promocion" checked> Ninguna 
+        </label>
+        <br>
+        <label for="transporte-gratuito">
+          <input type="radio" id="transporte-gratuito" value="transporte-gratuito" name="promocion">Transporte gratuito
+        </label>
+        <br>
+        <label for="descuento5">
+          <input type="radio" id="descuento5" value="descuento5" name="promocion">Descuento 5%
+        </label>
+      </fieldset>
+      <br>
+      <input type="button" name="guardar" value="Guardar">
+      <input type="reset" name="borrar" value="Borrar">
+      <input type="button" name="cancelar" value="Cancelar">
+    </form>
+  </body>
+</html>
