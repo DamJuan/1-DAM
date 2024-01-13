@@ -1,11 +1,12 @@
+package Teoria;
 
 import java.util.Random;
 
 public class ArraysDemo {
 
     public static void main (String[] args){
-        demo1();
-        //demo2();
+        //demo1();
+        demo2();
     }
 
     /**
