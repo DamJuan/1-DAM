@@ -1,5 +1,7 @@
-package PrimeraEvaluacion.UD5.ControlAcceso;
+package ControlAcceso;
 
+import ControlAcceso.*;
+import ControlAcceso.*;
 import java.util.ArrayList;
 
 class Sistema {
