@@ -1,6 +1,6 @@
 package ControlAcceso;
-import ControlAcceso.*;
 
+import ControlAcceso.*;
 import java.util.Scanner;
 
 public class ControlAcceso {
@@ -8,13 +8,13 @@ public class ControlAcceso {
         Sistema sistema = new Sistema();
         sistema.cargarUsuarios();
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         while (true) {
             System.out.print("Ingrese su nick: ");
-            String nick = scanner.nextLine();
+            String nick = sc.nextLine();
             System.out.print("Ingrese su contraseña: ");
-            String contrasena = scanner.nextLine();
+            String contrasena = sc.nextLine();
 
             Usuario usuarioValidado = sistema.validarAcceso(nick, contrasena);
 
