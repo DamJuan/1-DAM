@@ -9,7 +9,6 @@ public class Aventurero {
     private static Weapon currentWeapon;
 
     public static void main(String[] args) {
-        Aventurero juego = new Aventurero();
         jugarAventura();
         sc.close();
         System.out.println("Fin de la aventura");
@@ -32,12 +31,12 @@ public class Aventurero {
 
                     switch (eleccionArmaWood) {
                         case 1:
-                            equipWeapon(woodenSword, "Aventurero");
-                            System.out.println("Detalles del arma equipada:\n" + woodenSword.getWeaponDetails());
+                            //equipWeapon(Weapon.woodenSword, "Aventurero");
+                            //System.out.println("Detalles del arma equipada:\n" + woodenSword.getWeaponDetails());
                             break;
                         case 2:
-                            equipWeapon(woodenAxe, "Aventurero");
-                            System.out.println("Detalles del arma equipada:\n" + woodenAxe.getWeaponDetails());
+                            //equipWeapon(Weapon.woodenAxe, "Aventurero");
+                            //System.out.println("Detalles del arma equipada:\n" + woodenAxe.getWeaponDetails());
                             break;
                         default:
                             System.out.println("El valor introducido no es una opción válida.");
