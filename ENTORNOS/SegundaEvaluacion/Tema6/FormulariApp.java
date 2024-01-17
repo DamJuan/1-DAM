@@ -2,6 +2,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
 public class FormulariApp extends JFrame {
     private JTextField textField;
@@ -11,6 +17,13 @@ public class FormulariApp extends JFrame {
     private JCheckBox checkBox;
     private JComboBox<String> provinciaComboBox;
     private JSpinner spinner;
+
+    // Componentes espejo
+    private JLabel espejoSexoLabel;
+    private JLabel espejoCondicionesLabel;
+    private JLabel espejoNombreLabel;
+    private JLabel espejoProvinciaLabel;
+    private JLabel espejoEdadLabel;
 
     public FormulariApp() {
         // Configuración de la ventana principal
@@ -71,9 +84,38 @@ public class FormulariApp extends JFrame {
         gbc.gridy++;
         add(spinner, gbc);
 
+        // Configuración del "espejo"
+        gbc.gridx = 2;
+        gbc.gridy = 0;
+        gbc.gridheight = 6;
+        gbc.insets = new Insets(5, 20, 5, 5);
+
+        espejoSexoLabel = new JLabel("Sexo: ");
+        add(espejoSexoLabel, gbc);
+
+        gbc.gridy++;
+        espejoCondicionesLabel = new JLabel("Condiciones: ");
+        add(espejoCondicionesLabel, gbc);
+
+        gbc.gridy++;
+        espejoNombreLabel = new JLabel("Nombre: ");
+        add(espejoNombreLabel, gbc);
+
+        gbc.gridy++;
+        espejoProvinciaLabel = new JLabel("Provincia: ");
+        add(espejoProvinciaLabel, gbc);
+
+        gbc.gridy++;
+        espejoEdadLabel = new JLabel("Edad: ");
+        add(espejoEdadLabel, gbc);
+
         // Botones para enviar y cancelar el formulario
         JButton enviarButton = new JButton("Enviar");
+        gbc.gridx = 0;
         gbc.gridy++;
+        gbc.gridwidth = 1;
+        gbc.gridheight = 1;
+        gbc.insets = new Insets(5, 5, 5, 5);
         add(enviarButton, gbc);
         enviarButton.addActionListener(new ActionListener() {
             @Override
@@ -98,7 +140,7 @@ public class FormulariApp extends JFrame {
         });
 
         JButton cancelarButton = new JButton("Cancelar");
-        gbc.gridy++;
+        gbc.gridx = 1;
         add(cancelarButton, gbc);
         cancelarButton.addActionListener(new ActionListener() {
             @Override
@@ -112,8 +154,119 @@ public class FormulariApp extends JFrame {
             }
         });
 
+
+        // Configuración de eventos
+
+        // Eventos para los JRadioButtons
+        masculinoRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                actualitzarEspillSexe();
+            }
+        });
+
+        femeninoRadioButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                actualitzarEspillSexe();
+            }
+        });
+
+        radioButton3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                actualitzarEspillSexe();
+            }
+        });
+
+        // Evento para el JCheckBox
+        checkBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                actualitzarEspillCondicions();
+            }
+        });
+
+        // Evento para el JTextField
+        textField.addKeyListener(new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent e) {
+                actualitzarEspillNom();
+            }
+
+            @Override
+            public void keyPressed(KeyEvent e) {
+                // No es necesario implementar este método
+            }
+
+            @Override
+            public void keyReleased(KeyEvent e) {
+                // No es necesario implementar este método
+            }
+        });
+
+        // Evento para el JComboBox
+        provinciaComboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    actualitzarEspillProvincia();
+                }
+            }
+        });
+
+        // Evento para el JSpinner
+        spinner.addChangeListener(new ChangeListener() {
+            @Override
+            public void stateChanged(ChangeEvent e) {
+                actualitzarEspillEdat();
+            }
+        });
+
         // Mostrar la ventana
         setVisible(true);
+    }
+
+    private void actualitzarEspillSexe() {
+        // Obtener el sexo seleccionado
+        String sexo = masculinoRadioButton.isSelected() ? "Masculino" :
+                femeninoRadioButton.isSelected() ? "Femenino" :
+                        radioButton3.isSelected() ? "Otro" : "";
+
+        // Actualizar el espejo con el sexo
+        espejoSexoLabel.setText("Sexo: " + sexo);
+    }
+
+    private void actualitzarEspillCondicions() {
+        // Obtener el estado del CheckBox
+        boolean condicionesAceptadas = checkBox.isSelected();
+
+        // Actualizar el espejo con el estado del CheckBox
+        espejoCondicionesLabel.setText("Condiciones aceptadas: " + (condicionesAceptadas ? "Sí" : "No"));
+    }
+
+    private void actualitzarEspillNom() {
+        // Obtener el nombre introducido en el JTextField
+        String nombre = textField.getText();
+
+        // Actualizar el espejo con el nombre
+        espejoNombreLabel.setText("Nombre: " + nombre);
+    }
+
+    private void actualitzarEspillProvincia() {
+        // Obtener la provincia seleccionada en el JComboBox
+        String provincia = (String) provinciaComboBox.getSelectedItem();
+
+        // Actualizar el espejo con la provincia
+        espejoProvinciaLabel.setText("Provincia: " + provincia);
+    }
+
+    private void actualitzarEspillEdat() {
+        // Obtener la edad seleccionada en el JSpinner
+        int edad = (int) spinner.getValue();
+
+        // Actualizar el espejo con la edad
+        espejoEdadLabel.setText("Edad: " + edad);
     }
 
     public static void main(String[] args) {
