@@ -12,8 +12,8 @@ class Sistema {
 
     public void cargarUsuarios() {
         usuarios.add(new Usuario("admin", "admin123"));
-        usuarios.add(new Usuario("usuario1", "pass123"));
-        usuarios.add(new Usuario("usuario2", "pass456"));
+        usuarios.add(new Usuario("alumno", "alumno"));
+        usuarios.add(new Usuario("antonio", "antonio"));
     }
 
     public Usuario validarAcceso(String nick, String contrasena) {
