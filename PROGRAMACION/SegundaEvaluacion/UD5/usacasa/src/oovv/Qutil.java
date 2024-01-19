@@ -5,7 +5,6 @@ public class Qutil {
 
         boolean esVocal;
 
-
         if ("a".equalsIgnoreCase(poblacion.substring(0, 1)) || "e".equalsIgnoreCase(poblacion.substring(0, 1)) || "i".equalsIgnoreCase(poblacion.substring(0, 1)) || "o".equalsIgnoreCase(poblacion.substring(0, 1)) || "u".equalsIgnoreCase(poblacion.substring(0, 1))) {
 
             esVocal = Boolean.TRUE;
@@ -15,7 +14,6 @@ public class Qutil {
         }
 
         return esVocal;
-
     }
 
     public static Boolean esVocal(char caracter) {

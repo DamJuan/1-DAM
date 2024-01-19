@@ -1,21 +1,17 @@
 package oovv;
 
 public class Casa {
-
-    private String calle;
-    private int numero;
-    private String poblacion;
-    private double superficie;
-    private boolean ifGaraje;
-    private int edad;
+    private static final double MIN_SUPERFICIE = 43.5;
     private static int contadorCasas = 0;
-
-    private static final double minSuperficie = 43.5;
-
+    private String calle = "";
+    private String poblacion = "";
+    private int numero = 0;
+    private double superficie = MIN_SUPERFICIE;
+    private boolean ifGaraje = Boolean.FALSE;
+    private int edad = 0;
 
     public Casa() {
-        incrementarContCasas();
-
+        super();
     }
 
     public Casa(String calle, int numero, String poblacion, double superficie, boolean ifGaraje, int edad) {
@@ -25,17 +21,14 @@ public class Casa {
         this.superficie = superficie;
         this.ifGaraje = ifGaraje;
         this.edad = edad;
-
         incrementarContCasas();
     }
 
-
     public Casa(String calle, int numero, String poblacion) {
+        this();
         this.calle = calle;
         this.numero = numero;
         this.poblacion = poblacion;
-
-        incrementarContCasas();
     }
 
     public String getCalle() {
@@ -87,10 +80,9 @@ public class Casa {
     }
 
 
-    public String getDireccionCompleta(String calle, int numero, String poblacion) {
+    public String getDireccionCompleta() {
 
         String direccion = "";
-
 
         if (Qutil.esVocal(poblacion)) {
 
@@ -103,7 +95,7 @@ public class Casa {
     }
 
     public String getInfo(String calle, int numero, String poblacion, double superficie, boolean ifGaraje, int edad) {
-        String info = getDireccionCompleta(calle, numero, poblacion);
+        String info = getDireccionCompleta();
 
         info += ", superficie: " + superficie + ", Tiene Garaje: " + ifGaraje + ", Edad: " + edad;
 
@@ -115,13 +107,12 @@ public class Casa {
         return contadorCasas;
     }
 
-    public void setContadorCasas(int contadorCasas) {
-        this.contadorCasas = contadorCasas;
+    public static void setContadorCasas(int contadorCasas) {
+        Casa.contadorCasas = contadorCasas;
     }
 
     public static void incrementarContCasas() {
         contadorCasas++;
-        System.out.println("El numero de casas creadas es: " + contadorCasas);
     }
 
     @Override
