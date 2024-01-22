@@ -107,6 +107,62 @@ public class Ejercicio6 extends JFrame {
         espejoEdadLabel = new JLabel("Edad: ");
         add(espejoEdadLabel, gbc);
 
+        gbc.gridx = 0;
+        gbc.gridy++;
+        gbc.gridwidth = 2;
+        gbc.insets = new Insets(5, 5, 5, 5);
+
+        enableNombreCheckbox = new JCheckBox("Habilitar Nombre");
+        add(enableNombreCheckbox, gbc);
+        enableNombreCheckbox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                textField.setEnabled(enableNombreCheckbox.isSelected());
+            }
+        });
+
+        gbc.gridy++;
+        enableSexoCheckbox = new JCheckBox("Habilitar Sexo");
+        add(enableSexoCheckbox, gbc);
+        enableSexoCheckbox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                masculinoRadioButton.setEnabled(enableSexoCheckbox.isSelected());
+                femeninoRadioButton.setEnabled(enableSexoCheckbox.isSelected());
+                radioButton3.setEnabled(enableSexoCheckbox.isSelected());
+            }
+        });
+
+        gbc.gridy++;
+        enableCondicionesCheckbox = new JCheckBox("Habilitar Condiciones");
+        add(enableCondicionesCheckbox, gbc);
+        enableCondicionesCheckbox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                checkBox.setEnabled(enableCondicionesCheckbox.isSelected());
+            }
+        });
+
+        gbc.gridy++;
+        enableProvinciaCheckbox = new JCheckBox("Habilitar Provincia");
+        add(enableProvinciaCheckbox, gbc);
+        enableProvinciaCheckbox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                provinciaComboBox.setEnabled(enableProvinciaCheckbox.isSelected());
+            }
+        });
+
+        gbc.gridy++;
+        enableEdadCheckbox = new JCheckBox("Habilitar Edad");
+        add(enableEdadCheckbox, gbc);
+        enableEdadCheckbox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                spinner.setEnabled(enableEdadCheckbox.isSelected());
+            }
+        });
+
         JButton enviarButton = new JButton("Enviar");
         gbc.gridx = 0;
         gbc.gridy++;
@@ -141,61 +197,6 @@ public class Ejercicio6 extends JFrame {
                 checkBox.setSelected(false);
                 provinciaComboBox.setSelectedIndex(0);
                 spinner.setValue(18);
-            }
-        });
-
-        JMenu opcionesMenu = new JMenu("Opciones");
-
-        enableNombreCheckbox = new JCheckBox("Habilitar Nombre");
-        enableSexoCheckbox = new JCheckBox("Habilitar Sexo");
-        enableCondicionesCheckbox = new JCheckBox("Habilitar Condiciones");
-        enableProvinciaCheckbox = new JCheckBox("Habilitar Provincia");
-        enableEdadCheckbox = new JCheckBox("Habilitar Edad");
-
-        opcionesMenu.add(enableNombreCheckbox);
-        opcionesMenu.add(enableSexoCheckbox);
-        opcionesMenu.add(enableCondicionesCheckbox);
-        opcionesMenu.add(enableProvinciaCheckbox);
-        opcionesMenu.add(enableEdadCheckbox);
-
-        JMenuBar menuBar = new JMenuBar();
-        menuBar.add(opcionesMenu);
-        setJMenuBar(menuBar);
-
-        enableNombreCheckbox.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                textField.setEnabled(enableNombreCheckbox.isSelected());
-            }
-        });
-
-        enableSexoCheckbox.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                masculinoRadioButton.setEnabled(enableSexoCheckbox.isSelected());
-                femeninoRadioButton.setEnabled(enableSexoCheckbox.isSelected());
-                radioButton3.setEnabled(enableSexoCheckbox.isSelected());
-            }
-        });
-
-        enableCondicionesCheckbox.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                checkBox.setEnabled(enableCondicionesCheckbox.isSelected());
-            }
-        });
-
-        enableProvinciaCheckbox.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                provinciaComboBox.setEnabled(enableProvinciaCheckbox.isSelected());
-            }
-        });
-
-        enableEdadCheckbox.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                spinner.setEnabled(enableEdadCheckbox.isSelected());
             }
         });
 
