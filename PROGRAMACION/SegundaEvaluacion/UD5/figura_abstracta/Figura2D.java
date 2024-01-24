@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class Figura2D {
+public class Figura2D extends ci{
 }

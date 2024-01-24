@@ -1,2 +1,13 @@
-package PACKAGE_NAME;public class Cuadrado {
+public abstract class Cuadrado extends FiguraAbstracta {
+    private double lado;
+
+    public Cuadrado(String tipo, double lado) {
+        super(tipo);
+        this.lado = lado;
+    }
+
+    @Override
+    public double calcularArea() {
+        return Math.pow(lado, 2);
+    }
 }
