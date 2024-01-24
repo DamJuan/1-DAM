@@ -30,6 +30,9 @@ public class PixelArtGame extends JFrame {
             }
         });
         timer.start();
+
+        // Asegura que la interfaz gráfica se actualice al inicio del juego
+        gamePanel.repaint();
     }
 
     private Player createPlayer() {

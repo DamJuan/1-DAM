@@ -22,6 +22,10 @@ public class Scene {
         randomEncounter.start(player);
     }
 
+    public List<Encounter> getEncounters() {
+        return encounters;
+    }
+
     private List<Encounter> initializeEncounters() {
         List<Encounter> encounters = new ArrayList<>();
         // Implementa la creación de encuentros aquí
