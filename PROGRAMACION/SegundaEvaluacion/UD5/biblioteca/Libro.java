@@ -1,16 +1,53 @@
-public class Libro {
+import java.time.LocalDate;
 
+public class Libro implements MaterialPrestable {
     private final int id;
     private final String titulo;
     private final String autor;
     private boolean prestado;
     private Usuario usuarioPrestado;
+    private LocalDate fechaPrestamo;
 
     public Libro(int id, String titulo, String autor) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.prestado = false;
+    }
+
+    @Override
+    public boolean esPrestable() {
+        return true;
+    }
+
+    @Override
+    public void prestar(Usuario usuarioPrestado) {
+        if (usuarioPrestado != null) {
+            this.usuarioPrestado = usuarioPrestado;
+            prestado = true;
+            fechaPrestamo = LocalDate.now();
+        }
+    }
+
+    @Override
+    public Usuario devolver() {
+        prestado = false;
+        usuarioPrestado = null;
+        fechaPrestamo = null;
+        return null;
+    }
+
+    @Override
+    public boolean estaPrestado() {
+        return prestado;
+    }
+
+    public boolean haExpiradoPrestamo() {
+        if (fechaPrestamo != null) {
+            LocalDate fechaDevolucionMaxima = fechaPrestamo.plusDays(15);
+            return LocalDate.now().isAfter(fechaDevolucionMaxima);
+        }
+        return false;
     }
 
     public int getId() {
@@ -23,32 +60,5 @@ public class Libro {
 
     public String getAutor() {
         return autor;
-    }
-
-    public boolean estaPrestado() {
-        return prestado;
-    }
-
-    public void prestar(Usuario usuarioPrestado) {
-        if (usuarioPrestado != null) {
-            this.usuarioPrestado = usuarioPrestado;
-            prestado = true;
-        }
-    }
-
-    public Usuario devolver() {
-        prestado = false;
-
-        Usuario usuarioDevuelve = null;
-        try {
-            usuarioDevuelve = (Usuario) usuarioPrestado.clone();
-        } catch (CloneNotSupportedException e) {
-            // No relanzo la excepción, ya que no me importa si no se ha podido clonar, era por tener un poco más de
-            // información.
-            System.out.println("ERROR");
-        }
-
-        usuarioPrestado = null;
-        return usuarioDevuelve;
     }
 }

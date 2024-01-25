@@ -1,6 +1,6 @@
 public interface MaterialPrestable {
     boolean esPrestable();
     void prestar(Usuario usuario);
-    void devolver();
+    Usuario devolver();
     boolean estaPrestado();
 }

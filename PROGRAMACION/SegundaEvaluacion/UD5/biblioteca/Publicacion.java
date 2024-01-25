@@ -30,10 +30,11 @@ public class Publicacion implements MaterialPrestable {
     }
 
     @Override
-    public void devolver() {
+    public Usuario devolver() {
         prestado = false;
         usuarioPrestado = null;
         fechaPrestamo = null;
+        return null;
     }
 
     @Override
