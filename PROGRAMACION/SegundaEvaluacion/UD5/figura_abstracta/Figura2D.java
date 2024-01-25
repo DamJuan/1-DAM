@@ -1,2 +1,2 @@
-public class Figura2D extends ci{
+package PACKAGE_NAME;public interface Figura2D {
 }
