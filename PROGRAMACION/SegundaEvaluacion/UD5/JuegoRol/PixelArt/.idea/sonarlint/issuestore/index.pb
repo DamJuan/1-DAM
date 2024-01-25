@@ -11,3 +11,5 @@ E
 src/PixelArtGame.java,2\9\29892fa1317e44deedecd334f93be4165e836549
 >
 src/Scene.java,8\1\8123e962decf26a93abaebd34e6a43baba45a0e7
+D
+src/PlayerClass.java,7\9\79df4402ee72ca4a6de2f97b1c86b089bfd621d6
