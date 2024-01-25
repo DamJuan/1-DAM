@@ -1,21 +1,27 @@
-public abstract class Cilindro extends FiguraAbstracta {
-    private double area;
-    private double volumen;
-
-    private double altura;
+public class Cilindro extends FiguraAbstracta implements Figura3D {
 
     private double radio;
 
-    public Cilindro(String tipo, double area, double volumen, double radio, double altura) {
-        super(tipo);
-        this.area = area;
-        this.volumen = volumen;
+    private double altura;
+
+    public Cilindro(String nombreFigura, double radio, double altura) {
+        super(nombreFigura);
         this.radio = radio;
         this.altura = altura;
     }
 
     @Override
-    public double calcularArea() {
-        return Math.PI * Math.pow(radio,2) * altura + Math.PI * Math.pow(radio,2);
+    public double calularVolumen() {
+        return Math.PI * Math.pow(radio, 2) * altura;
+    }
+
+    @Override
+    public double calularArea() {
+        return (2 * Math.PI * radio *altura) + (2 * Math.PI * Math.pow(radio, 2));
+    }
+
+    @Override
+    public String toString() {
+        return this.nombre + " con area " + this.calularArea() + "y volumen: " + this.calularVolumen();
     }
 }

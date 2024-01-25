@@ -1,13 +1,24 @@
-public abstract class Cuadrado extends FiguraAbstracta {
-    private double lado;
+public class Cuadrado extends FiguraAbstracta implements Figura2D{
 
-    public Cuadrado(String tipo, double lado) {
-        super(tipo);
+    public double lado;
+
+
+    public Cuadrado(String nombre, double lado) {
+        super(nombre);
         this.lado = lado;
     }
 
     @Override
-    public double calcularArea() {
-        return Math.pow(lado, 2);
+    public double calularArea() {
+        return lado * lado;
     }
+
+    @Override
+    public double calcularPerimetro() {
+        return 4 * lado;
+    }
+    @Override
+         public String toString() {
+             return this.nombre + " con area " + this.calularArea() + "y perimetro: " + this.calcularPerimetro();
+         }
 }

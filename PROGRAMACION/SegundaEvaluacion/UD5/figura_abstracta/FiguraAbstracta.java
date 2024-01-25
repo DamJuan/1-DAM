@@ -1,19 +1,14 @@
 public abstract class FiguraAbstracta {
-    private final String nombre;
+    protected final String nombre;
+    public abstract double calularArea();
 
-    public FiguraAbstracta(String nombreFigura) {
-        this.nombre = nombreFigura;
+    public FiguraAbstracta(String nombre) {
+        this.nombre = nombre;
     }
 
-    abstract public double area();
 
-    final public boolean mayorQue(FiguraAbstracta otra) {
-        return this.area() > otra.area();
-    }
 
     public String toString() {
-        return this.nombre + " con area " + this.area();
+        return this.nombre + " con area " + this.calularArea();
     }
-
-    public abstract double calcularPerimetro();
 }
