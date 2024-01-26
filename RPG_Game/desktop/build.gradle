@@ -10,7 +10,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.badlogicgames.gdx:gdx-gif-reader:1.0.0'
+    implementation project(":core")
+    implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+    implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+    implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+    implementation 'pl.mkonrad.gdx:gdx-gif-reader:1.2.0' // Cambia la versión según la última disponible en Maven Central
+
+    // Otras dependencias específicas del proyecto desktop...
 }
 
 application {
@@ -18,12 +24,12 @@ application {
     applicationDefaultJvmArgs = ["-Xms256m", "-Xmx1g"]
 
     if (OperatingSystem.current() == OperatingSystem.MAC_OS) {
-        // Required to run on macOS
+        // Requerido para ejecutar en macOS
         applicationDefaultJvmArgs += ["-XstartOnFirstThread"]
     }
 }
 
-tasks.withType(JavaCompile).configureEach {
+tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
@@ -36,37 +42,5 @@ jar {
     dependsOn configurations.runtimeClasspath
     from {
         configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-}
-
-project(":desktop") {
-    apply plugin: "java"
-    apply plugin: "application"
-
-    dependencies {
-        implementation project(":core")
-        implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
-        implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
-        implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
-
-        // Otras dependencias específicas del proyecto desktop...
-    }
-
-    application {
-        if (OperatingSystem.current() == OperatingSystem.MAC_OS) {
-            // Required to run on macOS
-            applicationDefaultJvmArgs += ["-XstartOnFirstThread"]
-        }
-    }
-}
-
-project(":core") {
-    apply plugin: "java"
-
-    dependencies {
-        implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
-        implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
-
-        // Otras dependencias específicas del proyecto core...
     }
 }
