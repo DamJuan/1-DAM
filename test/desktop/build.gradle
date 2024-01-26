@@ -1,0 +1,77 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+import org.gradle.internal.os.OperatingSystem
+
+repositories {
+    mavenCentral()
+}
+
+// Define la versión de libGDX que estás utilizando
+ext {
+    gdxVersion = '1.12.1'
+}
+
+dependencies {
+    implementation 'com.badlogicgames.gdx:gdx-gif-reader:1.0.0'
+}
+
+application {
+    mainClassName = "com.mygdx.game.DesktopLauncher"
+    applicationDefaultJvmArgs = ["-Xms256m", "-Xmx1g"]
+
+    if (OperatingSystem.current() == OperatingSystem.MAC_OS) {
+        // Requerido para ejecutar en macOS
+        applicationDefaultJvmArgs += ["-XstartOnFirstThread"]
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    dependsOn configurations.runtimeClasspath
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+project(":desktop") {
+    apply plugin: "java"
+    apply plugin: "application"
+
+    dependencies {
+        implementation project(":core")
+        implementation "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        implementation "com.badlogicgames.gdx:gdx-box2d-platform:$gdxVersion:natives-desktop"
+
+        // Otras dependencias específicas del proyecto desktop...
+    }
+
+    application {
+        if (OperatingSystem.current() == OperatingSystem.MAC_OS) {
+            // Requerido para ejecutar en macOS
+            applicationDefaultJvmArgs += ["-XstartOnFirstThread"]
+        }
+    }
+}
+
+project(":core") {
+    apply plugin: "java"
+
+    dependencies {
+        implementation "com.badlogicgames.gdx:gdx:$gdxVersion"
+        implementation "com.badlogicgames.gdx:gdx-box2d:$gdxVersion"
+
+        // Otras dependencias específicas del proyecto core...
+    }
+}
