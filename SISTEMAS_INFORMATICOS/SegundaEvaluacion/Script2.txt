@@ -1,0 +1,42 @@
+#!/bin/bash
+
+while true; do
+    opcion=$(zenity --list --title="Opciones" --column="Opción" --column="Descripción" \
+        "a" "Eliminar un proceso o trabajo" \
+        "b" "Cambiar la prioridad de un proceso en ejecución" \
+        "c" "Desinstalar un paquete/aplicación" \
+        "d" "Apagar el equipo en el tiempo que se le indique, por teclado" \
+        "e" "Finalizar")
+
+    case $opcion in
+        "a")
+            # Opción a: Eliminar un proceso o trabajo
+            proceso_a_eliminar=$(zenity --entry --title="Eliminar Proceso" --text="Introduce el nombre del proceso o trabajo:")
+            # Realiza la acción correspondiente, por ejemplo, kill -9 $proceso_a_eliminar
+            ;;
+        "b")
+            # Opción b: Cambiar la prioridad de un proceso en ejecución
+            proceso_a_modificar=$(zenity --entry --title="Cambiar Prioridad" --text="Introduce el ID del proceso:")
+            nueva_prioridad=$(zenity --scale --title="Selecciona la Prioridad" --text="Selecciona la nueva prioridad:" --min-value=-20 --max-value=19 --value=0)
+            # Realiza la acción correspondiente, por ejemplo, renice $nueva_prioridad $proceso_a_modificar
+            ;;
+        "c")
+            # Opción c: Desinstalar un paquete/aplicación
+            paquete_a_desinstalar=$(zenity --entry --title="Desinstalar Paquete" --text="Introduce el nombre del paquete/aplicación:")
+            # Realiza la acción correspondiente, por ejemplo, apt-get remove $paquete_a_desinstalar
+            ;;
+        "d")
+            # Opción d: Apagar el equipo en el tiempo que se le indique, por teclado
+            tiempo_apagado=$(zenity --entry --title="Apagar el Equipo" --text="Introduce el tiempo en minutos para apagar el equipo:")
+            # Realiza la acción correspondiente, por ejemplo, shutdown -h +$tiempo_apagado
+            ;;
+        "e")
+            # Opción e: Finalizar
+            exit 0
+            ;;
+        *)
+            # Opción no válida
+            zenity --error --text="Opción no válida. Por favor, selecciona una opción válida."
+            ;;
+    esac
+done
