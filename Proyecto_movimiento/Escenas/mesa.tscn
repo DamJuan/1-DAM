@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpt28l5qe77rv"]
+
+[ext_resource type="Texture2D" uid="uid://djv2u0tlaukms" path="res://Imagenes/Mesa.png" id="1_0udm3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uusvo"]
+size = Vector2(229, 59)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+position = Vector2(9, -23)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(274.5, 340.5)
+shape = SubResource("RectangleShape2D_uusvo")
+
+[node name="Mesa" type="Sprite2D" parent="."]
+position = Vector2(251, 253)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_0udm3")
