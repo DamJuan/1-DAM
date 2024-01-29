@@ -1,0 +1,4 @@
+SELECT apellido, salario
+FROM EMPLE
+WHERE salario BETWEEN 2000 AND 3500
+ORDER BY salario ASC;
