@@ -1,0 +1,6 @@
+--SCRIPT DE SQL*PLUS
+--LANZA LOS SCRIPTS NECESARIOS PARA CREAR EL ESQUEMA LÓGICO DE EMPLE Y DEPART
+@000_Eliminar_tablas
+@001_Crear_tablas_V2
+@002_Cargar_datos
+@003_Modificar_tablas

@@ -1,6 +1,6 @@
 package practica.demo_vehiculo;
 
-public interface Aire_Acondicionado {
+public interface Climatizador {
 
     void encederAire();
 

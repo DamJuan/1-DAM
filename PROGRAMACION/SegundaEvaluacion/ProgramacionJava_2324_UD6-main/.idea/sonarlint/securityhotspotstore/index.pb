@@ -15,3 +15,9 @@ T
 $practica/demo_vehiculo/Vehiculo.java,d\c\dc3733fe68851c5645a6e8da79a6ccda716392b1
 Y
 )practica/demo_vehiculo/VehiculoMotor.java,e\4\e4f75c9333e952f8ba3185815782a9cd9c7cee44
+^
+.practica/demo_vehiculo/Aire_Acondicionado.java,5\9\593af06ef4cfb768c52dded34c96ce601debea8a
+X
+(practica/demo_vehiculo/Climatizador.java,d\2\d227821bd371dc8c0a9c993dbba3072650216bd7
+W
+'practica/demo_vehiculo/Transmision.java,7\2\7281344950d74827c9e3b140be1f2bc4c59ed1f4

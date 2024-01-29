@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bocrx4wjv4kn1"]
+
+[ext_resource type="Texture2D" uid="uid://toqh5asv6lj2" path="res://Imagenes/Sprite_fondo1.png" id="1_wrdjk"]
+[ext_resource type="PackedScene" uid="uid://cf04ayafsjh6v" path="res://Escenas/Jugador.tscn" id="2_levya"]
+[ext_resource type="PackedScene" uid="uid://dpt28l5qe77rv" path="res://Escenas/mesa.tscn" id="3_md063"]
+
+[node name="Mundo" type="Node2D"]
+
+[node name="SpriteFondo1" type="Sprite2D" parent="."]
+position = Vector2(636, 514)
+scale = Vector2(0.530833, 0.4225)
+texture = ExtResource("1_wrdjk")
+
+[node name="Personaje" parent="." instance=ExtResource("2_levya")]
+position = Vector2(459, 355)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_md063")]
+position = Vector2(616, -9)
