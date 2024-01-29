@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bat80dqfwqn5j"]
+
+[ext_resource type="Texture2D" uid="uid://c8w2if4jdoaby" path="res://Sprite/fondo.jpg" id="1_70ntp"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(3000, 3000)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_repeat = 1
+position = Vector2(625.5, 510.5)
+scale = Vector2(0.696354, 0.994291)
+texture = ExtResource("1_70ntp")

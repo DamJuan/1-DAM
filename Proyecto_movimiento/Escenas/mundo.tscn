@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://toqh5asv6lj2" path="res://Imagenes/Sprite_fondo1.png" id="1_wrdjk"]
 [ext_resource type="PackedScene" uid="uid://cf04ayafsjh6v" path="res://Escenas/Jugador.tscn" id="2_levya"]
-[ext_resource type="PackedScene" uid="uid://dpt28l5qe77rv" path="res://Escenas/mesa.tscn" id="3_md063"]
+[ext_resource type="PackedScene" uid="uid://kvbht33i2750" path="res://Escenas/mohai.tscn" id="3_04fwg"]
 
 [node name="Mundo" type="Node2D"]
 
@@ -10,13 +10,13 @@
 z_index = -1
 y_sort_enabled = true
 position = Vector2(636, 514)
-scale = Vector2(0.530833, 0.4225)
+scale = Vector2(1, 0.797)
 texture = ExtResource("1_wrdjk")
-
-[node name="Mesa" parent="." instance=ExtResource("3_md063")]
-position = Vector2(616, -9)
 
 [node name="Personaje" parent="." instance=ExtResource("2_levya")]
 z_index = 1
 y_sort_enabled = true
 position = Vector2(473, 208)
+
+[node name="Mohai" parent="." instance=ExtResource("3_04fwg")]
+position = Vector2(740, 233)

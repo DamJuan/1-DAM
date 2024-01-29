@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://kvbht33i2750"]
+
+[ext_resource type="Texture2D" uid="uid://dyncvypsoindi" path="res://Imagenes/Mohai.png" id="1_csaih"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ob87k"]
+radius = 9.8109
+
+[node name="Mohai" type="StaticBody2D"]
+disable_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(298.5, 111.5)
+scale = Vector2(10.0271, -9.57071)
+shape = SubResource("CircleShape2D_ob87k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(298.5, 111.5)
+scale = Vector2(0.485007, 0.345535)
+texture = ExtResource("1_csaih")
