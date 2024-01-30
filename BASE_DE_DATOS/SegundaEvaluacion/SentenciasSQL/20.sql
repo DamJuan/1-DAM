@@ -1,0 +1,4 @@
+SELECT CODART
+FROM ARTICULO
+WHERE codigo LIKE '%A' OR codigo LIKE '%B' OR codigo LIKE '%C'
+ORDER BY codigo DESC;

@@ -1,0 +1,3 @@
+SELECT nombre
+FROM PROVINCIA
+WHERE nombre LIKE '%Z%';

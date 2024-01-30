@@ -1,0 +1,3 @@
+SELECT CODART, PRECIO, PRECIO * 2 AS "doble_precio"
+FROM ARTICULO
+WHERE precio < '0,5';
