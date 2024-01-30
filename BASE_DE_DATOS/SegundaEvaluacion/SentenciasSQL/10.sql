@@ -1,0 +1,4 @@
+SELECT apellido
+FROM EMPLE
+WHERE DEPT_NO = 30
+ORDER BY apellido;
