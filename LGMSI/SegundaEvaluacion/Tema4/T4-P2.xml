@@ -1,0 +1,27 @@
+<viaje>
+<cliente>
+<nombre>Fernando</nombre>
+<apellidos>Paniagua Martín</apellidos>
+</cliente>
+<fecha-inicio>01-06-2023</fecha-inicio>
+<fecha-fin>30-06-2023</fecha-fin>
+<origen>Madrid</origen>
+<destinos>
+<destino>
+<ciudad>Rio de Janeiro</ciudad>
+<hotel>Hilton Rio de Janeiro Copacabana</hotel>
+<noches>10</noches>
+</destino>
+<destino>
+<ciudad>Sao Paulo</ciudad>
+<hotel>Palácio Tangará</hotel>
+<noches>10</noches>
+</destino>
+<destino>
+<ciudad>Salvador de Bahia</ciudad>
+<hotel>Hotel Bahia do Sol</hotel>
+<noches>8</noches>
+</destino>
+</destinos>
+<precio>2000</precio>
+</viaje>
