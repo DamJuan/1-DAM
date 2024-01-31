@@ -1,0 +1,9 @@
+
+E
+java:S1604 "(Make this anonymous inner class a lambda(ÖãºÂ8¨äƒõÕ1
+‚
+java:S1488G"`Immediately return this expression instead of assigning it to the temporary variable "retValue".(ÑÜ±ğøÿÿÿÿ8¨äƒõÕ1
+q
+java:S3252"OUse static access with "javax.swing.WindowConstants" for "DO_NOTHING_ON_CLOSE".(Ö“¹Ôúÿÿÿÿ8½äƒõÕ1
+a
+java:S1612a"DReplace this lambda with method reference 'EntornGrafic2Ejer9::new'.(Òé½8ÉäƒõÕ1
