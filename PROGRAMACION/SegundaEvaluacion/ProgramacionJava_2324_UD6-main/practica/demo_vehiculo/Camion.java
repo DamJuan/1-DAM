@@ -7,7 +7,7 @@ public class Camion extends Vehiculo implements IVehiculoMotor {
     public Camion(int nRuedas, int nAsientos) {
         super(nRuedas, nAsientos);
     }
-    
+
     @Override
     public void arrancar() {
 
