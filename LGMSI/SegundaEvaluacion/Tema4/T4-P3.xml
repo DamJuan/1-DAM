@@ -1,0 +1,23 @@
+<!DOCTYPE receta [
+        <!ELEMENT receta (nombre, ingredientes+, instrucciones)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT ingredientes (#PCDATA)>
+        <!ELEMENT instrucciones (#PCDATA)>
+
+        <!ATTLIST receta raciones CDATA #REQUIRED
+                dificultad (baja | media | alta) "media">
+
+        <!ATTLIST ingredientes cantidad CDATA #IMPLIED
+                unidad CDATA #IMPLIED>
+        ]>
+
+<receta raciones="4" dificultad="media">
+    <nombre>Spaghetti Bolognese</nombre>
+    <ingredientes cantidad="500g" unidad="gramos">Carne picada</ingredientes>
+    <ingredientes cantidad="1" unidad="unidad">Cebolla</ingredientes>
+    <ingredientes>Cucharadita de sal</ingredientes>
+    <instrucciones>
+        Cocinar la carne picada con la cebolla en una sartén hasta que estén bien doradas.
+        Agregar la sal al gusto. Cocinar la pasta por separado. Servir la salsa sobre la pasta.
+    </instrucciones>
+</receta>

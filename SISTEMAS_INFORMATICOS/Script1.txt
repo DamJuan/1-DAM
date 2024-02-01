@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Verifica si se proporciona un directorio como argumento
+if [ $# -eq 0 ]; then
+    echo "Uso: $0 directorio"
+    exit 1
+fi
+
+# Almacena el directorio proporcionado como argumento
+directorio=$1
+
+# Función para comprobar si el directorio es válido
+function validar_directorio {
+    if [ ! -d "$1" ]; then
+        echo "$1 no es un directorio válido."
+        return 1
+    fi
+    return 0
+}
+
+# Validar el directorio y solicitar uno válido si es necesario
+while ! validar_directorio "$directorio"; do
+    echo -n "Introduce un directorio válido: "
+    read directorio
+done
+
+# Inicializar el archivo de salida
+archivo_salida="misEjecutables"
+> "$archivo_salida"
+
+# Buscar archivos ejecutables y guardar sus nombres en el archivo de salida
+find "$directorio" -type f -executable -print >> "$archivo_salida"
+
+# Presentar el contenido del archivo de salida
+echo "Contenido de $archivo_salida:"
+cat "$archivo_salida"
+
+# Contar el número de archivos localizados
+numero_archivos_localizados=$(wc -l < "$archivo_salida")
+
+# Presentar el mensaje final
+echo "Se han localizado $numero_archivos_localizados archivos"
