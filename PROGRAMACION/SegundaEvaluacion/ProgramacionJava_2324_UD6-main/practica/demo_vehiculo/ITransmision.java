@@ -1,6 +1,6 @@
 package practica.demo_vehiculo;
 
-public interface Transmision {
+public interface ITransmision {
 
     public void cambiarMarcha();
     public void embragar();

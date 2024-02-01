@@ -7,7 +7,7 @@ public class VehiculoMotor extends Vehiculo implements IMotor, Transmision{
     public VehiculoMotor(int nRuedas, int nAsientos) {
         super(nRuedas, nAsientos);
     }
-
+    
     @Override
     public float getMaxVel() {
         return 0;
