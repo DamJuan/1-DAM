@@ -10,6 +10,11 @@ public interface IMotor {
         }
     }
 
+
+    default void consumoCombustible(){
+        //TODO implementacion
+    }
+
     float getMaxVel();
 
     void arrancar();

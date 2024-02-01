@@ -1,10 +1,8 @@
 package practica.demo_vehiculo;
 
-import practica.polimorfismo.angel_parking.GestionParking.VehiculoNoMotor;
+public class IVehiculoMotor extends Vehiculo implements IMotor, ITransmision {
 
-public class VehiculoMotor extends Vehiculo implements IMotor, Transmision{
-
-    public VehiculoMotor(int nRuedas, int nAsientos) {
+    public IVehiculoMotor(int nRuedas, int nAsientos) {
         super(nRuedas, nAsientos);
     }
     

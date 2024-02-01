@@ -1,6 +1,6 @@
 package practica.demo_vehiculo;
 
-public class Coche extends VehiculoMotor implements Radio, Climatizador {
+public class Coche extends IVehiculoMotor implements IRadio, Climatizador {
 
     private int numPuertas;
     private int numVentanas;
@@ -9,6 +9,13 @@ public class Coche extends VehiculoMotor implements Radio, Climatizador {
 
     public Coche(int nRuedas, int nAsientos) {
         super(nRuedas, nAsientos);
+    }
+
+    public void arrancar(){
+
+    }
+    public void detener(){
+
     }
 
     @Override

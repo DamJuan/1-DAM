@@ -1,7 +1,7 @@
 package practica.demo_vehiculo;
 
-public interface Radio {
-    public void startRadio();
+public interface IRadio {
+    public void start();
 
-    public void stopRadio();
+    public void stop();
 }

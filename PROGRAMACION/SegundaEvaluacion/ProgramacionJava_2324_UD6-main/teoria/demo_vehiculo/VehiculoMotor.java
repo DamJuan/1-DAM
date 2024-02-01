@@ -4,7 +4,7 @@ package teoria.demo_vehiculo;
  * Libre configuración por los alumnos
  * por ejemplo:
  *  - extends Vehiculo
- *  - implements ABS y Radio
+ *  - implements ABS y IRadio
  *  - Pero no implements GPS --> para eso crear otro que sea VehiculoMotorGps
  */
 public class VehiculoMotor implements IVehiculoMotor {

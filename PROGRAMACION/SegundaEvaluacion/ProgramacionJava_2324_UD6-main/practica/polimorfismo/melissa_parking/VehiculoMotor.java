@@ -21,7 +21,7 @@ public class VehiculoMotor extends Vehiculo {
 
     @Override
     public String toString() {
-        return super.toString()+ "VehiculoMotor{" +
+        return super.toString()+ "IVehiculoMotor{" +
                 "tipoMotor='" + tipoMotor + '\'' +
                 '}';
     }

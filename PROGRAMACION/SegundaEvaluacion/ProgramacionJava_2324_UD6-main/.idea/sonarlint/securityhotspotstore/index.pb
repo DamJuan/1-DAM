@@ -19,3 +19,21 @@ X
 (practica/demo_vehiculo/Climatizador.java,d\2\d227821bd371dc8c0a9c993dbba3072650216bd7
 W
 'practica/demo_vehiculo/Transmision.java,7\2\7281344950d74827c9e3b140be1f2bc4c59ed1f4
+Z
+*practica/demo_vehiculo/IVehiculoMotor.java,8\1\81aadff0020e94144941e83671cfc2cb7a9817cd
+V
+&practica/demo_vehiculo/Smartphone.java,d\4\d4ded0794740a81aea020598c5920070483a8c74
+U
+%practica/demo_vehiculo/Bicicleta.java,b\1\b15cec9d9d19f89feeab95d7e579f84baea1fcd9
+X
+(practica/demo_vehiculo/ITransmision.java,5\5\553c94d169dfdef0130592b70f700ce14bf7d7c5
+R
+"practica/demo_vehiculo/IRadio.java,1\f\1f68569aee705ad06f7130dac0652dbf33c9774c
+P
+ practica/demo_vehiculo/Moto.java,e\6\e698782d380a191def71272737241b9ea70a2932
+S
+#practica/demo_vehiculo/Starter.java,7\e\7e5a3b9a434c219f3a1bd901f82bbf10ca799467
+R
+"practica/demo_vehiculo/Camion.java,5\d\5d6ef0cb22589d59c05cb177d033570bae98e87c
+X
+(practica/demo_vehiculo/IMusicPlayer.java,0\d\0d73757a39cc2e96c0af2f7d8f6fb226c4a194a4

@@ -15,16 +15,10 @@ G
 biblioteca/Usuario.java,5\5\553820559899fbd55ebc5a4a03b1140f23345f37
 L
 CajaAventura/Aventurero.java,b\b\bb4f9c6c843e67bb48d1af700c24601521ef2c1c
-K
-StringBuilder/src/Main.java,1\5\15ebe6612592f68feb0ebbe15d9f9c50de910739
 O
 StringBuilder/src/YelowSun.java,b\1\b11330f45e46ece4745056823081ebeac7e5da44
-J
-StringBuilder/Capicua.java,a\2\a247255fad6cbd54e46002ad04004a873e0915b0
 N
 StringBuilder/src/Capicua.java,3\e\3ea9cd004a912da64e92c57026fe4967b3262137
-L
-StringBuilder/SnakeCase.java,8\b\8ba8bec6c94ae28f151f9e0bf100bdfc18a000f8
 P
  StringBuilder/src/SnakeCase.java,2\d\2d106a1af58ed636b75bb31bf895bea54c2555d9
 Y
