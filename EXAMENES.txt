@@ -1,6 +1,5 @@
 FEBRERO:
 
-SI: examen 2
 ENT:14
 LGMSI: 15
 Ingles: examen 19 
