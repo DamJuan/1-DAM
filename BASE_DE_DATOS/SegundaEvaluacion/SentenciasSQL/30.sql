@@ -1,0 +1,5 @@
+SELECT CODFAC, LINEA, CODART, CANT * PRECIO AS ImporteTotal,
+       CANT * PRECIO * (1 - DTO) AS ImporteTotalConDescuento,
+       DTO, CANT * PRECIO * DTO AS CantidadTotalDescuento
+FROM FACTURA_LINEA LINEA
+WHERE CANT * PRECIO * (1 - DTO) > 2000 AND DTO > 0.05;
