@@ -1,0 +1,4 @@
+--USER
+
+SELECT  USER
+FROM    DUAL;

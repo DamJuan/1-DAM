@@ -1,0 +1,4 @@
+--MOD(n,m)
+
+SELECT  MOD(10,5), MOD(11,5), MOD(12,5)
+FROM    DUAL;

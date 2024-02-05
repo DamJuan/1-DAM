@@ -1,0 +1,4 @@
+--ABS(n)
+
+SELECT  ABS(20), ABS(-20)
+FROM    DUAL;

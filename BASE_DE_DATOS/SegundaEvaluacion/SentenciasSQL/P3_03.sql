@@ -1,0 +1,1 @@
+ALTER SESSION SET NLS_DATE_FORMAT = 'day dd month yyyy';

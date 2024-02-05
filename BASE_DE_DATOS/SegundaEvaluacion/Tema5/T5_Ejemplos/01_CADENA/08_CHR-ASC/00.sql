@@ -1,0 +1,4 @@
+--CHR(n)/ASCII (cad)
+
+SELECT  CHR(66), ASCII('B'), ASCII('BD')
+FROM    DUAL;

@@ -1,0 +1,5 @@
+--TO_CHAR(dato[, 'formato'])
+--DEVUELVE UNA CADENA!!
+
+SELECT  TO_CHAR(20), TO_CHAR(SYSDATE)
+FROM    DUAL;

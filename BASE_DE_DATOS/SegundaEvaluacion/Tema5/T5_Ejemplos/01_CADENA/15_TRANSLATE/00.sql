@@ -1,0 +1,4 @@
+--TRANSLATE (cad1, cad2, cad3)
+
+SELECT  TRANSLATE ('BASES DE DATOS', 'AEIOU', 'aeiou'), TRANSLATE ('BASES DE DATOS', 'AEIOU', 'a')
+FROM    DUAL;

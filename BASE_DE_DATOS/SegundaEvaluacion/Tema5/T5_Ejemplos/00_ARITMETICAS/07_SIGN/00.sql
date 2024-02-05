@@ -1,0 +1,4 @@
+--SIGN(n)
+
+SELECT  SIGN(-50), SIGN(50), SIGN(0)
+FROM    DUAL;
