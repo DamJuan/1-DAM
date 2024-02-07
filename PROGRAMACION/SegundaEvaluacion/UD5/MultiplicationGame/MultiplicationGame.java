@@ -1,8 +1,6 @@
 package MultiplicationGame;
 
 
-import java.util.Scanner;
-
 public abstract class MultiplicationGame {
     protected int numPlayers;
     protected String[] players;
@@ -20,12 +18,4 @@ public abstract class MultiplicationGame {
     }
 
     public abstract void play();
-
-    public int getNumPlayers() {
-        return numPlayers;
-    }
-
-    public void setNumPlayers(int numPlayers) {
-        this.numPlayers = numPlayers;
-    }
 }

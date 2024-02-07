@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_mff7wMWcEe6417_hI4Sytw" name="ejercicio1">
+  <eAnnotations xmi:id="_mff7wcWcEe6417_hI4Sytw" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_mff7wsWcEe6417_hI4Sytw" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_mff7w8WcEe6417_hI4Sytw" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff7xMWcEe6417_hI4Sytw" name="ESPAI">
+    <ownedAttribute xmi:id="_mff7xcWcEe6417_hI4Sytw" name="magatzem " visibility="public" type="_mff71MWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff7z8WcEe6417_hI4Sytw"/>
+    <ownedAttribute xmi:id="_mff7xsWcEe6417_hI4Sytw" name="departament     " visibility="public" type="_mff72MWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff70cWcEe6417_hI4Sytw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mff7x8WcEe6417_hI4Sytw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mff7yMWcEe6417_hI4Sytw"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7ycWcEe6417_hI4Sytw" name=" - idEspai: int ">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7ysWcEe6417_hI4Sytw" name="Class"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7y8WcEe6417_hI4Sytw" name="Class1"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7zMWcEe6417_hI4Sytw" name="- pis: int"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7zcWcEe6417_hI4Sytw" name="- numero: int"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7zsWcEe6417_hI4Sytw" name="- departaments: List&lt;Departament>"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff7z8WcEe6417_hI4Sytw" memberEnd="_mff7xcWcEe6417_hI4Sytw _mff70MWcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff70MWcEe6417_hI4Sytw" visibility="public" type="_mff7xMWcEe6417_hI4Sytw" isUnique="false" association="_mff7z8WcEe6417_hI4Sytw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff70cWcEe6417_hI4Sytw" memberEnd="_mff7xsWcEe6417_hI4Sytw _mff70sWcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff70sWcEe6417_hI4Sytw" visibility="public" type="_mff7xMWcEe6417_hI4Sytw" isUnique="false" association="_mff70cWcEe6417_hI4Sytw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mff708WcEe6417_hI4Sytw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff71MWcEe6417_hI4Sytw" name="Magatzem ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff71cWcEe6417_hI4Sytw" name=" - idMagatzem: int"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff71sWcEe6417_hI4Sytw" name="- ubicacio: Espai"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff718WcEe6417_hI4Sytw" name="- ordinador: Ordinador"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff72MWcEe6417_hI4Sytw" name="Departament     ">
+    <ownedAttribute xmi:id="_mff72cWcEe6417_hI4Sytw" name="ordinador       " visibility="public" type="_mff738WcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff73cWcEe6417_hI4Sytw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff72sWcEe6417_hI4Sytw" name="- idDepartament: int"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff728WcEe6417_hI4Sytw" name="- espais: List&lt;Espai>"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff73MWcEe6417_hI4Sytw" name="- ordinadors: List&lt;Ordinador>"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff73cWcEe6417_hI4Sytw" memberEnd="_mff72cWcEe6417_hI4Sytw _mff73sWcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff73sWcEe6417_hI4Sytw" visibility="public" type="_mff72MWcEe6417_hI4Sytw" isUnique="false" association="_mff73cWcEe6417_hI4Sytw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff738WcEe6417_hI4Sytw" name="Ordinador       ">
+    <ownedAttribute xmi:id="_mff74MWcEe6417_hI4Sytw" name="placaBase       " visibility="public" type="_mff78MWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff76sWcEe6417_hI4Sytw"/>
+    <ownedAttribute xmi:id="_mff74cWcEe6417_hI4Sytw" name="modulRAM       " visibility="public" type="_mff78sWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff77MWcEe6417_hI4Sytw"/>
+    <ownedAttribute xmi:id="_mff74sWcEe6417_hI4Sytw" name="processador     " visibility="public" type="_mff7-cWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff77sWcEe6417_hI4Sytw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff748WcEe6417_hI4Sytw" name="- idOrdinador: int"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff75MWcEe6417_hI4Sytw" name="- departament: Departament"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff75cWcEe6417_hI4Sytw" name="- placaBase: PlacaBase"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff75sWcEe6417_hI4Sytw" name="- modulsRAM: List&lt;ModulRAM>"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff758WcEe6417_hI4Sytw" name="- processador: Processador"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff76MWcEe6417_hI4Sytw" name="- lectorDVD: LectorDVD"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff76cWcEe6417_hI4Sytw" name="- discsDurs: List&lt;DiscDur>"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff76sWcEe6417_hI4Sytw" memberEnd="_mff74MWcEe6417_hI4Sytw _mff768WcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff768WcEe6417_hI4Sytw" visibility="public" type="_mff738WcEe6417_hI4Sytw" isUnique="false" association="_mff76sWcEe6417_hI4Sytw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff77MWcEe6417_hI4Sytw" memberEnd="_mff74cWcEe6417_hI4Sytw _mff77cWcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff77cWcEe6417_hI4Sytw" visibility="public" type="_mff738WcEe6417_hI4Sytw" isUnique="false" association="_mff77MWcEe6417_hI4Sytw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff77sWcEe6417_hI4Sytw" memberEnd="_mff74sWcEe6417_hI4Sytw _mff778WcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff778WcEe6417_hI4Sytw" visibility="public" type="_mff738WcEe6417_hI4Sytw" isUnique="false" association="_mff77sWcEe6417_hI4Sytw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff78MWcEe6417_hI4Sytw" name="PlacaBase       ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff78cWcEe6417_hI4Sytw" name="- model: string"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff78sWcEe6417_hI4Sytw" name="ModulRAM       ">
+    <ownedAttribute xmi:id="_mff788WcEe6417_hI4Sytw" name="lectorDVD       " visibility="public" type="_mff7_MWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff79sWcEe6417_hI4Sytw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff79MWcEe6417_hI4Sytw" name=" - capacitat: int"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff79cWcEe6417_hI4Sytw" name="- tipus: string"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff79sWcEe6417_hI4Sytw" memberEnd="_mff788WcEe6417_hI4Sytw _mff798WcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff798WcEe6417_hI4Sytw" visibility="public" type="_mff78sWcEe6417_hI4Sytw" isUnique="false" association="_mff79sWcEe6417_hI4Sytw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mff7-MWcEe6417_hI4Sytw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff7-cWcEe6417_hI4Sytw" name="Processador     ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7-sWcEe6417_hI4Sytw" name="- model: string"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7-8WcEe6417_hI4Sytw" name="- velocitat: float"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff7_MWcEe6417_hI4Sytw" name="LectorDVD       ">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff7_cWcEe6417_hI4Sytw" name="- gravador: bool"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_mff7_sWcEe6417_hI4Sytw" name="DiscDur         ">
+    <ownedAttribute xmi:id="_mff7_8WcEe6417_hI4Sytw" name="lectorDVD       " visibility="public" type="_mff7_MWcEe6417_hI4Sytw" isUnique="false" aggregation="shared" association="_mff8AcWcEe6417_hI4Sytw"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_mff8AMWcEe6417_hI4Sytw" name="- capacitat: int"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mff8AcWcEe6417_hI4Sytw" memberEnd="_mff7_8WcEe6417_hI4Sytw _mff8AsWcEe6417_hI4Sytw">
+    <ownedEnd xmi:id="_mff8AsWcEe6417_hI4Sytw" visibility="public" type="_mff7_sWcEe6417_hI4Sytw" isUnique="false" association="_mff8AcWcEe6417_hI4Sytw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mff8A8WcEe6417_hI4Sytw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
