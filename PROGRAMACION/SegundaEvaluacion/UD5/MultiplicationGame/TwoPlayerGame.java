@@ -1,9 +1,11 @@
 package MultiplicationGame;
+
+
 import java.util.Scanner;
 
-class TwoPlayerGame extends MultiplicationGame {
-    public TwoPlayerGame() {
-        super();
+public class TwoPlayerGame extends MultiplicationGame {
+    public TwoPlayerGame(int numPlayers) {
+        super(numPlayers);
     }
 
     @Override

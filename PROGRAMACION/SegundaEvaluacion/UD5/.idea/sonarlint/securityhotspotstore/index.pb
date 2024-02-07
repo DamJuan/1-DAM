@@ -23,3 +23,21 @@ P
  StringBuilder/src/SnakeCase.java,2\d\2d106a1af58ed636b75bb31bf895bea54c2555d9
 Y
 )StringBuilder/src/ConcatenarPalabras.java,c\a\ca9b81996aef6f68611468225855a929c1518cc4
+L
+MultiplicationGame/Main.java,7\b\7be14a1b77db26781a705100f52d8ebb8531afde
+M
+MultiplicationGame/Juego.java,0\1\010a3069ed121a5bac91041785cab25363f35fac
+Z
+*MultiplicationGame/MultiplicationGame.java,f\a\fa68f10ff767b709b1752c0650dddcdded99ed58
+]
+-MultiplicationGame/MultiplicationProblem.java,8\8\88d27068c949c929576fa10517a1d8c5b4544830
+W
+'MultiplicationGame/ThreePlayerGame.java,7\b\7b1002964ec8bda1d35822f874c8bd011d2db39d
+U
+%MultiplicationGame/TwoPlayerGame.java,e\0\e08f5bdbb47f908fbd18f50a1a6a48ff8a45cf55
+Q
+!MultiplicationGame/Incognita.java,7\b\7baba2389d332fb091b9e95641577d56303223a8
+P
+ MultiplicationGame/Ahorcado.java,b\e\be13e28a1c70ce40844cf9ec869a19c48a946d0b
+O
+formas_geometricas/Circulo.java,e\6\e62ac243a6dbbcaae0e5b15937581df26c9ed42b

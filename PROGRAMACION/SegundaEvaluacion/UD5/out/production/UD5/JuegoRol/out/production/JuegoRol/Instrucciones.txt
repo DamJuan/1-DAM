@@ -1,0 +1,31 @@
+Enunciado: Juego de Rol (RPG) en Consola
+
+
+Desarrolla un juego de rol (RPG) simple pero completo en Java que se ejecute en la consola. El juego debe tener las siguientes características:
+
+
+1. Creación de Personajes: Los jugadores deben poder crear su propio personaje con atributos como nombre, clase (guerrero, mago, ladrón, etc.), habilidades iniciales, etc.
+
+
+2. Mundo y Escenarios: Diseña un mundo con varios escenarios (ciudades, bosques, cuevas, etc.) que los personajes pueden explorar. Cada escenario debe tener sus propios desafíos y recompensas.
+
+
+3. Combates por Turnos: Implementa un sistema de combate por turnos donde los personajes pueden enfrentarse a enemigos. Cada personaje y enemigo debe tener estadísticas como puntos de salud, puntos de ataque, puntos de defensa, etc.
+
+
+4. Inventario y Equipamiento: Cada personaje debe tener un inventario donde pueda recoger objetos como pociones, armas, armaduras, etc. Los jugadores deben poder equipar a sus personajes con estos objetos.
+
+
+5. Misiones y Objetivos: Diseña misiones que los personajes puedan aceptar y completar para obtener recompensas. Las misiones pueden involucrar la derrota de enemigos, la búsqueda de objetos, la exploración de lugares, etc.
+
+
+6. Niveles y Progresión: Implementa un sistema de niveles para los personajes. A medida que los personajes ganan experiencia al derrotar enemigos o completar misiones, deberían subir de nivel y mejorar sus estadísticas.
+
+
+7. Historia y Diálogos: Introduce una historia en el juego con diálogos entre personajes, misiones relacionadas con la trama y eventos que afecten al mundo del juego.
+
+
+8. Interfaz de Usuario Amigable: Aunque el juego se ejecute en consola, procura crear una interfaz de usuario clara y amigable para que los jugadores puedan interactuar de manera intuitiva.
+
+
+9. Este ejercicio ofrece la oportunidad de aplicar conceptos de programación orientada a objetos, gestión de datos y lógica de juego. Además, puedes expandir el juego según tus preferencias, añadiendo características adicionales como magia, tiendas, opciones de personalización avanzada, etc. ¡Diviértete creando tu propio mundo de RPG en consola! Si tienes preguntas o necesitas orientación, estaré encantado de ayudarte.

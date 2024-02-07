@@ -1,0 +1,7 @@
+
+†
+java:S1192*"pDefine a constant instead of duplicating this literal "El valor introducido no es una opciÃ³n vÃ¡lida." 3 times.(“ÁËæ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(†ùŠéşÿÿÿÿ
+f	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(ªëÅŞúÿÿÿÿ
+P	java:S125""<This block of commented-out lines of code should be removed.(êæ®
+V	java:S125&"<This block of commented-out lines of code should be removed.(°²Ìşøÿÿÿÿ

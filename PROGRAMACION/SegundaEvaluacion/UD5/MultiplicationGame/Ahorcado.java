@@ -3,10 +3,10 @@ package MultiplicationGame;
 import java.util.Random;
 import java.util.Scanner;
 
-class Ahorcado extends Juego {
-    private static final String[] PELICULAS = {"Titanic", "Avatar", "Inception", "The Matrix", "Pulp Fiction"};
-    private static final String[] LIBROS = {"Harry Potter", "The Lord of the Rings", "To Kill a Mockingbird", "1984", "The Great Gatsby"};
-    private static final String[] GRUPOS_MUSICALES = {"The Beatles", "Queen", "Led Zeppelin", "Pink Floyd", "The Rolling Stones"};
+class Ahorcado {
+    private static final String[] PELICULAS = {"Titanic", "Avatar", "Inception", "The_Matrix", "Pulp_Fiction"};
+    private static final String[] LIBROS = {"Harry_Potter", "El_Señor_de_los_Anillos", "Matar_a_un_ruiseñor", "1984", "El_gran_Gatsby"};
+    private static final String[] GRUPOS_MUSICALES = {"The_Beatles", "Queen", "Led_Zeppelin", "Pink_Floyd", "The_Rolling_Stones"};
     private static final int MAX_INTENTOS = 12;
     private static final int PISTA_INTENTOS = 6;
 
@@ -15,18 +15,18 @@ class Ahorcado extends Juego {
     private String palabraEnJuego;
     private int intentosRestantes;
 
-    @Override
-    public void Jugar() {
-
+    public Ahorcado(int numJugadoresAhorcado) {
+        inicializarIncognitas();
+        seleccionarIncognita();
     }
 
-    @Override
-    public void jugar() {
+    public void Jugar() {
         Scanner sc = new Scanner(System.in);
         char[] palabraDescubierta = new char[palabraEnJuego.length()];
         for (int i = 0; i < palabraDescubierta.length; i++) {
             palabraDescubierta[i] = '_';
         }
+        intentosRestantes = MAX_INTENTOS;
         while (intentosRestantes > 0) {
             System.out.println("Palabra: " + String.valueOf(palabraDescubierta));
             System.out.println("Intentos restantes: " + intentosRestantes);
@@ -70,4 +70,3 @@ class Ahorcado extends Juego {
         palabraEnJuego = incognitaAdivinar.getTexto().toLowerCase();
     }
 }
-

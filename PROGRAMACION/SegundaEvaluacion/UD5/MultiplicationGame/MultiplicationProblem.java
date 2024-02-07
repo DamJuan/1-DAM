@@ -1,5 +1,7 @@
 package MultiplicationGame;
-import MultiplicationGame.*;
+
+
+import java.util.Random;
 
 class MultiplicationProblem {
     private int num1;

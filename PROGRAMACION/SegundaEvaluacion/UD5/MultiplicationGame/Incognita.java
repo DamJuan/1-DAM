@@ -4,7 +4,7 @@ enum TipoIncognita {
     PELICULA, LIBRO, GRUPO_MUSICAL
 }
 
-public class Incognita {
+class Incognita {
     private String texto;
     private TipoIncognita tipo;
 

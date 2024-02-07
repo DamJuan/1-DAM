@@ -1,12 +1,15 @@
 package MultiplicationGame;
 
-abstract class MultiplicationGame {
+
+import java.util.Scanner;
+
+public abstract class MultiplicationGame {
     protected int numPlayers;
     protected String[] players;
     protected int currentPlayer;
     protected MultiplicationProblem problem;
 
-    public MultiplicationGame() {
+    public MultiplicationGame(int numPlayers) {
         this.numPlayers = numPlayers;
         players = new String[numPlayers];
         for (int i = 0; i < numPlayers; i++) {
@@ -17,4 +20,12 @@ abstract class MultiplicationGame {
     }
 
     public abstract void play();
+
+    public int getNumPlayers() {
+        return numPlayers;
+    }
+
+    public void setNumPlayers(int numPlayers) {
+        this.numPlayers = numPlayers;
+    }
 }

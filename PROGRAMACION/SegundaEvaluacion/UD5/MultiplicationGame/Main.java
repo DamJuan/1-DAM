@@ -1,7 +1,6 @@
 package MultiplicationGame;
 
 import java.util.Scanner;
-import MultiplicationGame.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,21 +11,34 @@ public class Main {
         System.out.print("Ingrese su elección: ");
         int opcion = sc.nextInt();
 
-        Juego juego;
-
         switch (opcion) {
             case 1:
-                juego = new MultiplicationGame.Juego() {};
+                System.out.print("Ingrese el número de jugadores para el Juego de Multiplicación: ");
+                int numJugadoresMate = sc.nextInt();
+                System.out.print("Ingrese el tipo de juego de multiplicación (2 o 3 jugadores): ");
+                int tipoJuegoMate = sc.nextInt();
+                MultiplicationGame game1;
+                if (tipoJuegoMate == 2) {
+                    game1 = new TwoPlayerGame(numJugadoresMate);
+                } else if (tipoJuegoMate == 3) {
+                    game1 = new ThreePlayerGame(numJugadoresMate);
+                } else {
+                    System.out.println("Tipo de juego de multiplicación no válido. Saliendo del programa.");
+                    sc.close();
+                    return;
+                }
+                game1.play();
                 break;
             case 2:
-                juego = new Ahorcado();
+                System.out.print("Ingrese el número de jugadores para el Juego del Ahorcado: ");
+                int numJugadoresAhorcado = sc.nextInt();
+                Ahorcado game2 = new Ahorcado(numJugadoresAhorcado);
+                game2.Jugar();
                 break;
             default:
                 System.out.println("Opción no válida. Saliendo del programa.");
-                return;
+                break;
         }
-
-        juego.jugar();
         sc.close();
     }
 }
