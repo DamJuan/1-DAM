@@ -13,6 +13,7 @@ public class TwoPlayerGame extends MultiplicationGame {
         Scanner sc = new Scanner(System.in);
         while (true) {
             String player = players[currentPlayer];
+            problem.generateProblem();
             System.out.println("Problem: " + problem);
             System.out.print(player + ", enter your answer: ");
             int guess = sc.nextInt();
@@ -26,4 +27,5 @@ public class TwoPlayerGame extends MultiplicationGame {
         }
         sc.close();
     }
+
 }

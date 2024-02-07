@@ -15,7 +15,8 @@ public abstract class MultiplicationGame {
         }
         currentPlayer = 0;
         problem = new MultiplicationProblem();
+        problem.generateProblem();
     }
 
-    public abstract void play();
+    protected abstract void play();
 }

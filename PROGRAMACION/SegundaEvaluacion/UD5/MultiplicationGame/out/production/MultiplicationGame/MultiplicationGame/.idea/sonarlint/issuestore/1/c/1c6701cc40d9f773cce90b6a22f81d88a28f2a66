@@ -1,9 +1,11 @@
 
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜š¯Ð
-3
-java:S2119="Save and re-use this "Random".(¼ÝÅf
-3
-java:S2119F"Save and re-use this "Random".(¼ÝÅf
-F
-java:S1068
-"0Remove this unused "MAX_INTENTOS" private field.(ÜÈ¸Ë
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(˜š¯Ð8˜ðâ•Ø1
+‚
+java:S1450"`Remove the "intentosRestantes" field and declare it as a local variable in the relevant methods.(°èª—úÿÿÿÿ8‡ÿà•Ø1
+X
+java:S1172";Remove this unused method parameter "numJugadoresAhorcado".(¸º¯“8‹ÿà•Ø1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ËÈ›ùüÿÿÿÿ8‹ÿà•Ø1
+:
+java:S2119;"Save and re-use this "Random".(¼ÝÅf8Õ’Þ•Ø1
+:
+java:S2119D"Save and re-use this "Random".(¼ÝÅf8ß’Þ•Ø1
