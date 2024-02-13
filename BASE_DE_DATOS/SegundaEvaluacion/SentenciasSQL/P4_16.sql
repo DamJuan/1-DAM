@@ -1,0 +1,3 @@
+SELECT EMP_NO, APELLIDO, TO_CHAR(FECHA_ALT, ' "Se incorporó el día "  DD " de " month " de " YYYY') AS FECHA_FORMATO
+FROM EMPLE
+WHERE DEPT_NO = 10;
