@@ -1,0 +1,33 @@
+ul {
+    background-color: #e0e0e0; 
+    padding: 0;
+    list-style-type: none;  
+}
+
+li {
+    margin: 10px; 
+    text-align: center; 
+
+}
+
+li:nth-child(odd) {
+    color: #3366cc; 
+}
+
+li:nth-child(even) {
+    background-color: #f0f0f0; 
+}
+
+li:hover {
+    background-color: #b3b3b3;
+    font-size: 50px;
+}
+
+
+li:first-child {
+    border: 2px solid #ff0000; 
+}
+
+li:last-child {
+    border: 1px dotted #0011ff;
+}

@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #000000; 
+    border-radius: 10px;
+  }
+  
+  thead {
+    background-color: #008cff; 
+    text-align:left; 
+    border-radius: 10px;
+  }
+      
+  tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f1e5e5; 
+  }
+
+  tbody tr:hover {
+    background-color: #75cdf9; 
+    color: #ff0808;    
+  }
+  
+  td {
+    padding: 15px; 
+  }
+
+  th {
+    padding: 15px;
+
+  }

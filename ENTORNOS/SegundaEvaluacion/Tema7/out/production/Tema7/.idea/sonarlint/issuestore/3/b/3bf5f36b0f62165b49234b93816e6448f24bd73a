@@ -3,7 +3,7 @@ E
 java:S1604"(Make this anonymous inner class a lambda(ÖãºÂ8°°ÀóÕ1
 J
 java:S1604H"(Make this anonymous inner class a lambda(Ô¶µÿşÿÿÿÿ8±°ÀóÕ1
-}
-java:S1488;"`Immediately return this expression instead of assigning it to the temporary variable "retValue".(´øˆğ8±°ÀóÕ1
+‚
+java:S1488;"`Immediately return this expression instead of assigning it to the temporary variable "retValue".(Òâ‚Ùıÿÿÿÿ8±°ÀóÕ1
 k
 java:S3252"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿ8Õ°ÀóÕ1
