@@ -1,0 +1,7 @@
+SELECT CODART, STOCK, NVL(STOCK_MIN,0) AS STOCK_MIN,
+       DECODE(SIGN(STOCK - STOCK_MIN),
+              1, 'STOCK SUFICIENTE',
+              0, 'STOCK AJUSTADO',
+              'STOCK INSUFICIENTE') AS situacion_stock
+FROM ARTICULO
+WHERE precio < 0.50;
