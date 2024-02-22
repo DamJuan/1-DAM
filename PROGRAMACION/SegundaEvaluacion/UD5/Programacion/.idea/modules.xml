@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Examen/Examen.iml" filepath="$PROJECT_DIR$/Examen/Examen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Programacion.iml" filepath="$PROJECT_DIR$/Programacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgramacionJava_2324_UD5-main/ProgramacionJava_2324_UD5-main.iml" filepath="$PROJECT_DIR$/ProgramacionJava_2324_UD5-main/ProgramacionJava_2324_UD5-main.iml" />
+    </modules>
+  </component>
+</project>

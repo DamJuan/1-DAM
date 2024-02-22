@@ -1,0 +1,12 @@
+
+t	java:S116"SRename this field "MAXSTOCK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“эЦЇюяяяя8ЇбяЮЬ1
+C
+java:S1170"!Make this final field static too.(“эЦЇюяяяя8ЇбяЮЬ1
+n
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(кђ’;8±бяЮЬ1
+T
+java:S6126"2Replace this String concatenation with Text block.(Э„¤Эыяяяя8ґбяЮЬ1
+`
+java:S1155;">Use isEmpty() to check whether the collection is empty or not.(н©кОьяяяя8¶бяЮЬ1
+`
+java:S1155G">Use isEmpty() to check whether the collection is empty or not.(н©кОьяяяя8·бяЮЬ1
