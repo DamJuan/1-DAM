@@ -1,8 +1,7 @@
 FEBRERO:
 
-ENT:14
-LGMSI: 15
-Ingles: examen 19 
-Programacion: examen 21 
 BD: examen T4 T5:  28
 
+MAYO
+
+INGLES : 20
