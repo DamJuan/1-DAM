@@ -1,0 +1,9 @@
+SELECT  CODFAC, FECHA, CODCLI
+FROM    FACTURA
+WHERE   CODCLI BETWEEN 100 AND 200 AND
+        TO_CHAR(FECHA, 'YYYY')= '2002' AND
+        TO_NUMBER(TO_CHAR(FECHA, 'DDD'))<=50;   
+
+        
+        
+        

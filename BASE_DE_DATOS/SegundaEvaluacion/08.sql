@@ -1,0 +1,7 @@
+SELECT  CODFAC, FECHA, CODCLI, DTO, IVA
+FROM    FACTURA
+WHERE   MOD(TO_NUMBER(SUBSTR(TO_CHAR(CODCLI),1,1)),2) =0 AND
+        (NVL(DTO,0)=0 OR
+        NVL(IVA,0)=0);        
+        
+        
