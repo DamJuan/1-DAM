@@ -50,16 +50,16 @@ public class Almacen {
 
     public static void borrarStockVacios() {
         for (ProductoAlmacenado producto : productosAlmacenados) {
-            if (producto.getCantidadStock()==0){
+            if (producto.getCantidadStock() == 0) {
                 productosAlmacenados.remove(producto);
             }
         }
     }
 
-    public void ordenarArray(){
-        for (ProductoAlmacenado producto:productosAlmacenados) {
+    public void ordenarArray() {
+        for (ProductoAlmacenado producto : productosAlmacenados) {
             int indice = productosAlmacenados.indexOf(producto);
-            if (producto.getFechaCaducidad().isBefore(productosAlmacenados.get(indice).getFechaCaducidad())){
+            if (producto.getFechaCaducidad().isBefore(productosAlmacenados.get(indice).getFechaCaducidad())) {
 
             }
 

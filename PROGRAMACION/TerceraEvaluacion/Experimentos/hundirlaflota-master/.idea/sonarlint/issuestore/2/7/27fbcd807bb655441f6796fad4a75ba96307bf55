@@ -1,0 +1,16 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŠÛ‰Š
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Å¢ºğ
+
+java:S1319"kThe type of "posicionesx" should be an interface such as "List" rather than the implementation "ArrayList".(ŠÛ‰Š
+
+java:S1319"kThe type of "posicionesy" should be an interface such as "List" rather than the implementation "ArrayList".(Å¢ºğ
+m
+java:S1104"WMake posicionesx a static final constant or non-public and provide accessors if needed.(ŠÛ‰Š
+m
+java:S1104"WMake posicionesy a static final constant or non-public and provide accessors if needed.(Å¢ºğ
+b	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õİ‡ˆ
+±
+java:S1598"šThis file "barco.java" should be located in "hundirlaflota" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\Experimentos\hundirlaflota-master".(™Ùçû

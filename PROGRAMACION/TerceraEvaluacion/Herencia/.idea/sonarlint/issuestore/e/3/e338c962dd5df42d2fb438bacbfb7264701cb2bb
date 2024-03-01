@@ -1,0 +1,23 @@
+
+]
+java:S1192h"GDefine a constant instead of duplicating this literal "Nombre" 3 times.(Ï¸í
+x
+java:S1192z"bDefine a constant instead of duplicating this literal "producto registrado exitosamente." 3 times.(å¡ÊÇ
+p
+java:S1192k"UDefine a constant instead of duplicating this literal "Fecha de caducidad: " 3 times.(Šä‘“úÿÿÿÿ
+~
+java:S1192f"hDefine a constant instead of duplicating this literal "Introduce los datos del nuevo producto:" 3 times.(ŠÁñı
+v
+java:S1192."`Define a constant instead of duplicating this literal "Introduce una respuesta vÃ¡lida" 3 times.(œëÌÍ
+d
+java:S1192*"IDefine a constant instead of duplicating this literal "Saliendo" 3 times.(Ø ÏÇøÿÿÿÿ
+¬
+java:S1598"•This file "Almacen.java" should be located in "revision_examen\herencia\Clases" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\Herencia".(Šè±ä
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Šè±ä
+A
+java:S3010"+Remove this assignment of "listaProductos".(Ñ›âÃ
+7	java:S131X""Add a default case to this switch.(ü€Ñ
+U
+java:S1854">Remove this useless assignment to local variable "paisOrgien".(…ƒØ¿
+F
+java:S1481"/Remove this unused "paisOrgien" local variable.(…ƒØ¿

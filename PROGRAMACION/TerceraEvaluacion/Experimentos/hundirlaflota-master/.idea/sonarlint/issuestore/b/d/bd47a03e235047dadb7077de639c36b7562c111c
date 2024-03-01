@@ -1,0 +1,128 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿€ô£
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿËù²úÿÿÿÿ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ë±ïˆ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ß£¡üÿÿÿÿ
+f
+java:S1192¾"JDefine a constant instead of duplicating this literal "izquierda" 3 times.(ˆú—Ñÿÿÿÿÿ
+b
+java:S1192º"FDefine a constant instead of duplicating this literal "abajo" 3 times.(½øÿÿÿÿ
+c
+java:S1192À"GDefine a constant instead of duplicating this literal "arriba" 4 times.(·©¬Ùøÿÿÿÿ
+~
+java:S1319"hThe type of "ocupadas" should be an interface such as "List" rather than the implementation "ArrayList".(¿€ô£
+„
+java:S1319"iThe type of "repetidas" should be an interface such as "List" rather than the implementation "ArrayList".(ÿËù²úÿÿÿÿ
+~
+java:S1319"hThe type of "posfinal" should be an interface such as "List" rather than the implementation "ArrayList".(ë±ïˆ
+3
+java:S1643Ü"Use a StringBuilder instead.(¹‰†
+3
+java:S1643ç"Use a StringBuilder instead.(¹‰†
+3
+java:S1643ò"Use a StringBuilder instead.(ê—Ã
+3
+java:S1643ı"Use a StringBuilder instead.(ê—Ã
+g
+java:S1104"RMake reglas a static final constant or non-public and provide accessors if needed.(£ÒùO
+n
+java:S1104"SMake tablero a static final constant or non-public and provide accessors if needed.(÷‚èÒÿÿÿÿÿ
+j
+java:S1104"TMake ocupadas a static final constant or non-public and provide accessors if needed.(¿€ô£
+p
+java:S1104"UMake repetidas a static final constant or non-public and provide accessors if needed.(ÿËù²úÿÿÿÿ
+j
+java:S1104"TMake posfinal a static final constant or non-public and provide accessors if needed.(ë±ïˆ
+k
+java:S1104"PMake user a static final constant or non-public and provide accessors if needed.(ŠÕÿÿÿÿÿ
+k
+java:S1104"PMake posx a static final constant or non-public and provide accessors if needed.(ıô×¤øÿÿÿÿ
+k
+java:S1104"PMake posy a static final constant or non-public and provide accessors if needed.(ÿä‘ÿüÿÿÿÿ
+A
+java:S1444",Make this "public static reglas" field final(£ÒùO
+H
+java:S1444"-Make this "public static tablero" field final(÷‚èÒÿÿÿÿÿ
+D
+java:S1444".Make this "public static ocupadas" field final(¿€ô£
+J
+java:S1444"/Make this "public static repetidas" field final(ÿËù²úÿÿÿÿ
+D
+java:S1444".Make this "public static posfinal" field final(ë±ïˆ
+E
+java:S1444"*Make this "public static user" field final(ŠÕÿÿÿÿÿ
+E
+java:S1444"*Make this "public static posx" field final(ıô×¤øÿÿÿÿ
+E
+java:S1444"*Make this "public static posy" field final(ÿä‘ÿüÿÿÿÿ
+S
+java:S4973Õ"<Strings and Boxed types should be compared using "equals()".(çïß‹
+X
+java:S4973à"<Strings and Boxed types should be compared using "equals()".(Ç£ºŒüÿÿÿÿ
+S
+java:S4973ë"<Strings and Boxed types should be compared using "equals()".(×Çœ
+S
+java:S4973ö"<Strings and Boxed types should be compared using "equals()".(„ò–õ
+¹
+java:S1598"¢This file "HundirlaFlota.java" should be located in "hundirlaflota" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\Experimentos\hundirlaflota-master".(™Ùçû
+2
+java:S2386"Make this member "protected".(£ÒùO
+8
+java:S2386"Make this member "protected".(÷‚èÒÿÿÿÿÿ
+3
+java:S2386"Make this member "protected".(¿€ô£
+8
+java:S2386"Make this member "protected".(ÿËù²úÿÿÿÿ
+3
+java:S2386"Make this member "protected".(ë±ïˆ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(Çµí‘
+Q	java:S1253"<This block of commented-out lines of code should be removed.(³€Èñ
+Q	java:S1258"<This block of commented-out lines of code should be removed.(şµ½•
+B
+java:S1125J"'Remove the unnecessary boolean literal.(Î‘ôÉøÿÿÿÿ
+=
+java:S1125Y"'Remove the unnecessary boolean literal.(¯•á‹
+m
+java:S3776g"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(œ–ï—úÿÿÿÿ
+n
+java:S3776±"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ï·Üßüÿÿÿÿ
+?
+java:S2140²")Use "java.util.Random.nextInt()" instead.(éˆ”
+@
+java:S2140³")Use "java.util.Random.nextInt()" instead.(˜ŒäÊ
+?
+java:S2140´")Use "java.util.Random.nextInt()" instead.(ÉÆª{
+W	java:S125Í"<This block of commented-out lines of code should be removed.(ÔşØøùÿÿÿÿ
+n
+java:S3776Ñ"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(õÌˆ™úÿÿÿÿ
+L
+java:S1481Ó"0Remove this unused "posfallidas" local variable.(ÔÒµÅşÿÿÿÿ
+=
+java:S1125×"'Remove the unnecessary boolean literal.(éÁA
+=
+java:S1125â"'Remove the unnecessary boolean literal.(éÁA
+C
+java:S1125í"'Remove the unnecessary boolean literal.(™³›ãüÿÿÿÿ
+w
+java:S2234í"[Parameters to comprobar have the same names but not the same order as the method arguments.(™³›ãüÿÿÿÿ
+C
+java:S1125ø"'Remove the unnecessary boolean literal.(™³›ãüÿÿÿÿ
+w
+java:S2234ø"[Parameters to comprobar have the same names but not the same order as the method arguments.(™³›ãüÿÿÿÿ
+R	java:S125…"<This block of commented-out lines of code should be removed.(Ê•ïÓ
+R	java:S125‡"<This block of commented-out lines of code should be removed.(»Äß¸
+X
+java:S1126"AReplace this if-then-else statement by a single return statement.(¾«Ãä
+>
+java:S1125"'Remove the unnecessary boolean literal.(¾«Ãä
+>
+java:S1125"'Remove the unnecessary boolean literal.(¾«Ãä
+>
+java:S1125"'Remove the unnecessary boolean literal.(¾«Ãä
+>
+java:S1125"'Remove the unnecessary boolean literal.(¾«Ãä
