@@ -1,0 +1,4 @@
+CREATE USER 	juan
+IDENTIFIED BY	juan;
+
+GRANT 
