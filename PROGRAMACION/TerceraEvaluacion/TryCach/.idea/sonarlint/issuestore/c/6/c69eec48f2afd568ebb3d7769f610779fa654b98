@@ -1,0 +1,18 @@
+
+X
+java:S1854";Remove this useless assignment to local variable "numeros".(ÿ½¢×8¢¨¼á1
+X
+java:S1854	"6Remove this useless assignment to local variable "sc".(ğÛ²¸øÿÿÿÿ8¢¨¼á1
+I
+java:S1481	"'Remove this unused "sc" local variable.(ğÛ²¸øÿÿÿÿ8¥¨¼á1
+I
+java:S1481",Remove this unused "numeros" local variable.(ÿ½¢×8¥¨¼á1
+K
+java:S1481")Remove this unused "suma" local variable.(é«Ğüşÿÿÿÿ8¥¨¼á1
+K
+java:S1481"/Remove this unused "esCorrecto" local variable.(Íåy8¥¨¼á1
+X	java:S125"<This block of commented-out lines of code should be removed.(Æˆ¾ğ8§¨¼á1
+Y
+java:S1128"=Remove this unused import 'java.util.InputMismatchException'.(İ§18¨¨¼á1
+_
+java:S1128"=Remove this unused import 'java.util.NoSuchElementException'.(®“ÿéúÿÿÿÿ8¨¨¼á1
