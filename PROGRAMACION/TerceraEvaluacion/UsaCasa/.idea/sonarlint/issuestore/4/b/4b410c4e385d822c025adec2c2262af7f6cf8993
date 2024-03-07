@@ -1,0 +1,12 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¦ç…ûÿÿÿÿ8…§‰Áá1
+r	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý×ÌÅùÿÿÿÿ8…§‰Áá1
+m	java:S117<"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( õžñ8…§‰Áá1
+˜
+java:S1598"vThis file "Casa.java" should be located in "oovv" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\UsaCasa".(¶Ü£ûÿÿÿÿ8†§‰Áá1
+u	java:S116"TRename this field "poblaciÃ³" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿â…˜ùÿÿÿÿ8§‰Áá1
+o	java:S1008"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž†òðýÿÿÿÿ8º‰Áá1
+j	java:S100<"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( õžñ8º‰Áá1
+j	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õü¶ï8‘º‰Áá1
+X
+java:S2696f"6Make the enclosing method "static" or remove this set.(Ô·¯ñøÿÿÿÿ8•º‰Áá1
