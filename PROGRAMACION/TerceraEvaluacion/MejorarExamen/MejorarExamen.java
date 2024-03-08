@@ -1,25 +1,20 @@
-public class MejorarExamen {
 /*
-    public String almacenarProductos(ProductoAlmacenado producto) {
-        cantidadActual += producto.getCantidad();
+public String almacenarProductos(ProductoAlmacenado producto) {
+    int cantidadAAnadir = producto.getCantidad();
 
-        if (cantidadActual > LIMITE_ALMACEN) { //limite_almacen = 1000
+    if (cantidadActual + cantidadAAnadir > LIMITE_ALMACEN) { // LIMITE_ALMACEN = 1000
+        int espacioDisponible = LIMITE_ALMACEN - cantidadActual;
 
-            int exceso = cantidadActual - getLIMITE_ALMACEN();
-            int cantidadAAnadir = producto.getCantidad() - exceso;
-
-            if (cantidadAAnadir > 0) {
-                producto.setCantidad(cantidadAAnadir);
-                almacen.add(producto);
-                cantidadActual = getLIMITE_ALMACEN();
-                return "No se ha podido añadir todo, pero se añaden  " + cantidadAAnadir + " productos.";
-            } else {
-                cantidadActual -= producto.getCantidad();
-                return false;
-            }
+        if (espacioDisponible > 0) {
+            cantidadAAnadir = espacioDisponible;
+        } else {
+            return "No hay espacio disponible para almacenar más productos.";
         }
-        almacen.add(producto);
-        return true;
     }
-    */
+
+    almacen.add(new ProductoAlmacenado(producto.getNombre(), cantidadAAnadir)); // Crear una nueva instancia del producto para evitar modificaciones externas
+    cantidadActual += cantidadAAnadir;
+
+    return "Se han añadido " + cantidadAAnadir + " productos.";
 }
+*/
