@@ -1,7 +1,7 @@
 package ControlAcceso;
 
-import ControlAcceso.*;
 import java.util.Date;
+
 class Usuario {
     private String nick;
     private String contrasena;

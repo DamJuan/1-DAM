@@ -1,6 +1,5 @@
 package ControlAcceso;
 
-import ControlAcceso.*;
 import java.util.ArrayList;
 
 class Sistema {
@@ -16,13 +15,13 @@ class Sistema {
         usuarios.add(new Usuario("antonio", "antonio"));
     }
 
-    public Usuario validarAcceso(String nick, String contrasena) {
+    public Usuario validarAcceso(String nick, String contrasena) throws InvalidUserException {
         for (Usuario usuario : usuarios) {
             if (usuario.getNick().equals(nick) && usuario.validarContrasena(contrasena)) {
                 usuario.permitirAcceso();
                 return usuario;
             }
         }
-        return null;
+        throw new InvalidUserException();
     }
 }
