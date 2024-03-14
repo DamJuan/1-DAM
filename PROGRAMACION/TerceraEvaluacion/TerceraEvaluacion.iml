@@ -3,12 +3,20 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Libreria/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Almacen" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Division" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Herencia" isTestSource="false" packagePrefix="revision_examen.herencia.Clases" />
+      <sourceFolder url="file://$MODULE_DIR$/MejorarIF" isTestSource="false" packagePrefix="revision_examen.mejorar_if" />
+      <sourceFolder url="file://$MODULE_DIR$/Termometro" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TryCach" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/UsaCasa" isTestSource="false" packagePrefix="oovv" />
+      <sourceFolder url="file://$MODULE_DIR$/Resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="log4j-api-2.23.1" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="c5d8a511-2710-4c86-a1c6-d6025b4a331c" />
+    <option name="uniqueId" value="e7a2b15f-31b9-4658-b805-cfdc86f96f82" />
   </component>
 </module>

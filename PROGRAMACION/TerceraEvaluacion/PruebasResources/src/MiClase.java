@@ -1,3 +1,8 @@
+/*
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class MiClase {
 
     private static Logger LOGGER = LogManager.getRootLogger();
@@ -5,7 +10,12 @@ public class MiClase {
     public static void main(String[] args) {
 
         try {
-            // Código que puede generar una excepción
+            int i = 1 / 0;
         } catch (ArithmeticException e) {
-            LOGGER.error("¡Error aritmético! No se puede dividir por cero.");
+            System.out.println("¡Error aritmético! No se puede dividir por cero.");
+
         }
+
+
+    }
+}*/

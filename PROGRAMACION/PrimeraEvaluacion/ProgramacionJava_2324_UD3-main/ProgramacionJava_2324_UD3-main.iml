@@ -7,11 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="lib8" level="project" />
-    <orderEntry type="library" name="lib7" level="project" />
-    <orderEntry type="library" name="lib12" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="151a9627-e095-45b1-be0d-f55a0437520f" />
+    <option name="uniqueId" value="edae4f59-4f71-4a4c-a2f8-24214fd7b394" />
   </component>
 </module>

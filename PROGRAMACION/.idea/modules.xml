@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ejercicios/Ejercicios.iml" filepath="$PROJECT_DIR$/Ejercicios/Ejercicios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TerceraEvaluacion/Experimentos/Experimentos.iml" filepath="$PROJECT_DIR$/TerceraEvaluacion/Experimentos/Experimentos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TerceraEvaluacion/Libreria/Libreria.iml" filepath="$PROJECT_DIR$/TerceraEvaluacion/Libreria/Libreria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PROGRAMACION.iml" filepath="$PROJECT_DIR$/PROGRAMACION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeraEvaluacion/PrimeraEvaluacion.iml" filepath="$PROJECT_DIR$/PrimeraEvaluacion/PrimeraEvaluacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeraEvaluacion/ProgramacionJava_2324_UD3-main/ProgramacionJava_2324_UD3-main.iml" filepath="$PROJECT_DIR$/PrimeraEvaluacion/ProgramacionJava_2324_UD3-main/ProgramacionJava_2324_UD3-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegundaEvaluacion/ProgramacionJava_2324_UD5-main/ProgramacionJava_2324_UD5-main.iml" filepath="$PROJECT_DIR$/SegundaEvaluacion/ProgramacionJava_2324_UD5-main/ProgramacionJava_2324_UD5-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TerceraEvaluacion/PruebasResources/PruebasResources.iml" filepath="$PROJECT_DIR$/TerceraEvaluacion/PruebasResources/PruebasResources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegundaEvaluacion/SegundaEvaluacion.iml" filepath="$PROJECT_DIR$/SegundaEvaluacion/SegundaEvaluacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TerceraEvaluacion/TerceraEvaluacion.iml" filepath="$PROJECT_DIR$/TerceraEvaluacion/TerceraEvaluacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimeraEvaluacion/UD1/UD1.iml" filepath="$PROJECT_DIR$/PrimeraEvaluacion/UD1/UD1.iml" />
+    </modules>
+  </component>
+</project>

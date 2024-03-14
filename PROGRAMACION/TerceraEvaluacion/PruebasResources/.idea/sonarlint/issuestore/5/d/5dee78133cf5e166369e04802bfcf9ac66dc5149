@@ -1,0 +1,14 @@
+
+]
+java:S1220""Move this file to a named package.8®ﬂÅ·„1J$7a78d84f-a7fd-4795-a96a-8d7a21ff1e70
+Ö
+java:S3518"CMake sure this expression can't be zero before doing this division.(õ∫ù<8„ÎÇ·„1J$5a6cccbb-c9d9-483b-9efa-dabde335f528
+ô
+java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…¨•…¸ˇˇˇˇ8´ﬂÅ·„1J$96fc25fb-99ae-49a2-a595-3d59c597a557
+w
+java:S1854"5Remove this useless assignment to local variable "i".(õ∫ù<8≤ﬂÅ·„1J$1485ca19-1fc0-4c3a-8b1c-9035976f8449
+h
+java:S1481"&Remove this unused "i" local variable.(õ∫ù<8µﬂÅ·„1J$cc229464-5826-4dbc-95a7-f1e4caf6a3be
+r	java:S106"+Replace this use of System.out by a logger.(‘À¶±˚ˇˇˇˇ8∂ﬂÅ·„1J$7aeb58b9-35bd-471d-abd7-821faefff186
+r
+java:S1068"*Remove this unused "LOGGER" private field.(…¨•…¸ˇˇˇˇ8˘≈É·„1J$8635ac9c-580f-41eb-becb-3ce0f0c0d1e6
