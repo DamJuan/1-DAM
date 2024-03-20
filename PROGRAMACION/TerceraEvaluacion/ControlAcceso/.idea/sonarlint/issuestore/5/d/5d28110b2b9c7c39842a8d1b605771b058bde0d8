@@ -1,8 +1,12 @@
 
-7
-java:S1220""Move this file to a named package.8ÚƒáØå1
-L	java:S106"+Replace this use of System.out by a logger.(çÉÚóûÿÿÿÿ8æƒáØå1
-L	java:S106"+Replace this use of System.out by a logger.(èöÒ‘ÿÿÿÿÿ8çƒáØå1
-L	java:S106"+Replace this use of System.out by a logger.(³¶Ïæşÿÿÿÿ8èƒáØå1
-G	java:S106"+Replace this use of System.out by a logger.(Ï¬İÍ8éƒáØå1
-L	java:S106"+Replace this use of System.out by a logger.(Åô¸—úÿÿÿÿ8éƒáØå1
+]
+java:S1220""Move this file to a named package.8ÚƒáØå1J$2f447aa1-dd69-4321-9689-09fa1a7c59cd
+j
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8Æ¾ÀÜå1J$3630e7d8-c411-49c2-9566-181b01c00766
+r	java:S106"+Replace this use of System.out by a logger.(çÉÚóûÿÿÿÿ8æƒáØå1J$0fdc33d7-ab0c-494d-a5a6-9078cb7f1bee
+r	java:S106"+Replace this use of System.out by a logger.(èöÒ‘ÿÿÿÿÿ8çƒáØå1J$99622cbb-feac-45f3-933d-aab97b5f121b
+r	java:S106"+Replace this use of System.out by a logger.(³¶Ïæşÿÿÿÿ8éƒáØå1J$5fcc4fa5-ad96-4577-8283-1d05722f55f9
+m	java:S106"+Replace this use of System.out by a logger.(Ï¬İÍ8éƒáØå1J$ee850795-979f-4ae4-b6c8-7bee04f829a0
+r	java:S106"+Replace this use of System.out by a logger.(Åô¸—úÿÿÿÿ8ï›Ûå1J$64894207-8261-4997-b685-fe593fb01430
+‰
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Ğúüõşÿÿÿÿ8Ş¾ÀÜå1J$b44377d1-d933-45ab-8b79-50badddd2db7

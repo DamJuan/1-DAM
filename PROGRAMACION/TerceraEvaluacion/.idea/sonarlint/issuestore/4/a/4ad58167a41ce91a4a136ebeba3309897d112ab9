@@ -1,8 +1,12 @@
 
 7
-java:S1220""Move this file to a named package.8èûåÙå1
-L	java:S106"+Replace this use of System.out by a logger.(çÉÚóûÿÿÿÿ8öûåÙå1
-L	java:S106"+Replace this use of System.out by a logger.(èöÒ‘ÿÿÿÿÿ8÷ûåÙå1
-L	java:S106"+Replace this use of System.out by a logger.(³¶Ïæşÿÿÿÿ8ùûåÙå1
-G	java:S106"+Replace this use of System.out by a logger.(Ï¬İÍ8úûåÙå1
-L	java:S106"+Replace this use of System.out by a logger.(Åô¸—úÿÿÿÿ8úûåÙå1
+java:S1220""Move this file to a named package.8ëçÙå1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8±çÙå1
+L	java:S106"+Replace this use of System.out by a logger.(çÉÚóûÿÿÿÿ8»çÙå1
+L	java:S106"+Replace this use of System.out by a logger.(èöÒ‘ÿÿÿÿÿ8¼çÙå1
+L	java:S106"+Replace this use of System.out by a logger.(³¶Ïæşÿÿÿÿ8¿çÙå1
+G	java:S106"+Replace this use of System.out by a logger.(Ï¬İÍ8¿çÙå1
+L	java:S106"+Replace this use of System.out by a logger.(Åô¸—úÿÿÿÿ8ÀçÙå1
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Ğúüõşÿÿÿÿ8ÂçÙå1
