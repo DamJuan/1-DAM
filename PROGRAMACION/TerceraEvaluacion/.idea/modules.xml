@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ControlAcceso/ControlAcceso.iml" filepath="$PROJECT_DIR$/ControlAcceso/ControlAcceso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InputStream_OutputStream/InputStream_OutputStream.iml" filepath="$PROJECT_DIR$/InputStream_OutputStream/InputStream_OutputStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Leer_Escribir/Leer_Escribir.iml" filepath="$PROJECT_DIR$/Leer_Escribir/Leer_Escribir.iml" />
       <module fileurl="file://$PROJECT_DIR$/TerceraEvaluacion.iml" filepath="$PROJECT_DIR$/TerceraEvaluacion.iml" />
     </modules>
   </component>
