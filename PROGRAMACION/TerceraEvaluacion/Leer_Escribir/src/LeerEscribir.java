@@ -31,5 +31,6 @@ public class LeerEscribir {
         } catch (IOException e) {
             System.err.println("Error al leer");
         }
+
     }
 }
