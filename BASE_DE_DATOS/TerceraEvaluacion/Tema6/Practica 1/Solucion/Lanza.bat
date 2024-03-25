@@ -1,0 +1,1 @@
+sqlplus DDL/DDL@pracs @scripts.sql
