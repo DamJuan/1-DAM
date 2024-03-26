@@ -1,0 +1,8 @@
+
+z
+java:S1488…"^Immediately return this expression instead of assigning it to the temporary variable "opcion".(şËÁåüÿÿÿÿ
+P
+java:S1854":Remove this useless assignment to local variable "maCasa".(Óøï
+A
+java:S1481"+Remove this unused "maCasa" local variable.(Óøï
+f	java:S1284"LEnd this switch case with an unconditional break, return or throw statement.(‰ÆÄÎşÿÿÿÿ

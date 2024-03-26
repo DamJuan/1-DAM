@@ -1,0 +1,7 @@
+
+]
+java:S1220""Move this file to a named package.8¡£¡Øå1J$c6bdd80d-63f0-4a5e-80ba-0e86a8b31e8a
+’
+java:S3008"QRename this field "LOGGER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¬¥ÉüÿÿÿÿJ$a5416021-8188-41a6-b27f-a0993eddeb6a
+–
+java:S1450"URemove the "LOGGER" field and declare it as a local variable in the relevant methods.(É¬¥ÉüÿÿÿÿJ$6b67e068-0e02-419f-b5db-8dcf8cab7b38

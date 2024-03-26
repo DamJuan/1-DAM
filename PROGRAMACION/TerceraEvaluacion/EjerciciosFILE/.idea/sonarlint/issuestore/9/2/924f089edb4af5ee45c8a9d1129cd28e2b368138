@@ -1,0 +1,29 @@
+
+ª
+java:S11929"gDefine a constant instead of duplicating this literal "El archivo se a creado correctamente 
+" 3 times.(“‡‰¾8Ÿµòä1J$78982e90-8fdf-4e10-a0b2-66bf8c996cd1
+—
+java:S1192"TDefine a constant instead of duplicating this literal "El fichero existe? " 4 times.(À¹8æ×ğä1J$3e8f7007-bc0a-4eff-8d76-6b55b21aa50f
+]
+java:S1220""Move this file to a named package.8ç×ğä1J$dd588d1b-ae4c-41e5-8647-805a839bef1a
+•
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(œû¿Ø8‚Øğä1J$780df282-d601-4235-9e1f-bc2c2014fed8
+m	java:S106"+Replace this use of System.out by a logger.(À¹8†Øğä1J$e144c11f-0673-4e53-bdeb-39d23812da9b
+m	java:S106"+Replace this use of System.out by a logger.(Š±µ8‡Øğä1J$5581948c-c5b4-4a58-b3ec-41cba49da6aa
+r	java:S106"+Replace this use of System.out by a logger.(¤¦­Åùÿÿÿÿ8‡Øğä1J$dba9d7b6-2555-44c1-9a85-039cf7b87d97
+m	java:S106 "+Replace this use of System.out by a logger.(Ó“‡÷8‡Øğä1J$c955a4de-411c-46dd-a83f-89708999c279
+r	java:S1060"+Replace this use of System.out by a logger.(ºìüÿÿÿÿ8ˆØğä1J$c126c53b-daff-4412-8ba4-e6d6739d9655
+‚	java:S8995";Do something with the "boolean" value returned by "delete".(ãƒ€ıÿÿÿÿ8‰Øğä1J$3f9425ed-79c7-4941-983d-9fcc695ac1bd
+–
+java:S40425"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ãƒ€ıÿÿÿÿ8‰Øğä1J$ef5f44cc-a6cb-471e-9b98-8f20d019a511
+‰	java:S8998"BDo something with the "boolean" value returned by "createNewFile".(ªÀ•Ôúÿÿÿÿ8ŠØğä1J$24855187-3a21-475e-bd97-81afc9524e52
+r	java:S106;"+Replace this use of System.out by a logger.(ÅŠæÕşÿÿÿÿ8ŠØğä1J$feef8827-4853-4f8b-b153-98c1f1ff7eb4
+r	java:S106<"+Replace this use of System.out by a logger.(ËÉïµüÿÿÿÿ8ŠØğä1J$3e7a3577-e856-4f3d-bb69-a1873acebe4d
+m	java:S106="+Replace this use of System.out by a logger.(ñÿ¤8ŠØğä1J$7d4b8c86-f3d0-4651-be6c-cb41cc8f6f96
+l	java:S106>"+Replace this use of System.out by a logger.(²Îû08‹Øğä1J$abfe32fd-3d0b-456c-b0d1-c0605e69440f
+r	java:S106?"+Replace this use of System.out by a logger.(¦ôÌÿÿÿÿÿ8‹Øğä1J$664b345d-d330-4b60-82d4-9f2ca2128e22
+‰	java:S899C"BDo something with the "boolean" value returned by "createNewFile".(ªÀ•Ôúÿÿÿÿ8‹Øğä1J$0f1c0a7c-1d23-4cdf-a2ad-5ac12cef7bdd
+r	java:S106G"+Replace this use of System.out by a logger.(Èåşùÿÿÿÿ8‹Øğä1J$a7c1f4db-ae89-49ce-b190-30d4a9ca23be
+r	java:S106T"+Replace this use of System.out by a logger.(ƒ°³úÿÿÿÿ8ŒØğä1J$dfdbca40-5018-4b98-b5d6-de969ad2aedd
+‰	java:S899a"BDo something with the "boolean" value returned by "createNewFile".(ªÀ•Ôúÿÿÿÿ8Ñµòä1J$f99d1cdd-15ae-444a-bfba-a34646a113d8
+m	java:S106i"+Replace this use of System.out by a logger.(´¨ô”8°¯øä1J$1eb3357f-4056-431c-97ef-a685b73147dc
