@@ -1,3 +1,7 @@
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.util.Base64;
 import java.io.*;
 import java.util.Scanner;
 
@@ -17,15 +21,38 @@ public class Desencriptador {
             FileReader fr = new FileReader(archivoEntrada);
             BufferedReader br = new BufferedReader(fr);
 
-            String textoEncriptado = "";
+            StringBuilder textoEncriptado = new StringBuilder();
             String linea;
 
             while ((linea = br.readLine()) != null) {
-                textoEncriptado += linea + "\n";
+                textoEncriptado.append(linea).append("\n");
             }
             br.close();
 
-            String textoDesencriptado = desencriptarSumaResta(textoEncriptado, palabraEncriptacion);
+            System.out.println("¿Que metodo desea utilizar para desencriptar?");
+            System.out.println("1. Suma y resta");
+            System.out.println("2. Base64");
+            System.out.println("3. Cipher");
+            int metodo = sc.nextInt();
+            sc.nextLine();
+
+            String textoDesencriptado = "";
+
+            switch (metodo) {
+                case 1:
+                    textoDesencriptado = desencriptarSumaResta(textoEncriptado.toString(), palabraEncriptacion);
+                    break;
+                case 2:
+                    textoDesencriptado = desencriptarBase64(textoEncriptado.toString(), palabraEncriptacion);
+                    break;
+                case 3:
+                    textoDesencriptado = desencriptarCipher(textoEncriptado.toString(), palabraEncriptacion);
+                    break;
+                default:
+                    System.out.println("Opcion no valida");
+                    return;
+            }
+
             String nombreArchivoDesencriptado = nombreArchivo.replace(".crip", "");
 
             File archivoSalida = new File(nombreArchivoDesencriptado);
@@ -42,6 +69,8 @@ public class Desencriptador {
             System.out.println("No se encontro el archivo");
         } catch (IOException e) {
             System.out.println("Error al leer el archivo");
+        } catch (Exception e) {
+            System.out.println("Error al desencriptar el archivo");
         }
 
     }
@@ -59,5 +88,29 @@ public class Desencriptador {
             }
         }
         return textoDesencriptado;
+    }
+
+    private static String desencriptarBase64(String textoEncriptado, String palabraEncriptacion) {
+        byte[] textoEnBytes = Base64.getDecoder().decode(textoEncriptado);
+        byte[] palabraEnBytes = palabraEncriptacion.getBytes();
+
+        for (int i = 0; i < textoEnBytes.length; i++) {
+            textoEnBytes[i] = (byte) (textoEnBytes[i] - palabraEnBytes[i % palabraEnBytes.length]);
+        }
+
+        return new String(textoEnBytes);
+    }
+
+    private static String desencriptarCipher(String textoEncriptado, String palabraEncriptacion) throws Exception {
+        byte[] textoEnBytes = Base64.getDecoder().decode(textoEncriptado);
+        byte[] palabraEnBytes = palabraEncriptacion.getBytes();
+
+        SecretKey claveSecreta = new SecretKeySpec(palabraEnBytes, "AES");
+        Cipher cifrador = Cipher.getInstance("AES/ECB/PKCS5Padding");
+        cifrador.init(Cipher.DECRYPT_MODE, claveSecreta);
+
+        byte[] textoDesencriptadoBytes = cifrador.doFinal(textoEnBytes);
+
+        return new String(textoDesencriptadoBytes);
     }
 }
