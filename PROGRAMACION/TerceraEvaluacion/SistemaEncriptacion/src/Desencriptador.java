@@ -35,7 +35,6 @@ public class Desencriptador {
             fw.close();
 
             System.out.println("Archivo desencriptado con exito");
-
             System.out.println("Texto desencriptado: ");
             System.out.println(textoDesencriptado);
 
