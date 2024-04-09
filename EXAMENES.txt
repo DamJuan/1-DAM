@@ -1,7 +1,12 @@
-FEBRERO:
+ABRIL:
 
-BD: examen T4 T5:  28
+BD: 24 (TEMA 6 Y 7)
 
 MAYO
 
 INGLES : 20
+PROG : 22
+LGMSI : 
+BD : 
+ENT : 
+SI : 
