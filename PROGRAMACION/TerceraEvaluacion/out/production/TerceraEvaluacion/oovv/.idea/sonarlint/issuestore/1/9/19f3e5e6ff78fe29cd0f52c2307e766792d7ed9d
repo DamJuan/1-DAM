@@ -1,0 +1,22 @@
+
+|
+java:S1192"ZDefine a constant instead of duplicating this literal "Introduce un valor valido" 5 times.(ÇÓôÕøÿÿÿÿ8Ø­úÁá1
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡8Ù­úÁá1
+˜
+java:S1598"vThis file "main.java" should be located in "oovv" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\UsaCasa".(¶Ü£ûÿÿÿÿ8Ú­úÁá1
+i
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8Ú­úÁá1
+^
+java:S1226E"AIntroduce a new variable instead of reusing the parameter "casa".(ƒÛÄò8İ­úÁá1
+`
+java:S2583"CChange this condition so that it does not always evaluate to "true"(¹©®Ş8é­úÁá1
+f
+java:S2147"DCombine this catch with the one at line 15, which has the same body.(ÄÖëîúÿÿÿÿ8ò­úÁá1
+a
+java:S2147"DCombine this catch with the one at line 17, which has the same body.(« î£8ò­úÁá1
+f
+java:S2147"DCombine this catch with the one at line 19, which has the same body.(ÄÛ’åøÿÿÿÿ8ò­úÁá1
+f
+java:S2147"DCombine this catch with the one at line 21, which has the same body.(¼ëŠüÿÿÿÿ8èúÁá1
+U
+java:S1854E"8Remove this useless assignment to local variable "casa".(ƒÛÄò8ö­úÁá1

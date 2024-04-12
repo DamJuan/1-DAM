@@ -1,0 +1,20 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·š†‡8úùÀá1
+˜
+java:S1598"vThis file "main.java" should be located in "oovv" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\UsaCasa".(¶Ü£ûÿÿÿÿ8úùÀá1
+i
+java:S1223
+"LRename this method to prevent any misunderstanding or make it a constructor.(Çµí‘8ûùÀá1
+^
+java:S1226:"AIntroduce a new variable instead of reusing the parameter "casa".(ƒÛÄò8ıùÀá1
+`
+java:S2583"CChange this condition so that it does not always evaluate to "true"(¹©®Ş8‰úÀá1
+U
+java:S1854:"8Remove this useless assignment to local variable "casa".(ƒÛÄò8úÀá1
+f
+java:S2147>"DCombine this catch with the one at line 60, which has the same body.(ÄÖëîúÿÿÿÿ8‘úÀá1
+a
+java:S2147@"DCombine this catch with the one at line 62, which has the same body.(« î£8‘úÀá1
+J	java:S108<")Either remove or fill this block of code.(¦Œçõÿÿÿÿÿ8•úÀá1
+J	java:S108>")Either remove or fill this block of code.(ÄÖëîúÿÿÿÿ8•úÀá1
+E	java:S108@")Either remove or fill this block of code.(« î£8•úÀá1

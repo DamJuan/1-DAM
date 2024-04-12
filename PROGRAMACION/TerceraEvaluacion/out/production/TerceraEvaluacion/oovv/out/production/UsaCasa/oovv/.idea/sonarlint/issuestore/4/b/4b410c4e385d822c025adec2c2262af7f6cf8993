@@ -1,0 +1,14 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à¦ç…ûÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ×ÌÅùÿÿÿÿ
+f	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( õñ
+‘
+java:S1598"vThis file "Casa.java" should be located in "oovv" directory, not in "D:\1-DAM\PROGRAMACION\TerceraEvaluacion\UsaCasa".(¶Ü£ûÿÿÿÿ
+n	java:S116"TRename this field "poblaciÃ³" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿â…˜ùÿÿÿÿ
+h	java:S100-"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†òğıÿÿÿÿ
+c	java:S1001"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( õñ
+c	java:S100M"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õü¶ï
+Q
+java:S2696Z"6Make the enclosing method "static" or remove this set.(Ô·¯ñøÿÿÿÿ
+M
+java:S1068"2Remove this unused "MIN_SUPERFICIE" private field.(Ÿİ®èøÿÿÿÿ

@@ -13,6 +13,8 @@ public class Ahorcado {
     private Incognita[] incognitas;
     private Incognita incognitaAdivinar;
     private String palabraEnJuego;
+
+    //TODO Si al empezar el programa cambias el valor de intentosRestantes a MAX_INTENTOS, hazlo directamente cuando lo declaras.
     private int intentosRestantes;
 
     public Ahorcado(int numJugadoresAhorcado) {
@@ -22,6 +24,7 @@ public class Ahorcado {
 
     public void Jugar() {
         Scanner sc = new Scanner(System.in);
+        //TODO Haz un metodo que te desarrolle la incognita que vamos a adivinar. Como dijo Jack El Destripador, vamos por partes.
         char[] palabraDescubierta = new char[palabraEnJuego.length()];
         for (int i = 0; i < palabraDescubierta.length; i++) {
             if (incognitaAdivinar.getTexto().charAt(i) == ' ') {
@@ -30,6 +33,7 @@ public class Ahorcado {
                 palabraDescubierta[i] = '_';
             }
         }
+        //TODO porque no lo pones cuando inicializas la variable???
         intentosRestantes = MAX_INTENTOS;
         ArrayList<Character> caracteresIntroducidos = new ArrayList<>();
         while (intentosRestantes > 0) {
@@ -51,6 +55,7 @@ public class Ahorcado {
 
             boolean acierto = false;
 
+            //TODO Esto se podría hacer en un método aparte.
             for (int i = 0; i < palabraEnJuego.length(); i++) {
                 if (palabraEnJuego.charAt(i) == letra) {
                     palabraDescubierta[i] = letra;
@@ -58,6 +63,7 @@ public class Ahorcado {
                 }
             }
 
+            //TODO En mi opinión se debería de restar intentos aunque aciertes.
             if (!acierto) {
                 intentosRestantes--;
             }
@@ -77,6 +83,7 @@ public class Ahorcado {
     }
 
     private void inicializarIncognitas() {
+        //TODO Hazlo más fácil de leer, me duelen los ojos AYUDA :(.
         File peliculas = new File("src/Ahorcado/peliculas.txt");
         File libros = new File("src/Ahorcado/libros.txt");
         File gruposMusicales = new File("src/Ahorcado/grupos_musicales.txt");

@@ -2,10 +2,8 @@ package HundirLaFlota;
 
 public class HundirFlota {
     public static void main(String[] args) {
-        // Crear un objeto de la clase Tablero
-        Tablero tablero = new Tablero();
-        // Llamar al método jugar
-        tablero.jugar();
+        //Tablero tablero = new Tablero();
+        //tablero.jugar();
     }
 
     //TODO 1: Mostrar las instrucciones del juego si no se conocen

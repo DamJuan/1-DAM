@@ -25,7 +25,6 @@ public class Encriptador {
                 System.out.println("El archivo no existe. Creando el archivo...");
                 Creador creador = new Creador();
                 creador.crearArchivo();
-                // No return statement here so the method continues
             }
 
             System.out.println("Ingrese la palabra de encriptacion: ");
