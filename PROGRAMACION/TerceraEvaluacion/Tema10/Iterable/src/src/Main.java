@@ -7,12 +7,12 @@ public class Main {
 
         numerosAleatorios();
         recorrerLista();
+        pruebaPilaPersonalizada();
 
     }
 
 
     public static void numerosAleatorios() {
-        //TODO Hacer print de 100 numeros aleatorios con iterable
 
         List<Integer> listaNumeros = new ArrayList<Integer>();
 
@@ -37,10 +37,23 @@ public class Main {
     }
 
     public static void pruebaPilaPersonalizada() {
-        //TODO Crear una pila personalizada
-        //TODO Hacer push, pop, peek, isEmpty
-        //TODO Recorrer la pila con un for each
-        //TODO Hacer algun ejercicio de prueba para demostar el funcionamiento
+        CustomStack<Integer> stack = new CustomStack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
+        System.out.println("Elements in the stack:");
+        for (int element : stack) {
+            System.out.println(element);
+        }
+
+        System.out.println("Pop: " + stack.pop());
+        System.out.println("Peek: " + stack.peek());
+        System.out.println("Pop: " + stack.pop());
+        System.out.println("Esta vacio (isEmpty)? " + stack.isEmpty());
+        System.out.println("Pop: " + stack.pop());
+        System.out.println("Esta vacio (isEmpty)? " + stack.isEmpty());
+        System.out.println("Esta vacio (isEmpty)? " + stack.isEmpty());
     }
 
 }
