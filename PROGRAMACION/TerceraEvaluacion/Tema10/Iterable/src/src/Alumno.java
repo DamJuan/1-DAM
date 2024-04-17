@@ -1,2 +1,8 @@
-package PACKAGE_NAME;public class Alumno {
+public class Alumno {
+
+    String nombre;
+    String nia;
+    String edad;
+    String curso;
+    String notaMedia;
 }
