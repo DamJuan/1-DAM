@@ -4,7 +4,6 @@ public class RetoA {
 
     static Scanner sc = new Scanner(System.in);
 
-
     public static boolean casoDePrueba() {
 
         int cantNum = sc.nextInt();
@@ -21,18 +20,12 @@ public class RetoA {
                     isCorrect = false;
                     break;
                 }
-
-            } else {
-                if (Math.signum(numActual) != Math.signum(numSig)) {
-                    isCorrect = false;
-                    break;
-                }
+            } else if (Math.signum(numActual) != Math.signum(numSig)) {
+                isCorrect = false;
+                break;
             }
-
         }
         return isCorrect;
-
-
     }
 
     public static void main(String[] args) {
@@ -41,12 +34,11 @@ public class RetoA {
         sc.nextLine();
 
         for (int i = 0; i < numCasos; i++) {
-            if(casoDePrueba()){
+            if (casoDePrueba()) {
                 System.out.println("CORRECTA");
             } else {
                 System.out.println("INCORRECTA");
             }
         }
-
     }
 }
