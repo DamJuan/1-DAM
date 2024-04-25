@@ -1,0 +1,1 @@
+sqlplus alumno/alumno@pracs @scripts.sql
