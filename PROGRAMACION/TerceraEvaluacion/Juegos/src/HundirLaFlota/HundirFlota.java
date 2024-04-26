@@ -1,5 +1,7 @@
 package HundirLaFlota;
 
+import HundirLaFlota.clases.Tablero;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -19,6 +21,13 @@ public class HundirFlota {
 
         System.out.println("Contra quién quieres jugar? Jugador o Máquina?");
         String PVPoPVE = sc.nextLine();
+
+        if (PVPoPVE.equalsIgnoreCase("Jugador")) {
+            namePVP();
+        } else if (PVPoPVE.equalsIgnoreCase("Máquina")) {
+            namePVE();
+        }
+
     }
 
 
@@ -39,11 +48,35 @@ public class HundirFlota {
 
     }
 
+    public static void namePVP() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Introduce el nombre del jugador 1:");
+        String nombreJugador1 = sc.nextLine();
+        System.out.println("Introduce el nombre del jugador 2:");
+        String nombreJugador2 = sc.nextLine();
+
+        System.out.println("Bienvenidos " + nombreJugador1 + " y " + nombreJugador2 + "!");
+        empezarJuego();
+
+    }
 
 
-    //TODO 2: Preguntar si se quiere jugar contra jugador o contra la máquina
+    public static void namePVE() {
+        System.out.println("Lo siento, esta opción no está disponible todavía.");
+        //Scanner sc = new Scanner(System.in);
+        //System.out.println("Introduce tu nombre:");
+        //String nombreJugador = sc.nextLine();
+    }
+
+    public static void empezarJuego() {
+
+        Tablero.mostrarTablero();
+
+    }
+
+
+
     //TODO 3: MIRAR COMO HACER (Si se juega contra la máquina, preguntar si se quiere jugar en modo fácil o difícil)
-    //TODO 4: Preguntar nombre del jugador o jugadores
     //TODO 5: Mostrar el tablero del jugador 1 y los barcos disponibles
     //TODO 6: Preguntar al jugador 1 dónde quiere colocar los barcos
     //TODO 7: Mostrar el tablero del jugador 2 y los barcos disponibles

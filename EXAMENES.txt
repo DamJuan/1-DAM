@@ -1,12 +1,7 @@
-ABRIL:
-
-BD: 24 (TEMA 6 Y 7)
-LGMSI : 25
-
 MAYO
 
 INGLES : 20
 PROG : 22 serializacion entra
-BD : 
+BD : 28
 ENT : 15
-SI : 
+SI : 24
