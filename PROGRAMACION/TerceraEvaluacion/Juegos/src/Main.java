@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+import Bingo.*;
 import MultiplicationGame.*;
 import Ahorcado.*;
 
@@ -9,7 +10,8 @@ public class Main {
         System.out.println("Seleccione el juego:");
         System.out.println("1. Juego de Multiplicación");
         System.out.println("2. Juego del Ahorcado");
-        System.out.println("3. Hundir la flota (no implementado)");
+        System.out.println("3. Bingo");
+        System.out.println("4. Hundir la flota (no implementado)");
         System.out.print("Ingrese su elección: ");
         int opcion = sc.nextInt();
 
@@ -37,7 +39,11 @@ public class Main {
                 Ahorcado game2 = new Ahorcado(numJugadoresAhorcado);
                 game2.Jugar();
                 break;
+
             case 3:
+                JuegoBingo.bingo();
+                break;
+            case 4:
                 System.out.println("Hundir la flota no está implementado por el momento.");
                 //TODO: Implementar juego de Hundir la flota
                 break;
