@@ -23,6 +23,12 @@ public class JuegoBingo {
             int edad = sc.nextInt();
             sc.nextLine();
             jugadores[i] = new Jugador(nombre, ciudad, edad);
+
+            if (edad < 18) {
+                System.out.println("El jugador " + nombre + " es menor de edad y no puede jugar al Bingo.");
+                break;
+            }
+
         }
 
         System.out.println("Los cartones se han generado correctamente.");

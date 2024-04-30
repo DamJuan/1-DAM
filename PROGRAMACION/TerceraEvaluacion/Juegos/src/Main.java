@@ -5,6 +5,12 @@ import MultiplicationGame.*;
 import Ahorcado.*;
 
 public class Main {
+
+    //TODO MEJORAR SISTEMA DE JUEGOS
+    //TODO IMPLEMENTAR MEJORA BINGO
+    //TODO AÑADIR EXCEPCIONES
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Seleccione el juego:");
