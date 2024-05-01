@@ -4,13 +4,9 @@ import java.util.Scanner;
 
 public class JuegoBingo {
 
-    public static void bingo() {
+    public static void bingo(int numJugadores) {
 
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("¿Cuantos jugadores jugaran al Bingo?");
-        int numJugadores = sc.nextInt();
-        sc.nextLine();
 
         Jugador[] jugadores = new Jugador[numJugadores];
 

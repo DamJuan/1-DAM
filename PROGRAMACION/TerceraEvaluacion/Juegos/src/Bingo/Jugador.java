@@ -28,4 +28,13 @@ public class Jugador {
     public String getNombre() {
         return nombre;
     }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
 }

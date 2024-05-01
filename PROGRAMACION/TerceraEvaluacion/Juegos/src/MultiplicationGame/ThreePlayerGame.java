@@ -12,18 +12,18 @@ public class ThreePlayerGame extends MultiplicationGame {
     public void play() {
         Scanner sc = new Scanner(System.in);
         while (true) {
-            String player = players[currentPlayer];
+            String player = players[actualPlayer];
             problem.generateProblem();
-            System.out.println("Problem: " + problem);
-            System.out.print(player + ", enter your answer: ");
+            System.out.println("Problema a resolver: " + problem);
+            System.out.print(player + ", introduce tu respuesta: ");
             int guess = sc.nextInt();
-            if (guess == problem.getAnswer()) {
-                System.out.println("Correct! " + player + " stays in the game.");
+            if (guess == problem.getrespuesta()) {
+                System.out.println("Correcto! " + player + " sigues en el juego.");
             } else {
-                System.out.println("Incorrect! " + player + " is out of the game.");
+                System.out.println("Incorrecto! " + player + " te vas del juego aprende a calcular.");
                 break;
             }
-            currentPlayer = (currentPlayer + 1) % numPlayers;
+            actualPlayer = (actualPlayer + 1) % numPlayers;
         }
         sc.close();
     }
