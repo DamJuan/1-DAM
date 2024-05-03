@@ -14,7 +14,6 @@ public class Cartas {
     }
 
     public static void main(String[] args) {
-        // Casos de prueba
         System.out.println(ValorCarta.AS + " vale " + ValorCarta.AS.obtenerPuntos() + " puntos.");
         System.out.println(ValorCarta.DOS + " vale " + ValorCarta.DOS.obtenerPuntos() + " puntos.");
         System.out.println(ValorCarta.JACK + " vale " + ValorCarta.JACK.obtenerPuntos() + " puntos.");
