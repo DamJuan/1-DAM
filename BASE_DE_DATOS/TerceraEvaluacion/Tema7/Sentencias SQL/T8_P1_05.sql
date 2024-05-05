@@ -1,0 +1,3 @@
+SELECT MAX(COUNT(CODPOSTAL)) " número de códigos postales"
+FROM CPOSTAL
+GROUP BY CODLOC
