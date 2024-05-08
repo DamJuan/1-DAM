@@ -63,11 +63,13 @@ public class Alumno implements Comparable<Alumno> {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Alumno)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
+
         Alumno alumno = (Alumno) o;
-        return edad == alumno.edad &&
-                Objects.equals(nombre, alumno.nombre) &&
-                Objects.equals(nia, alumno.nia);
+
+        if (edad != alumno.edad) return false;
+        if (!Objects.equals(nombre, alumno.nombre)) return false;
+        return Objects.equals(nia, alumno.nia);
     }
 
     @Override
