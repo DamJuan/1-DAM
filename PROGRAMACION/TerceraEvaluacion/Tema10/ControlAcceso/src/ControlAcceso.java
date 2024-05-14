@@ -150,7 +150,7 @@ public class ControlAcceso {
                         Usuario usuario = new Usuario(nick, contrasena, nombre, apellidos, correo, ip, telefono);
                         sistema.guardarUsuario(usuario);
                         mostrarMensajeGuardado(sc);
-                        
+
                     } else {
                         System.err.println("Las contraseñas no coinciden");
                     }
