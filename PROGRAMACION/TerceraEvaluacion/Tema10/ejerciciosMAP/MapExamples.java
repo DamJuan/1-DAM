@@ -86,5 +86,6 @@ public class MapExamples {
     public static void buscarEdad(Map<String, String> map, String nombre) {
         System.out.println("Edad de " + nombre + ": " + map.get(nombre));
     }
+    
 
 }
