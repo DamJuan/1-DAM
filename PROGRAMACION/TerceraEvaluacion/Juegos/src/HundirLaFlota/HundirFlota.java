@@ -1,13 +1,19 @@
 package HundirLaFlota;
 
-import HundirLaFlota.clases.*;
-import java.io.*;
+import HundirLaFlota.clases.Tablero;
+import HundirLaFlota.clases.barco;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class HundirFlota {
 
     private static ArrayList<barco> barcos = new ArrayList<>();
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -75,33 +81,27 @@ public class HundirFlota {
 
     }
 
-    public static void genenarbarcos(int longitud) {
-        barco nuevoBarco = new barco(longitud, "nombre", orientado);
-        barcos.add(nuevoBarco);
+    //TODO cuando se golpea un barco el turno del jugador debe seguir
+//TODO cuando se golpea agua el turno del jugador debe cambiar
 
-        generarposiciones(x, y, orientado, longitud, nuevoBarco);
+    //TODO MOSTRAR LOS BARCOS QUE QUEDAN POR PONER EN EL TABLERO
+    //TODO PRIMER TURNO ES PARA COLOCAR LOS BARCOS EL TURNO ACABA CUANDO SE HAN COLOCADO TODOS LOS BARCOS
+
+    public static void colocarBarcos() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Vamos a colocar los barcos en el tablero.");
+        System.out.println("Elige la posición de tu barco:");
+        System.out.println("1. Portaaviones (5 posiciones)");
+        System.out.println("2. Acorazado (4 posiciones)");
+        System.out.println("3. Submarino (3 posiciones)");
+        System.out.println("4. Destructor (2 posiciones)");
+        System.out.println("5. Salir");
+
+        int opcion = sc.nextInt();
+
+        //TODO al elegir el barco se tiene que decidir si se coloca en horizontal o vertical y en qué posición
+
+
+
     }
-
-    public static void generarposiciones(int x, int y, String orientado, int longitud, barco nuevoBarco) {
-        if (orientado=="derecha") {
-            for (int o = y; o < y + longitud; o++) {
-                if (comprobar(x, o) == true) {
-                    conterr = 1;
-                    repetidas.add(Integer.toString(x) + "," + Integer.toString(o));
-                } else {
-                    ocupadas.add(Integer.toString(x) + "," + Integer.toString(o));
-                    nuevoBarco.tocado(x, o);
-                }
-            }
-        }
-
-        if (conterr==1){
-            genenarbarcos(longitud);
-        }else{
-            posfinal.add(posicionesfinal);
-            //System.out.println(posicionesfinal);
-        }
-        //System.out.println(posfallidas);
-    }
-
 }

@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.logging.Logger;
 
 class Sistema {
     private ArrayList<Usuario> usuarios;
@@ -44,7 +45,8 @@ class Sistema {
                 bw.newLine();
             }
         } catch (IOException e) {
-            System.err.println("Error al guardar los usuarios: " + e.getMessage());
+            Logger.getLogger("Error al guardar los usuarios: " + e.getMessage());
+            System.out.println("No se ha podido guardar el usuario. Inténtelo de nuevo.");
         }
     }
 }
