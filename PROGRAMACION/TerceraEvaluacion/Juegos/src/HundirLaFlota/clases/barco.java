@@ -1,4 +1,4 @@
-package HundirLaFlota.ejemplo;
+package HundirLaFlota.clases;
 
 import java.util.ArrayList;
 

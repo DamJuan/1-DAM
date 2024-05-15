@@ -87,6 +87,8 @@ B
 java:S1125J"'Remove the unnecessary boolean literal.(Î‘ôÉøÿÿÿÿ
 =
 java:S1125Y"'Remove the unnecessary boolean literal.(¯•á‹
+`
+java:S1155`">Use isEmpty() to check whether the collection is empty or not.(ãŸ„±üÿÿÿÿ8¦’¦›á1
 m
 java:S3776g"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(œ–ï—úÿÿÿÿ
 n

@@ -1,11 +1,13 @@
 package HundirLaFlota;
 
-import HundirLaFlota.clases.Tablero;
-
+import HundirLaFlota.clases.*;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class HundirFlota {
+
+    private static ArrayList<barco> barcos = new ArrayList<>();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -29,7 +31,6 @@ public class HundirFlota {
         }
 
     }
-
 
     public static void mostrarInstrucciones() {
         final File reglas = new File("src\\HundirLaFlota\\Reglas.");
@@ -74,15 +75,33 @@ public class HundirFlota {
 
     }
 
+    public static void genenarbarcos(int longitud) {
+        barco nuevoBarco = new barco(longitud, "nombre", orientado);
+        barcos.add(nuevoBarco);
 
+        generarposiciones(x, y, orientado, longitud, nuevoBarco);
+    }
 
-    //TODO 3: MIRAR COMO HACER (Si se juega contra la máquina, preguntar si se quiere jugar en modo fácil o difícil)
-    //TODO 5: Mostrar el tablero del jugador 1 y los barcos disponibles
-    //TODO 6: Preguntar al jugador 1 dónde quiere colocar los barcos
-    //TODO 7: Mostrar el tablero del jugador 2 y los barcos disponibles
-    //TODO 8: Preguntar al jugador 2 dónde quiere colocar los barcos
-    //TODO 9: Comenzar el juego
+    public static void generarposiciones(int x, int y, String orientado, int longitud, barco nuevoBarco) {
+        if (orientado=="derecha") {
+            for (int o = y; o < y + longitud; o++) {
+                if (comprobar(x, o) == true) {
+                    conterr = 1;
+                    repetidas.add(Integer.toString(x) + "," + Integer.toString(o));
+                } else {
+                    ocupadas.add(Integer.toString(x) + "," + Integer.toString(o));
+                    nuevoBarco.tocado(x, o);
+                }
+            }
+        }
+
+        if (conterr==1){
+            genenarbarcos(longitud);
+        }else{
+            posfinal.add(posicionesfinal);
+            //System.out.println(posicionesfinal);
+        }
+        //System.out.println(posfallidas);
+    }
 
 }
-
-//TODO: Hacer un array bidimensional con las coordenadas

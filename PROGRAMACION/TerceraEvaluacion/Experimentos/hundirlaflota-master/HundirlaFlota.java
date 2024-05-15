@@ -3,10 +3,6 @@ package hundirlaflota;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- *
- * @author Fermín Ortega Domínguez
- */
 public class HundirlaFlota {
 
     public static String[] reglas= new String[11];

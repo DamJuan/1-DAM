@@ -1,4 +1,4 @@
-package hundirlaflota;
+package HundirLaFlota.ejemplo;
 
 import java.util.ArrayList;
 import java.util.Scanner;
