@@ -4,7 +4,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.Scanner;
 
 public class ControlAcceso {
-    private static final Logger logger = LogManager.getRootLogger();
+    private static final Logger LOGGER = LogManager.getRootLogger();
 
 
     public static String menuPrincipal() {
@@ -48,6 +48,7 @@ public class ControlAcceso {
         if (telefono.length() != 9) {
             return null;
         }
+
         try {
             Long.parseLong(telefono);
         } catch (NumberFormatException e) {
@@ -73,10 +74,93 @@ public class ControlAcceso {
     public static void mostrarMensajeGuardado(Scanner sc) {
         System.out.print("¿Desea ser guardado en el sistema? (s/n): ");
         String respuesta = sc.nextLine();
+
         if (respuesta.equalsIgnoreCase("s")) {
             System.out.println("¡Usuario guardado!");
         } else {
             System.out.println("¡Hasta luego!");
+        }
+    }
+
+    public static void menuCase(Sistema sistema, Scanner sc) {
+        boolean salir = Boolean.FALSE;
+
+        while (!salir) {
+            String opcion = menuPrincipal();
+
+            String nick;
+            String contrasena;
+
+            switch (opcion) {
+                case "1":
+                    System.out.println("Acceder");
+
+                    System.out.print("Introduce tu nick: ");
+                    nick = sc.nextLine();
+
+                    System.out.print("Introduce tu contraseña: ");
+                    contrasena = sc.nextLine();
+
+                    try {
+                        Usuario usuario = sistema.validarAcceso(nick, contrasena);
+                        System.out.println("¡Bienvenido, " + usuario.getNick() + "!");
+                        System.out.println("Último acceso: " + usuario.getUltimoAcceso());
+                        System.out.println("Número de accesos: " + usuario.getNumeroAccesos());
+
+                    } catch (InvalidUserException e) {
+                        System.err.println("Usuario o contraseña incorrectos");
+                    }
+                    break;
+
+                case "2":
+                    System.out.println("Registrarse");
+                    String nombre = solicitarYValidarNombre(sc);
+                    String apellidos = solicitarYValidarApellidos(sc);
+
+                    String correo;
+                    do {
+                        System.out.print("Introduce tu correo: ");
+                        correo = sc.nextLine();
+                    } while (validarCorreo(correo) == null);
+
+                    String ip;
+                    do {
+                        System.out.print("Introduce tu IP: ");
+                        ip = sc.nextLine();
+                    } while (validarIp(ip) == null);
+
+                    String telefono;
+                    do {
+                        System.out.print("Introduce tu teléfono: ");
+                        telefono = sc.nextLine();
+                    } while (validarTelefono(telefono) == null);
+
+                    do {
+                        System.out.print("Introduce tu nick: ");
+                        nick = sc.nextLine();
+                    } while (validarNick(nick) == null);
+
+                    do {
+                        System.out.print("Introduce tu contraseña: ");
+                        contrasena = sc.nextLine();
+                    } while (validarContrasena(contrasena) == null);
+                    contrasena = confirmarContrasena(contrasena, sc);
+
+                    if (contrasena != null) {
+                        Usuario usuario = new Usuario(nick, contrasena, nombre, apellidos, correo, ip, telefono);
+                        sistema.guardarUsuario(usuario);
+                        mostrarMensajeGuardado(sc);
+
+                    } else {
+                        System.err.println("Las contraseñas no coinciden");
+                    }
+                    break;
+                case "3":
+                    salir = Boolean.TRUE;
+                    break;
+                default:
+                    System.out.println("Opción no válida");
+            }
         }
     }
 
@@ -85,81 +169,15 @@ public class ControlAcceso {
 
         Sistema sistema = new Sistema();
         sistema.cargarUsuarios();
+        Scanner sc = new Scanner(System.in);
 
-        boolean salir = Boolean.FALSE;
-
-        try {Scanner sc = new Scanner(System.in);{
-                while (!salir) {
-                    String opcion = menuPrincipal();
-
-                    String nick;
-                    String contrasena;
-
-                    switch (opcion) {
-                        case "1":
-                            System.out.println("Acceder");
-                            System.out.print("Introduce tu nick: ");
-                            nick = sc.nextLine();
-                            System.out.print("Introduce tu contraseña: ");
-                            contrasena = sc.nextLine();
-                            try {
-                                Usuario usuario = sistema.validarAcceso(nick, contrasena);
-                                System.out.println("¡Bienvenido, " + usuario.getNick() + "!");
-                                System.out.println("Último acceso: " + usuario.getUltimoAcceso());
-                                System.out.println("Número de accesos: " + usuario.getNumeroAccesos());
-                            } catch (InvalidUserException e) {
-                                System.err.println("Usuario o contraseña incorrectos");
-                            }
-                            break;
-                        case "2":
-                            System.out.println("Registrarse");
-                            String nombre = solicitarYValidarNombre(sc);
-                            String apellidos = solicitarYValidarApellidos(sc);
-                            String correo;
-                            do {
-                                System.out.print("Introduce tu correo: ");
-                                correo = sc.nextLine();
-                            } while (validarCorreo(correo) == null);
-                            String ip;
-                            do {
-                                System.out.print("Introduce tu IP: ");
-                                ip = sc.nextLine();
-                            } while (validarIp(ip) == null);
-                            String telefono;
-                            do {
-                                System.out.print("Introduce tu teléfono: ");
-                                telefono = sc.nextLine();
-                            } while (validarTelefono(telefono) == null);
-                            do {
-                                System.out.print("Introduce tu nick: ");
-                                nick = sc.nextLine();
-                            } while (validarNick(nick) == null);
-                            do {
-                                System.out.print("Introduce tu contraseña: ");
-                                contrasena = sc.nextLine();
-                            } while (validarContrasena(contrasena) == null);
-                            contrasena = confirmarContrasena(contrasena, sc);
-                            if (contrasena != null) {
-                                Usuario usuario = new Usuario(nick, contrasena, nombre, apellidos, correo, ip, telefono);
-                                sistema.guardarUsuario(usuario);
-                                mostrarMensajeGuardado(sc);
-                            } else {
-                                System.err.println("Las contraseñas no coinciden");
-                            }
-                            break;
-                        case "3":
-                            salir = Boolean.TRUE;
-                            break;
-                        default:
-                            System.out.println("Opción no válida");
-                    }
-                }
-                sc.close();
-            }
+        try {
+            menuCase(sistema, sc);
         } catch (Exception e) {
-            logger.error("Error en la aplicación: " + e.getMessage());
-        }finally {
-            System.out.println("¡Hasta luego!");
+            LOGGER.error("Error en la aplicación: " + e.getMessage());
+        } finally {
+            LOGGER.info("Aplicación finalizada");
+            sc.close();
         }
     }
 }
