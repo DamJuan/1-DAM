@@ -3,10 +3,7 @@ import java.util.HashSet;
 
 public class GestionEmpleados {
     public static void main(String[] args) {
-
-        //con los datos de empleado.java
-        //crear un programa que permita agregar buscar y eliminar empleados utilizando un mapa
-
+        
         HashMap<Integer, empleado> empleados = new HashMap<>();
 
         empleado empleado1 = new empleado(1, "Juan", "Gerente");
