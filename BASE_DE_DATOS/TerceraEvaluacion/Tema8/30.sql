@@ -1,0 +1,7 @@
+SELECT  NOMBRE
+FROM    CICLISTA
+WHERE   (SELECT COUNT(*)
+        FROM    PUERTO
+        WHERE   PUERTO.DORSAL=CICLISTA.DORSAL)>1;
+                       
+                           

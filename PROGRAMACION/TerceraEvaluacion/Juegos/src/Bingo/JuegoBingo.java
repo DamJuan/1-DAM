@@ -1,6 +1,7 @@
 package Bingo;
 
 import java.util.Scanner;
+import java.io.*;
 
 public class JuegoBingo {
 
@@ -50,6 +51,7 @@ public class JuegoBingo {
         int numGanadores = 0;
         int numBolas = 0;
         boolean bingo = false;
+        Scanner sc = new Scanner(System.in);
         while (!bingo) {
             numBolas++;
             System.out.println("Bola número " + numBolas + ":");
@@ -68,7 +70,49 @@ public class JuegoBingo {
                     }
                 }
             }
+            System.out.println("¿Desea guardar la partida? (s/n)");
+            String respuesta = sc.nextLine();
+            if (respuesta.equalsIgnoreCase("s")) {
+                guardarPartida(jugadores, numBolas);
+            }
         }
         System.out.println("¡BINGO!");
+        sc.close();
+    }
+
+    public static void guardarPartida(Jugador[] jugadores, int numBolas) {
+        try {
+            FileOutputStream fileOut = new FileOutputStream("partida.ser");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+            out.writeObject(jugadores);
+            out.writeInt(numBolas);
+            out.close();
+            fileOut.close();
+            System.out.println("Partida guardada en partida.ser");
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+    }
+
+    public static void cargarPartida() {
+        Jugador[] jugadores = null;
+        int numBolas = 0;
+        try {
+            FileInputStream fileIn = new FileInputStream("partida.ser");
+            ObjectInputStream in = new ObjectInputStream(fileIn);
+            jugadores = (Jugador[]) in.readObject();
+            numBolas = in.readInt();
+            in.close();
+            fileIn.close();
+        } catch (IOException i) {
+            i.printStackTrace();
+            return;
+        } catch (ClassNotFoundException c) {
+            System.out.println("Clase Jugador no encontrada");
+            c.printStackTrace();
+            return;
+        }
+        System.out.println("Partida cargada.");
+        jugarBingo(jugadores);
     }
 }
