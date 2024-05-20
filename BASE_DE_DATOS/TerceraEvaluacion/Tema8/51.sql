@@ -1,0 +1,5 @@
+SELECT  NOMPUERTO
+FROM    PUERTO
+WHERE   ALTURA <  (SELECT AVG(ALTURA)
+                  FROM    PUERTO
+                  WHERE   CATEGORIA='2');

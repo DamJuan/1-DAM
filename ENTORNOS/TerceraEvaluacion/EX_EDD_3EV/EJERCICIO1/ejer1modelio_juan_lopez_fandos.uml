@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_s18GoBKOEe-3V_Nv8TLzHw" name="ejer1modelio_juan_lopez_fandos">
+  <eAnnotations xmi:id="_s18GoRKOEe-3V_Nv8TLzHw" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_s18GohKOEe-3V_Nv8TLzHw" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_s18GoxKOEe-3V_Nv8TLzHw" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s18GpBKOEe-3V_Nv8TLzHw" name="Juego">
+    <ownedAttribute xmi:id="_s18GpRKOEe-3V_Nv8TLzHw" name="reglas" visibility="public" type="_s18G0BKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GrxKOEe-3V_Nv8TLzHw">
+      <ownedComment xmi:id="_s18GphKOEe-3V_Nv8TLzHw">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s18GpxKOEe-3V_Nv8TLzHw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GqBKOEe-3V_Nv8TLzHw" name="quedadas" visibility="public" type="_s18GwxKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GsBKOEe-3V_Nv8TLzHw"/>
+    <ownedAttribute xmi:id="_s18GqRKOEe-3V_Nv8TLzHw" name="Nombre" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GqhKOEe-3V_Nv8TLzHw" name="numJugadores" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GqxKOEe-3V_Nv8TLzHw" name="Copias" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s18GrBKOEe-3V_Nv8TLzHw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GrRKOEe-3V_Nv8TLzHw" name="Propietario" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GrhKOEe-3V_Nv8TLzHw" name="TipoJuego" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s18GrxKOEe-3V_Nv8TLzHw" memberEnd="_s18GpRKOEe-3V_Nv8TLzHw _s18G0RKOEe-3V_Nv8TLzHw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s18GsBKOEe-3V_Nv8TLzHw" memberEnd="_s18GqBKOEe-3V_Nv8TLzHw _s18GxhKOEe-3V_Nv8TLzHw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s18GsRKOEe-3V_Nv8TLzHw" name="Jugador">
+    <ownedAttribute xmi:id="_s18GshKOEe-3V_Nv8TLzHw" name="juego" visibility="public" type="_s18GwxKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GvhKOEe-3V_Nv8TLzHw"/>
+    <ownedAttribute xmi:id="_s18GsxKOEe-3V_Nv8TLzHw" name="mercado" visibility="public" type="_s18GzRKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GvxKOEe-3V_Nv8TLzHw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s18GtBKOEe-3V_Nv8TLzHw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GtRKOEe-3V_Nv8TLzHw" name="reglas" visibility="public" type="_s18G0BKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GwRKOEe-3V_Nv8TLzHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s18GthKOEe-3V_Nv8TLzHw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GtxKOEe-3V_Nv8TLzHw" name="Nombre" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GuBKOEe-3V_Nv8TLzHw" name="Apellidos" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GuRKOEe-3V_Nv8TLzHw" name="Telefono" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GuhKOEe-3V_Nv8TLzHw" name="Direccion" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GuxKOEe-3V_Nv8TLzHw" name="Correo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GvBKOEe-3V_Nv8TLzHw" name="InteresJuego" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GvRKOEe-3V_Nv8TLzHw" name="Administrador" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s18GvhKOEe-3V_Nv8TLzHw" memberEnd="_s18GshKOEe-3V_Nv8TLzHw _s18GxBKOEe-3V_Nv8TLzHw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s18GvxKOEe-3V_Nv8TLzHw" memberEnd="_s18GsxKOEe-3V_Nv8TLzHw _s18GwBKOEe-3V_Nv8TLzHw">
+    <ownedEnd xmi:id="_s18GwBKOEe-3V_Nv8TLzHw" visibility="public" type="_s18GsRKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GvxKOEe-3V_Nv8TLzHw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_s18GwRKOEe-3V_Nv8TLzHw" memberEnd="_s18GtRKOEe-3V_Nv8TLzHw _s18GwhKOEe-3V_Nv8TLzHw">
+    <ownedEnd xmi:id="_s18GwhKOEe-3V_Nv8TLzHw" visibility="public" type="_s18GsRKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GwRKOEe-3V_Nv8TLzHw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s18GwxKOEe-3V_Nv8TLzHw" name="Quedadas">
+    <ownedAttribute xmi:id="_s18GxBKOEe-3V_Nv8TLzHw" name="Jugador" visibility="public" type="_s18GsRKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GvhKOEe-3V_Nv8TLzHw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s18GxRKOEe-3V_Nv8TLzHw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GxhKOEe-3V_Nv8TLzHw" visibility="public" type="_s18GpBKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GsBKOEe-3V_Nv8TLzHw"/>
+    <ownedAttribute xmi:id="_s18GxxKOEe-3V_Nv8TLzHw" name="Propietario" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GyBKOEe-3V_Nv8TLzHw" name="Juego" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GyRKOEe-3V_Nv8TLzHw" name="Lugar" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GyhKOEe-3V_Nv8TLzHw" name="dia" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GyxKOEe-3V_Nv8TLzHw" name="hora" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GzBKOEe-3V_Nv8TLzHw" name="Asistencia" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s18GzRKOEe-3V_Nv8TLzHw" name="Mercado">
+    <ownedAttribute xmi:id="_s18GzhKOEe-3V_Nv8TLzHw" name="precio" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18GzxKOEe-3V_Nv8TLzHw" name="ofertas" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s18G0BKOEe-3V_Nv8TLzHw" name="Reglas">
+    <ownedAttribute xmi:id="_s18G0RKOEe-3V_Nv8TLzHw" name="juego" visibility="public" type="_s18GpBKOEe-3V_Nv8TLzHw" isUnique="false" association="_s18GrxKOEe-3V_Nv8TLzHw"/>
+    <ownedAttribute xmi:id="_s18G0hKOEe-3V_Nv8TLzHw" name="Idioma" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s18G0xKOEe-3V_Nv8TLzHw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_s18G1BKOEe-3V_Nv8TLzHw" name="Reglas" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
