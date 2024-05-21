@@ -1,7 +1,0 @@
-SELECT  SALIDA, LLEGADA
-FROM    ETAPA, PUERTO
-WHERE   ETAPA.NETAPA=PUERTO.NETAPA AND
-        PENDIENTE = (SELECT MAX (PENDIENTE)
-                    FROM    PUERTO)
-                    
--- PREGUNTA: podría salir más de una fila?                    
