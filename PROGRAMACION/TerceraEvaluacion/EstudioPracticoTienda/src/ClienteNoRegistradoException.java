@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class ClienteNoRegistradoException {
+public class ClienteNoRegistradoException extends Exception{
+    public ClienteNoRegistradoException(String mensaje){
+        super(mensaje);
+    }
 }

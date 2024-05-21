@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class UsuarioNoRegistradoException {
+public class UsuarioNoRegistradoException extends Exception{
+    public UsuarioNoRegistradoException(String mensaje){
+        super(mensaje);
+    }
+
 }

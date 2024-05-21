@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class LibroYaRegistradoException {
+public class LibroYaRegistradoException extends Exception {
+
+        public LibroYaRegistradoException(String message) {
+            super(message);
+        }
 }

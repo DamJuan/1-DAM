@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class LibroNoEncontradoException {
+public class LibroNoEncontradoException extends Exception{
+    public LibroNoEncontradoException(String mensaje){
+        super(mensaje);
+    }
 }

@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class VideojuegoYaRegistradoException {
+public class VideojuegoYaRegistradoException extends Exception{
+    public VideojuegoYaRegistradoException(String mensaje){
+        super(mensaje);
+    }
 }

@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public interface Item {
+public interface Item {
+    String getTitulo();
+    boolean estaDisponible();
+
+    int compareTo(Videojuego v);
 }
