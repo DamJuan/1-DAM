@@ -58,7 +58,7 @@ class Usuario {
     public String getContrasena() {
         return contrasena;
     }
-    
+
 
     public boolean validarContrasena(String contrasena) {
         return this.contrasena.equals(contrasena);
