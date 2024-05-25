@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoRectangulo/DemoRectangulo.iml" filepath="$PROJECT_DIR$/DemoRectangulo/DemoRectangulo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EstudioNG/EstudioNG.iml" filepath="$PROJECT_DIR$/EstudioNG/EstudioNG.iml" />
       <module fileurl="file://$PROJECT_DIR$/PruebasUnitariasCalculadora/PruebasUnitariasCalculadora.iml" filepath="$PROJECT_DIR$/PruebasUnitariasCalculadora/PruebasUnitariasCalculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Tema9.iml" filepath="$PROJECT_DIR$/.idea/Tema9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/masEstudioNG/masEstudioNG.iml" filepath="$PROJECT_DIR$/masEstudioNG/masEstudioNG.iml" />
     </modules>
   </component>
 </project>
