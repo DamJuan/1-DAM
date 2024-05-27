@@ -1,0 +1,10 @@
+SELECT  P.NETAPA, LLEGADA, SALIDA, KM, COUNT(*)
+FROM    PUERTO P, ETAPA E
+WHERE   P.NETAPA=E.NETAPA AND
+        E.KM>190
+GROUP BY P.NETAPA, LLEGADA, SALIDA, KM
+HAVING  COUNT(*)=  (SELECT  MIN (COUNT(*))
+                    FROM    PUERTO P1, ETAPA E1
+                    WHERE   P1.NETAPA=E1.NETAPA AND
+                            E1.KM>190
+                    GROUP BY P1.NETAPA);
