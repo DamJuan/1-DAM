@@ -58,6 +58,10 @@ public class HundirFlota {
     }
 
     public static void namePVP() {
+<<<<<<< HEAD
+        Scanner sc = new Scanner(System.in);
+=======
+>>>>>>> fdb20623b53e540b557d02df74210fb7c941a59b
         System.out.println("👤 Introduce el nombre del jugador 1 👤: ");
         String nombreJugador1 = sc.nextLine();
         System.out.println("👤 Introduce el nombre del jugador 2 👤:");
@@ -80,6 +84,7 @@ public class HundirFlota {
         //Scanner sc = new Scanner(System.in);
         //System.out.println("Introduce tu nombre:");
         //String nombreJugador = sc.nextLine();
+        
     }
 
     public static void empezarJuego() {
