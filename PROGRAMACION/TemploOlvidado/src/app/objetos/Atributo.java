@@ -1,2 +1,12 @@
-package app.objetos;public enum Atributo {
+package app.objetos;
+
+public enum Atributo {
+
+    MAGIA(),
+    INTELIGENCIA,
+    FUERZA;
+
+    private Atributo() {
+    }
+
 }

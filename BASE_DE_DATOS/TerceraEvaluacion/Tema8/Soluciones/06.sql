@@ -1,5 +1,0 @@
-SELECT    NOMEQ  
-FROM      CICLISTA     
-GROUP BY  NOMEQ
-HAVING    COUNT(*)>3 AND
-          AVG(EDAD)<=30;
