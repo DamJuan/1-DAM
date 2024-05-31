@@ -1,8 +1,9 @@
 package app.objetos;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Personaje{
+public class Personaje implements Serializable, Comparable<Personaje> {
 
     private String nombre;
     private String clase;
@@ -123,7 +124,7 @@ return atributo == personaje.atributo;
     }
 
     public int compareTo(Personaje o) {
-        return this.getValentia() - o.getValentia();
+        return Integer.compare(this.valentia, o.valentia);
     }
 
 

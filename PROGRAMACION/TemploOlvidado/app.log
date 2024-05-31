@@ -21,3 +21,5 @@
 2024-05-30 09:01:19,937 ERROR  [main] Error al cargar el fichero de objetos: %s
 2024-05-30 09:08:41,623 ERROR  [main] Error al cargar el fichero de objetos: %s
 2024-05-30 10:07:38,428 ERROR  [main] Error al recuperar las batallas: %s
+2024-05-31 18:57:12,675 ERROR  [main] Error al almacenar la batalla: %s
+2024-05-31 18:57:22,549 ERROR  [main] Error al recuperar las batallas: %s

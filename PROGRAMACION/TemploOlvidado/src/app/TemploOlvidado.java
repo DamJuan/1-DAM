@@ -7,9 +7,10 @@ import app.utilidades.EntradaSalida;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class TemploOlvidado {
+public class TemploOlvidado implements Serializable {
 
     private static final Logger LOGGER = LogManager.getRootLogger();
     private final String NOMBRE_ARCHIVO_PERSONAJES = "personajes.csv";
@@ -17,7 +18,6 @@ public class TemploOlvidado {
     private final String NOMBRE_GUARDIANES = "guardianes";
     private final String NOMBRE_LADRONES = "ladrones";
     private final int NUM_OBJETOS_EQUIPADOS_PERMITIDOS = 3;
-    private final int OPCION = 3;
 
     private Scanner sc = new Scanner(System.in);
 
@@ -26,6 +26,8 @@ public class TemploOlvidado {
     private List<Batalla> batallas;
     private List<Personaje> guardianes;
     private List<Personaje> ladrones;
+    private Map<String, Personaje> personajesDisponibles;
+
 
     private Batalla batalla;
 
@@ -34,11 +36,9 @@ public class TemploOlvidado {
         objetosMagicos = EntradaSalida.cargarCSVObjetos(NOMBRE_ARCHIVO_OBJETOS);
         guardianes = new ArrayList<>();
         ladrones = new ArrayList<>();
+        personajesDisponibles = new HashMap<>(personajes);
     }
 
-    /**
-     * Método que inicia el juego
-     */
     public void jugar() {
         int opcion = seleccionarOpcionMenu();
         switch (opcion) {
@@ -57,18 +57,18 @@ public class TemploOlvidado {
     }
 
     private void mostrarBatallasEpicas() {
-        batallas = EntradaSalida.recuperarBatallas();
-        if(batallas == null || batallas.isEmpty()) {
+        batallas = (List<Batalla>) EntradaSalida.recuperarBatallas();
+        if (batallas == null || batallas.isEmpty()) {
             System.out.println("No hay batallas épicas que mostrar.");
             return;
         }
 
         System.out.println("\n**BATALLAS ÉPICAS**");
         int contador = 1;
-        for(Batalla batalla : batallas) {
+        for (Batalla batalla : batallas) {
             StringBuilder sb = new StringBuilder();
             sb.append("\nBATALLA ").append(contador);
-            sb.append(batalla.isGanadaPorGuardianes()?" ganada por los guardianes:\n":" ganada por los ladrones:\n");
+            sb.append(batalla.isGanadaPorGuardianes() ? " ganada por los guardianes:\n" : " ganada por los ladrones:\n");
             System.out.println(sb);
             batalla.luchar();
             contador++;
@@ -80,7 +80,7 @@ public class TemploOlvidado {
 
         batalla = nuevoJuego();
         batalla.luchar();
-        if(batalla.isGanadaPorGuardianes()) {
+        if (batalla.isGanadaPorGuardianes()) {
             System.out.println("Los guardianes han ganado la batalla. Esta batalla ha sido épica. Quedará almacenada " +
                     " en la historia del templo.");
         } else {
@@ -88,7 +88,7 @@ public class TemploOlvidado {
                     " en la historia del templo.");
         }
 
-        if(!EntradaSalida.almacenarBatalla(batalla)) {
+        if (!EntradaSalida.almacenarBatalla(batalla)) {
             System.out.println("Lo sentimos, ha ocurrido un error y no se ha podido almacenar la batalla.");
         }
     }
@@ -102,21 +102,17 @@ public class TemploOlvidado {
         return sc.nextInt();
     }
 
-    /**
-     * Método que inicia y solicita lo necesario para empezar una nueva partida
-     * @return Batalla creada
-     */
     private Batalla nuevoJuego() {
-System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que nos indiques el número de " +
+        System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que nos indiques el número de " +
                 "guardianes y ladrones que van a participar en la batalla.");
         int numeroPersonajes = seleccionNumeroPersonajes();
         guardianes = (List<Personaje>) crearEquiparPersonajes(NOMBRE_GUARDIANES, numeroPersonajes);
-        if(guardianes == null) {
+        if (guardianes == null) {
             return null;
         }
 
         ladrones = (List<Personaje>) crearEquiparPersonajes(NOMBRE_LADRONES, numeroPersonajes);
-        if(ladrones == null) {
+        if (ladrones == null) {
             return null;
         }
 
@@ -130,11 +126,11 @@ System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que
         int num = 0;
         try {
             num = sc.nextInt();
-            if(num <= 0 || num > 5) {
+            if (num <= 0 || num > 5) {
                 do {
                     System.out.println("El número de guardianes debe ser un número entre 1 y 5. Vuelve a introducirlo:");
                     num = sc.nextInt();
-                } while(num < 0 || num > 5);
+                } while (num < 0 || num > 5);
             }
         } catch (InputMismatchException e) {
             LOGGER.error("El usuario ha introducido un valor no numérico.");
@@ -146,13 +142,12 @@ System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que
     private List crearEquiparPersonajes(String tipoPersonaje, int cantidad) {
         personajes = seleccionarPersonajes(tipoPersonaje, cantidad);
 
-        if(personajes.isEmpty()) {
+        if (personajes.isEmpty()) {
             return null;
         }
-        if(equiparPersonajes(personajes, tipoPersonaje, cantidad)) {
+        if (equiparPersonajes(personajes, tipoPersonaje, cantidad)) {
             return new ArrayList<>(personajes.values());
         }
-        //TODO no se está devolviendo nada
         System.out.println("Error al equipar personajes. La partida no puede continuar.");
         return null;
     }
@@ -169,21 +164,21 @@ System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que
 
         sc.nextLine();
 
-        for(int i = 1; i <= cantidad; i++) {
+        for (int i = 1; i <= cantidad; i++) {
             System.out.println("Introduce el nombre completo del personaje " + (i) + ":");
             String nombre = sc.nextLine();
-            //TODO no inicializa personaje en null me genera error nullpointer exception
             Personaje personaje;
 
-            if(personajes.containsKey(nombre.toUpperCase())) {
-                personaje = personajes.get(nombre);
+            if (personajesDisponibles.containsKey(nombre.toUpperCase())) {
+                personaje = personajesDisponibles.get(nombre.toUpperCase());
                 personajesSeleccionados.put(nombre, personaje);
-
+                personajesDisponibles.remove(nombre.toUpperCase());
             } else {
                 System.out.println("El personaje no existe. Prueba de nuevo.");
                 i--;
             }
         }
+
         return personajesSeleccionados;
     }
 
@@ -192,14 +187,14 @@ System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que
         StringBuilder sb = new StringBuilder();
         sb.append("Ahora debes equipar a ").append(construirMensajeNumero(cantidad, tipoPersonaje));
         sb.append(" con ").append(NUM_OBJETOS_EQUIPADOS_PERMITIDOS).append(" objetos mágicos");
-        sb.append(cantidad > 1?" para cada uno.":".");
+        sb.append(cantidad > 1 ? " para cada uno." : ".");
         System.out.println(sb);
 
         mostrarObjetosMagicos();
 
-        for(Object personaje : personajes.values()) {
-             objetosMagicos = (Map<Integer, ObjetoMagico>) equipar((Personaje) personaje);
-            if(objetosMagicos == null) {
+        for (Object personaje : personajes.values()) {
+            objetosMagicos = (Map<Integer, ObjetoMagico>) equipar((Personaje) personaje);
+            if (objetosMagicos == null) {
                 return Boolean.FALSE;
             }
         }
@@ -208,26 +203,26 @@ System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que
 
     private Object equipar(Personaje personaje) {
         List<ObjetoMagico> objetosEquipados = new ArrayList<>();
-        for(int i = 1; i <= NUM_OBJETOS_EQUIPADOS_PERMITIDOS; i++) {
+        for (int i = 1; i <= NUM_OBJETOS_EQUIPADOS_PERMITIDOS; i++) {
             System.out.println("Introduce el ID del objeto mágico " + i + " que quieres equipar:");
             int id = sc.nextInt();
             ObjetoMagico objeto = null;
 
-            if(objetosMagicos.containsKey(id)) {
+            if (objetosMagicos.containsKey(id)) {
                 objeto = objetosMagicos.get(id);
                 objetosEquipados.add(objeto);
             } else {
                 System.out.println("El objeto mágico no existe. Prueba de nuevo.");
                 i--;
             }
-         objetosMagicos.remove(objeto.getId());
+            objetosMagicos.remove(objeto.getId());
         }
         personaje.setObjetosMagicos(objetosEquipados);
         return objetosMagicos;
     }
 
     private void mostrarPersonajes() {
-        for (Personaje personaje : personajes.values()) {
+        for (Personaje personaje : personajesDisponibles.values()) {
             System.out.println(personaje);
         }
     }
@@ -240,11 +235,11 @@ System.out.println("Vamos a empezar una nueva partida. Para ello necesitamos que
 
     private String construirMensajeNumero(int cantidad, String tipoPersonaje) {
         StringBuilder sb = new StringBuilder();
-        sb.append("tu").append(cantidad>1?"s " + cantidad + " ":" ");
-        if(cantidad > 1){
-            sb.append(tipoPersonaje.equals(NOMBRE_GUARDIANES)?"GUARDIANES":"LADRONES");
+        sb.append("tu").append(cantidad > 1 ? "s " + cantidad + " " : " ");
+        if (cantidad > 1) {
+            sb.append(tipoPersonaje.equals(NOMBRE_GUARDIANES) ? "GUARDIANES" : "LADRONES");
         } else {
-            sb.append(tipoPersonaje.equals(NOMBRE_GUARDIANES)?"GUARDIÁN":"LADRÓN");
+            sb.append(tipoPersonaje.equals(NOMBRE_GUARDIANES) ? "GUARDIÁN" : "LADRÓN");
         }
         return sb.toString();
     }

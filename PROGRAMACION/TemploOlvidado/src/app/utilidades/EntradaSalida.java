@@ -45,6 +45,8 @@ public class EntradaSalida {
 
         return grupo;
     }
+
+    //TODO MIS OBJETOS USADOS NO SE PUEDEN REPETIR
     public static Map<Integer,ObjetoMagico> cargarCSVObjetos(String nombreFichero) {
 
         if (nombreFichero == null || nombreFichero.isEmpty()) {
@@ -75,29 +77,34 @@ public class EntradaSalida {
         return grupo;
     }
 
-    public static boolean almacenarBatalla(Batalla batalla) {
 
-        Map<String, Personaje> grupo = new HashMap<>();
+    //TODO NO TENGO CLARO SI SE GUARDA LA BATALLA
+    public static boolean almacenarBatalla(Batalla batallas) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(DATA_FILE))) {
-            oos.writeObject(grupo);
-            return true;
+            oos.writeObject(batallas);
+            return Boolean.TRUE;
         } catch (IOException e) {
             LOGGER.error("Error al almacenar la batalla: %s", e.getMessage());
-            return false;
+            return Boolean.FALSE;
         }
-
     }
 
-    public static List<Batalla> recuperarBatallas(){
+    //TODO NO DETECTA LASS BATALLAS GUARDADAS
+
+
+    public static HashMap<String, Batalla> recuperarBatallas(){
+        HashMap<String, Batalla> batallas = null;
 
         try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(DATA_FILE))) {
-            return (List<Batalla>) ois.readObject();
+            batallas = (HashMap<String, Batalla>) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
             LOGGER.error("Error al recuperar las batallas: %s", e.getMessage());
-            return null;
         }
 
+        return batallas;
     }
+
+    //TODO NO SE USA EXISTE PARTIDA GUATDADA
 
     public static boolean existePartidaGuardada() {
         File file = new File(DATA_FILE);

@@ -75,6 +75,8 @@ public class Batalla {
         return Boolean.TRUE;
     }
 
+    //TODO CREO QUE SOLO PIERDEN LOS GUARDIANES
+
     private void imprimirResultado(Personaje guardian, Personaje ladron, boolean guardianVencedor) {
         StringBuilder cadena = new StringBuilder();
         cadena.append("Guardián: " + guardian.getDatosParaVS()).append("\n");
