@@ -18,3 +18,7 @@ M
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 7
 app.log,a\0\a04cdc1b813999384ef385ac5191cbe69e844545
+M
+src/app/objetos/Atributo.java,5\0\50007904a6ff589b8d309910d653843b143a8dcc
+S
+#src/app/objetos/ClasePersonaje.java,5\c\5cdf4a7da476847d2d09f9ae3dc4717a1d9b5b67

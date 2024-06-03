@@ -3,116 +3,105 @@ package app.utilidades;
 import app.objetos.Batalla;
 import app.objetos.ObjetoMagico;
 import app.objetos.Personaje;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class EntradaSalida {
 
-    public static Map<String, Personaje> cargarCSVPersonas(String nombreArchivo) {
-        Map<String, Personaje> personajes = new HashMap<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
-            String linea;
-            while ((linea = br.readLine()) != null) {
-                Personaje personaje = crearPersonajeDeLinea(linea);
-                if (personaje != null) {
-                    personajes.put(personaje.getNombre(), personaje);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return personajes;
-    }
+    private static final Logger LOGGER = LogManager.getRootLogger();
+    public static final String RUTA_BBDD = "resources\\bbdd\\";
+    public static final String RUTA_DATOS = "resources\\datos";
+    public static final String DATA_FILE = "app.TemploOlvidado.dat";
 
-    private static Personaje crearPersonajeDeLinea(String linea) {
-        String[] partes = linea.split(";");
-        if (partes.length != 3) {
-            return null;
+    public static Map<String, Personaje> cargarCSVPersonas(String nombreFichero) {
+
+        if (nombreFichero == null || nombreFichero.isEmpty()) {
+            throw new IllegalArgumentException("El nombre del fichero no puede ser nulo ni vacío");
         }
+
+        Map<String, Personaje> grupo = new HashMap<>();
+
         try {
-            String nombre = partes[0];
-            String clase = partes[1];
-            String atributo = partes[2];
-            Personaje personaje = new Personaje();
-            personaje.setNombre(nombre);
-            personaje.setClase(clase);
-            personaje.setAtributo(atributo);
-            return personaje;
-        } catch (Exception e) {
-            return null;
-        }
-    }
-
-    public static Map<Integer, ObjetoMagico> cargarCSVObjetos(String nombreArchivo) {
-        Map<Integer, ObjetoMagico> objetosMagicos = new HashMap<>();
-        try (BufferedReader br = new BufferedReader(new FileReader(nombreArchivo))) {
+            BufferedReader br = new BufferedReader(new FileReader(RUTA_BBDD + nombreFichero));
             String linea;
+
+            br.readLine();
+
             while ((linea = br.readLine()) != null) {
-                ObjetoMagico objetoMagico = ObjetoMagico.crearInstanciaDeCSV(linea);
-                if (objetoMagico != null) {
-                    objetosMagicos.put(objetoMagico.getId(), objetoMagico);
+                Personaje personaje = Personaje.crearInstanciaDeCSV(linea);
+                if (personaje != null) {
+                    grupo.put(personaje.getNombre(), personaje);
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            LOGGER.error("Error al cargar el fichero de personajes: %s", e.getMessage());
         }
-        return objetosMagicos;
+
+        return grupo;
     }
 
-    public static Personaje solicitarDatosPersonaje(Map<String, Personaje> personajes) {
-        Scanner sc = new Scanner(System.in);
-        Personaje personaje = null;
-        while (personaje == null) {
-            System.out.println("Selecciona un personaje de la lista:");
-            for (Personaje p : personajes.values()) {
-                System.out.println(p.getDatosParaVS());
-            }
-            //TODO Mirar porque no imprime la lista
-            System.out.print("Introduce el nombre del personaje: ");
-            String nombre = sc.nextLine();
-            personaje = personajes.get(nombre);
-            //TODO al no imprimir la lista no encuentra el nombre y da error
-            if (personaje == null) {
-                System.out.println("Personaje no encontrado, intenta de nuevo.");
-            }
+    //TODO MIS OBJETOS USADOS NO SE PUEDEN REPETIR
+    public static Map<Integer,ObjetoMagico> cargarCSVObjetos(String nombreFichero) throws IllegalArgumentException {
+
+        if (nombreFichero == null || nombreFichero.isEmpty()) {
+            throw new IllegalArgumentException("El nombre del fichero no puede ser nulo ni vacío");
         }
-        return personaje;
+
+        Map<Integer, ObjetoMagico> grupo = new HashMap<>();
+
+        //TODO, esto queda mejor usando los parámetros new FileReader(RUTA_BBDD, nombreFichero)
+        try (BufferedReader br = new BufferedReader(new FileReader(RUTA_BBDD + nombreFichero))) {
+            String linea;
+
+            br.readLine();
+            while ((linea = br.readLine()) != null) {
+                ObjetoMagico objeto = ObjetoMagico.crearInstanciaDeCSV(linea);
+                if (objeto != null) {
+                    grupo.put(objeto.getId(), objeto);
+                }
+            }
+        } catch (IOException e) {
+            LOGGER.error("Error al cargar el fichero de objetos: %s", e.getMessage());
+        }
+
+        return grupo;
     }
 
-    public static void equiparObjetos(Personaje personaje, Map<Integer, ObjetoMagico> objetosMagicos, int maxObjetos) {
-        Scanner sc = new Scanner(System.in);
-        int objetosEquipados = 0;
-        while (objetosEquipados <= maxObjetos) {
-            System.out.println("Selecciona un objeto mágico de la lista para equipar a " + personaje.getNombre() + ":");
-            for (ObjetoMagico o : objetosMagicos.values()) {
-                System.out.println(o.getDatosParaVS());
-            }
-            System.out.print("Introduce el ID del objeto mágico: ");
-            int id = sc.nextInt();
-            ObjetoMagico objetoMagico = objetosMagicos.get(id);
-            if (objetoMagico == null) {
-                System.out.println("Objeto no encontrado, intenta de nuevo.");
-            } else {
-                // Equipar objetos -->
-                // personaje.equiparObjeto(objetoMagico);
-                objetosEquipados++;
-            }
+
+    //TODO NO TENGO CLARO SI SE GUARDA LA BATALLA
+    public static boolean almacenarBatalla(Batalla batallas) {
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(DATA_FILE))) {
+            oos.writeObject(batallas);
+            return Boolean.TRUE;
+        } catch (IOException e) {
+            LOGGER.error("Error al almacenar la batalla: %s", e.getMessage());
+            return Boolean.FALSE;
         }
     }
 
-    public static List<Batalla> recuperarBatallas() {
-        //TODO IMPLEMENTAR RECUPERAR BATALLAS de datos
-        return null;
+    //TODO NO DETECTA LASS BATALLAS GUARDADAS
+
+
+    public static HashMap<String, Batalla> recuperarBatallas(){
+        HashMap<String, Batalla> batallas = null;
+
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(DATA_FILE))) {
+            batallas = (HashMap<String, Batalla>) ois.readObject();
+        } catch (IOException | ClassNotFoundException e) {
+            LOGGER.error("Error al recuperar las batallas: %s", e.getMessage());
+        }
+
+        return batallas;
     }
 
-    public static boolean almacenarBatalla(Batalla batalla) {
-        //TODO IMPLEMENTAR almacenar BATALLAS DE DATOS SI GANAN LOS GUERREROS
-        return true;
+    //TODO NO SE USA EXISTE PARTIDA GUATDADA
+
+    public static boolean existePartidaGuardada() {
+        File file = new File(DATA_FILE);
+        return file.exists();
     }
+
 }

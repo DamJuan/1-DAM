@@ -1,0 +1,27 @@
+2024-05-30 08:22:40,926 ERROR  [main] Error al cargar el fichero de personajes: %s
+2024-05-30 08:22:40,926 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:26:08,571 ERROR  [main] Error al cargar el fichero de personajes: %s
+2024-05-30 08:26:08,571 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:27:50,026 ERROR  [main] Error al cargar el fichero de personajes: %s
+2024-05-30 08:27:50,026 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:31:21,686 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:32:17,621 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:34:14,003 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:34:21,605 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:34:25,047 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:35:16,015 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:37:30,180 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:37:45,106 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:37:53,307 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:42:03,425 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:51:43,692 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:55:59,777 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 08:57:06,829 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 09:00:56,232 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 09:01:19,937 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 09:08:41,623 ERROR  [main] Error al cargar el fichero de objetos: %s
+2024-05-30 10:07:38,428 ERROR  [main] Error al recuperar las batallas: %s
+2024-05-31 18:57:12,675 ERROR  [main] Error al almacenar la batalla: %s
+2024-05-31 18:57:22,549 ERROR  [main] Error al recuperar las batallas: %s
+2024-06-03 13:12:10,846 ERROR  [main] Error al almacenar la batalla: %s
+2024-06-03 13:12:18,654 ERROR  [main] Error al recuperar las batallas: %s

@@ -1,58 +1,73 @@
 package app.objetos;
 
-public final class ObjetoMagico {
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import java.io.Serializable;
 
-    private int id;
-    private String atributo;
-    private String nombre;
-    private int poder;
 
-    public ObjetoMagico(int id, String atributo, String nombre, int poder) {
-        this.id = id;
-        this.atributo = atributo;
-        this.nombre = nombre;
-        this.poder = poder;
-    }
+//todo implementa la interfaz Serializable
+public final class ObjetoMagico implements Serializable, Comparable<ObjetoMagico> {
+
+    //TODO completar manteniendo el nombre de las variables propuestas
+//TODO estos atributos no se ponen en mayusculas
+    private final int ID;
+    private final Atributo ATRIBUTO;
+    private final String NOMBRE;
+    private final int PODER;
+
+    private static final Logger LOGGER = LogManager.getRootLogger();
+
 
     public static ObjetoMagico crearInstanciaDeCSV(String linea) {
-        String[] partes = linea.split(";");
-        if (partes.length != 4) {
+        //TODO este if/else if/else se puede mejorar
+        if (!linea.isEmpty() && !linea.isBlank()) {
+            String[] campos = linea.split(";");
+            if (campos.length != 4) {
+                return null;
+            } else {
+                try {
+                    return new ObjetoMagico(Integer.parseInt(campos[0].toUpperCase()), Atributo.valueOf(campos[2].toUpperCase()), campos[1], Integer.parseInt(campos[3]));
+                } catch (Exception e) {
+                    LOGGER.error("Error al crear el objeto: %s", e.getMessage());
+                    return null;
+                }
+            }
+        } else {
             return null;
         }
-        try {
-            int id = Integer.parseInt(partes[0]);
-            String nombre = partes[1];
-            String atributo = partes[2];
-            int poder = Integer.parseInt(partes[3]);
-            return new ObjetoMagico(id, atributo, nombre, poder);
-        } catch (NumberFormatException e) {
-            return null;
-        }
+    }
+
+    public ObjetoMagico(int id, Atributo atributo, String nombre, int poder) {
+        this.ID = id;
+        this.ATRIBUTO = atributo;
+        this.NOMBRE = nombre;
+        this.PODER = poder;
     }
 
     public int getId() {
-        return id;
+        return ID;
     }
 
-    public String getAtributo() {
-        return atributo;
+    public Atributo getAtributo() {
+        return ATRIBUTO;
     }
 
     public String getNombre() {
-        return nombre;
+        return NOMBRE;
     }
 
     public int getPoder() {
-        return poder;
+        return PODER;
     }
+
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("ObjetoMagico{");
-        sb.append("id=").append(id);
-        sb.append(", atributo='").append(atributo).append('\'');
-        sb.append(", nombre='").append(nombre).append('\'');
-        sb.append(", poder=").append(poder);
+        sb.append("id=").append(getId());
+        sb.append(", atributo=").append(getAtributo());
+        sb.append(", nombre='").append(getNombre()).append('\'');
+        sb.append(", poder=").append(getPoder());
         sb.append('}');
         return sb.toString();
     }
@@ -61,16 +76,25 @@ public final class ObjetoMagico {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+
         ObjetoMagico that = (ObjetoMagico) o;
-        return id == that.id;
+        return ID == that.ID;
     }
 
     @Override
     public int hashCode() {
-        return id;
+        return ID;
     }
 
-    public String getDatosParaVS() {
-        return this.id + " -> " + this.nombre + ", " + this.atributo + ", " + this.poder;
+    @Override
+    public int compareTo(ObjetoMagico o) {
+        return Integer.compare(this.ID, o.ID);
     }
+
+
+
+    public String getDatosParaVS(){
+        return this.ID + " -> " + this.NOMBRE + ", " + this.ATRIBUTO + ", " + this.PODER;
+    }
+
 }
