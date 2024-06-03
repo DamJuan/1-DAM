@@ -9,7 +9,7 @@ import java.io.Serializable;
 public final class ObjetoMagico implements Serializable, Comparable<ObjetoMagico> {
 
     //TODO completar manteniendo el nombre de las variables propuestas
-
+//TODO estos atributos no se ponen en mayusculas
     private final int ID;
     private final Atributo ATRIBUTO;
     private final String NOMBRE;
@@ -19,6 +19,7 @@ public final class ObjetoMagico implements Serializable, Comparable<ObjetoMagico
 
 
     public static ObjetoMagico crearInstanciaDeCSV(String linea) {
+        //TODO este if/else if/else se puede mejorar
         if (!linea.isEmpty() && !linea.isBlank()) {
             String[] campos = linea.split(";");
             if (campos.length != 4) {

@@ -6,8 +6,11 @@ import java.util.List;
 public class Personaje implements Serializable, Comparable<Personaje> {
 
     private String nombre;
+    //TODO para que has creado el enum ClasePersonaje si no lo usas?
     private String clase;
     private final Atributo atributo;
+    //TODO valentia es calculado, no deberia estar como atributo de la clase. Además no se está calculando aquí en la
+    // clase, y es donde debería hacerse. Esto deberia ser un getValencia que calculase dentro todo.
     private int valentia;
     private int puntosExperiencia;
     private boolean esGanador;
@@ -22,6 +25,7 @@ public class Personaje implements Serializable, Comparable<Personaje> {
     }
 
     public static Personaje crearInstanciaDeCSV(String linea) {
+        //TODO aqui le aplica lo mismo que al de Objeto, se puede mejorar
         if (!linea.isEmpty() && !linea.isBlank()) {
             String[] campos = linea.split(";");
             if (campos.length != 5) {
@@ -136,6 +140,7 @@ return atributo == personaje.atributo;
         return objetosMagicos;
     }
 
+    //TODO este método me sorprende mucho.. todavia no se para que vale, pero no me cuadra
     public void setObjetosMagicos(List<ObjetoMagico> objetosMagicos) {
         this.objetosMagicos = objetosMagicos.toArray(new ObjetoMagico[0]);
     }

@@ -7,6 +7,7 @@ public enum ClasePersonaje {
     INFORMATICA(75),
     CAZADORA(25);
 
+    //TODO Esto es un atributo que ha de ser final si o si, rompe un poco lo habitual y no se escribe en mayúsculas.
     private final int VALOR;
 
     private ClasePersonaje (int valor) {
@@ -19,5 +20,3 @@ public enum ClasePersonaje {
 
 
 }
-
-

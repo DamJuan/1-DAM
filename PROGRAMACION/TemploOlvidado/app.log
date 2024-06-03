@@ -23,3 +23,5 @@
 2024-05-30 10:07:38,428 ERROR  [main] Error al recuperar las batallas: %s
 2024-05-31 18:57:12,675 ERROR  [main] Error al almacenar la batalla: %s
 2024-05-31 18:57:22,549 ERROR  [main] Error al recuperar las batallas: %s
+2024-06-03 13:12:10,846 ERROR  [main] Error al almacenar la batalla: %s
+2024-06-03 13:12:18,654 ERROR  [main] Error al recuperar las batallas: %s

@@ -27,13 +27,10 @@ public class EntradaSalida {
         try {
             BufferedReader br = new BufferedReader(new FileReader(RUTA_BBDD + nombreFichero));
             String linea;
-            int cont = 0;
+
+            br.readLine();
 
             while ((linea = br.readLine()) != null) {
-                if (cont == 0) {
-                    cont++;
-                    continue;
-                }
                 Personaje personaje = Personaje.crearInstanciaDeCSV(linea);
                 if (personaje != null) {
                     grupo.put(personaje.getNombre(), personaje);
@@ -47,7 +44,7 @@ public class EntradaSalida {
     }
 
     //TODO MIS OBJETOS USADOS NO SE PUEDEN REPETIR
-    public static Map<Integer,ObjetoMagico> cargarCSVObjetos(String nombreFichero) {
+    public static Map<Integer,ObjetoMagico> cargarCSVObjetos(String nombreFichero) throws IllegalArgumentException {
 
         if (nombreFichero == null || nombreFichero.isEmpty()) {
             throw new IllegalArgumentException("El nombre del fichero no puede ser nulo ni vacío");
@@ -55,16 +52,12 @@ public class EntradaSalida {
 
         Map<Integer, ObjetoMagico> grupo = new HashMap<>();
 
+        //TODO, esto queda mejor usando los parámetros new FileReader(RUTA_BBDD, nombreFichero)
         try (BufferedReader br = new BufferedReader(new FileReader(RUTA_BBDD + nombreFichero))) {
             String linea;
-            int cont = 0;
 
-
+            br.readLine();
             while ((linea = br.readLine()) != null) {
-                if (cont == 0) {
-                    cont++;
-                    continue;
-                }
                 ObjetoMagico objeto = ObjetoMagico.crearInstanciaDeCSV(linea);
                 if (objeto != null) {
                     grupo.put(objeto.getId(), objeto);

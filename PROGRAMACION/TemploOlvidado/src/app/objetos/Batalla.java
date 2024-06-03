@@ -9,29 +9,21 @@ import java.util.TreeSet;
 
 public class Batalla {
 
+
+    private static final Logger LOGGER = LogManager.getRootLogger();
+
     private TreeSet<Personaje> guardianes;
     private TreeSet<Personaje> ladrones;
 
-    private TreeSet<Personaje> guardianesClone;
-    private TreeSet<Personaje> ladronesClone;
-
-    private static final Logger LOGGER = LogManager.getRootLogger();
 
     private boolean ganadaPorGuardianes;
 
     private String motivo;
 
     public Batalla(List<Personaje> guardianes, List<Personaje> ladrones) {
+        //TODO para que le pasas parámetros al método si no los usas?
         this.guardianes = new TreeSet<>();
         this.ladrones = new TreeSet<>();
-    }
-
-    public void addGuardian(Personaje guardian) {
-        guardianes.add(guardian);
-    }
-
-    public void addLadron(Personaje ladron) {
-        ladrones.add(ladron);
     }
 
     public Personaje obtenerContrincante(Personaje personaje, TreeSet<Personaje> contrincantes) {
@@ -47,15 +39,15 @@ public class Batalla {
 
     public boolean luchar() {
 
-        guardianesClone = (TreeSet<Personaje>) guardianes.clone();
-        ladronesClone = (TreeSet<Personaje>) ladrones.clone();
+        TreeSet guardianesClone = (TreeSet<Personaje>) guardianes.clone();
+        TreeSet ladronesClone = (TreeSet<Personaje>) ladrones.clone();
         ganadaPorGuardianes = Boolean.FALSE;
 
         int guardianesSize = guardianesClone.size();
         int numGanadas = 0;
 
         for (int i = 0; i < guardianesSize; i++) {
-            Personaje guardian = guardianesClone.pollFirst();
+            Personaje guardian = (Personaje) guardianesClone.pollFirst();
             Personaje ladron = obtenerContrincante(guardian, ladronesClone);
 
             boolean guardianVencedor = esGuardianVencedor(guardian, ladron);
