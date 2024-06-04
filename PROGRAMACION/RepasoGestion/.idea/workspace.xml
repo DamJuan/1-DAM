@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="546d9f6c-67d3-4c5f-935b-5bf475547137" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/libraries/log4j_api_2_23_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/libraries/log4j_core_2_23_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/0/6/0653d167f8e5a319942872dfd13fc860e5e95cef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/1/1/111ab4b5c2fbe1619d5066f3d454cf269b99112d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/5/0/50007904a6ff589b8d309910d653843b143a8dcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/5/c/5cdf4a7da476847d2d09f9ae3dc4717a1d9b5b67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/6/1/613e8632dc7c247cb0464e0983a4825b403b03dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/a/0/a04cdc1b813999384ef385ac5191cbe69e844545" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/d/2/d223add86c115e905542050c9eff3667f98f2387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/d/c/dc5a2bd47a6c0d339c13178b9949071064277bb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/f/6/f6590d1221c749a6b06005411f6e65e94a788f15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/0/6/0653d167f8e5a319942872dfd13fc860e5e95cef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/1/1/111ab4b5c2fbe1619d5066f3d454cf269b99112d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/5/0/50007904a6ff589b8d309910d653843b143a8dcc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/5/c/5cdf4a7da476847d2d09f9ae3dc4717a1d9b5b67" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/6/1/613e8632dc7c247cb0464e0983a4825b403b03dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/a/0/a04cdc1b813999384ef385ac5191cbe69e844545" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/d/2/d223add86c115e905542050c9eff3667f98f2387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/d/c/dc5a2bd47a6c0d339c13178b9949071064277bb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/f/6/f6590d1221c749a6b06005411f6e65e94a788f15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/TemploOlvidado.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/app.TemploOlvidado.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/app.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/resources/bbdd/objetos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/resources/bbdd/personajes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/resources/ejemplosJuego/EjemploJuego.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/resources/ejemplosJuego/EjemploVerBatallasEpicas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/TemploOlvidado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/objetos/Atributo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/objetos/Batalla.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/objetos/ClasePersonaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/objetos/ObjetoMagico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/objetos/Personaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/utilidades/EntradaSalida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemploOlvidado/src/app/utilidades/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/libraries/log4j_api_2_23_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/0/6/0653d167f8e5a319942872dfd13fc860e5e95cef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/1/1/111ab4b5c2fbe1619d5066f3d454cf269b99112d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/6/1/613e8632dc7c247cb0464e0983a4825b403b03dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/a/0/a04cdc1b813999384ef385ac5191cbe69e844545" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/d/2/d223add86c115e905542050c9eff3667f98f2387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/d/c/dc5a2bd47a6c0d339c13178b9949071064277bb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/f/6/f6590d1221c749a6b06005411f6e65e94a788f15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/0/6/0653d167f8e5a319942872dfd13fc860e5e95cef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/1/1/111ab4b5c2fbe1619d5066f3d454cf269b99112d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/6/1/613e8632dc7c247cb0464e0983a4825b403b03dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/a/0/a04cdc1b813999384ef385ac5191cbe69e844545" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/d/2/d223add86c115e905542050c9eff3667f98f2387" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/d/c/dc5a2bd47a6c0d339c13178b9949071064277bb2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/f/6/f6590d1221c749a6b06005411f6e65e94a788f15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/TemploOlvidado.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/app.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/resources/bbdd/objetos.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/resources/bbdd/personajes.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/resources/ejemplosJuego/EjemploJuego.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/resources/ejemplosJuego/EjemploVerBatallasEpicas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/TemploOlvidado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/objetos/Atributo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/objetos/Batalla.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/objetos/ClasePersonaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/objetos/ObjetoMagico.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/objetos/Personaje.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/utilidades/EntradaSalida.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/utilidades/PoderComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/app/utilidades/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TemploOlvidado/src/datos/app.TemploOlvidado.dat" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2hQM99cPcWKysb8cZgtmvBANmWM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/fuego/1-DAM/TemploOlvidadoBEA",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="546d9f6c-67d3-4c5f-935b-5bf475547137" name="Changes" comment="" />
+      <created>1717521693545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717521693545</updated>
+      <workItem from="1717521694607" duration="29000" />
+      <workItem from="1717521732681" duration="560000" />
+      <workItem from="1717523070465" duration="55000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
